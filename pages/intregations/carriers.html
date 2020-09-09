@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Developed By M Abdur Rokib Promy">
+	<meta name="author" content="cosmic">
+	<meta name="keywords" content="Bootstrap 3, Template, Theme, Responsive, Corporate, Business">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<title>Lite Order Customer Dashborad</title>
+	<!-- Bootstrap core CSS -->
+	<link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../assets/css/theme.css" rel="stylesheet">
+	<link href="../../assets/css/bootstrap-reset.css" rel="stylesheet">
+	<!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet">-->
+	<!--external css-->
+	<link href="../../assets/css/fontawsome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../../assets/css/flexslider.css" />
+	<link href="../../assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../../assets/css/animate.css">
+	<link rel="stylesheet" href="../../assets/owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" href="../../assets/owlcarousel/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+	<link href="../../assets/css/superfish.css" rel="stylesheet" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<link href="../../assets/css/style-responsive.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/parallax-slider/parallax-slider.css" />
+	<!-- this is new page design main css file -->
+	<link rel="stylesheet" href="../../assets/css/custom.css">
+	<link rel="stylesheet" href="../../assets/css/responsive.css">
+	<!-- this is new page design main css file -->
+
+
+	<!-- HTML5 browser support message shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+	<!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js">
+    </script>
+    <script src="/assets/js/respond.min.js">
+    </script>
+    <![endif]-->
+</head>
+
+<body class="customerMinBody">
+
+	<!-- start customer dashboard header -->
+	<header id="customerHeader">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-lg-1">
+					<div class="logo text-center">
+						<a href="#">
+							<span><i class="fad fa-adjust"></i></span>
+							Lite Order
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="customerTabTop">
+						<!-- <ul role="tablist">
+
+
+							<li role="presentation">
+								<a href="#">Reports</a>
+							</li>
+						</ul> -->
+						<ul>
+							<li><a href="../../dashboard.html">Dashboard</a></li>
+							<li><a href="../../dashboard-orders.html">Orders</a></li>
+							<li><a href="../../dashboard-inventory.html">Inventory</a></li>
+							<li><a href="../../dashboard-customers.html">Customers</a></li>
+							<li><a href="../../dashboard-reports.html">Reports</a></li>
+							<li><a class="active" href="../../dashboard-intregation.html">Integrations</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="customerHeaderRight text-right">
+						<ul>
+							<li><a href="#"><i class="fal fa-question-circle"></i></a></li>
+							<li><a href="#"><i class="fal fa-bell"></i></a></li>
+							<li>
+								<div class="dropdown">
+									<button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										Settings <i class="fal fa-angle-down"></i>
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Account</a>
+										<a class="dropdown-item" href="#">Company</a>
+										<a class="dropdown-item" href="#">Users</a>
+										<a class="dropdown-item" href="#">Integrations</a>
+										<a class="dropdown-item" href="#">Logout</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end customer dashboard header -->
+
+	<!-- start dashbord main page -->
+	<section id="intregationsMainPage">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="intregationSubtabHeader">
+						<div class="row align-items-center">
+							<div class="col-lg-8">
+								<div class="intregationSubtabHeaderSubtabHeaderLeft">
+									<ul>
+										<li><a href="../../dashboard-intregation.html" >All</a></li>
+										<li><a href="../intregations/stores.html">Stories</a></li>
+										<li class="active"><a href="../intregations/carriers.html">Carriers</a></li>
+										<li><a href="../intregations/payment.html">Payment</a></li>
+										<li><a href="../intregations/cancel.html">Cancelled</a></li>
+										<li><a href="../intregations/pending.html">Pending</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="intregationSubtabHeaderSubtabHeaderRight text-right">
+									<div class="dropdown">
+										<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Add new intregations <i class="fal fa-plus"></i>
+										</button>
+										<div class="dropdown-menu" id="intregationDropdownMain" aria-labelledby="dropdownMenuButton">
+											<div class="search_filter">
+												<input id="itregationInputFilter" type="text" placeholder="Search here.." onkeyup="filterFunction()">
+											</div>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/1.jpg" alt=""> Amazon
+												UK</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/2.jpg" alt=""> Ebay</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/3.jpg" alt="">
+												Woocommerce</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/4.jpg" alt="">
+												Shopify</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/5.jpg" alt=""> Amazon
+												US</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/6.jpg" alt=""> Amazon
+												CA</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/7.jpg" alt=""> Amazon
+												MX</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/8.jpg" alt=""> Amazon AU
+												*Beta</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/9.jpg" alt=""> Amazon
+												DE</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/46.jpg" alt=""> Amazon
+												ES</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/10.jpg" alt=""> Amazon
+												FR</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/11.jpg" alt=""> Amazon
+												IT</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/12.jpg" alt="">
+												BigCommerce</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/13.jpg" alt="">
+												SquareSpace</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/14.jpg" alt=""> Etsy</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/15.jpg" alt=""> Houzz</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/16.jpg" alt=""> Magento
+												2.3</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/17.jpg" alt="">
+												Newegg</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/18.jpg" alt="">
+												ManoMano</a>
+											<a href="#"><img src="../../assets/img/icons/partner/19.jpg" alt=""> Ecwid</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/20.jpg" alt="">
+												Bonanza</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/21.jpg" alt="">
+												3dcart</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/22.jpg" alt=""> OpenCart
+												2.3</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/23.jpg" alt="">
+												PrestaShop 1.6</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/22.jpg" alt=""> OpenCart
+												3.0</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/24.jpg" alt=""> Vend</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/25.jpg" alt=""> Amazon NL
+												*Beta</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/23.jpg" alt="">
+												PrestaShop 1.7</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/26.jpg" alt="">Wix</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/13.jpg" alt="">
+												SquareSpace</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/27.jpg" alt="">
+												Stripe</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/28.jpg" alt=""> Australia
+												Post *beta</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/29.jpg" alt=""> Canada
+												Post *beta</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/30.jpg" alt=""> DHL
+												Express</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/31.jpg" alt=""> DPD
+												UK</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/32.jpg" alt=""> FedEx
+												US/CA</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/33.jpg" alt=""> DPD
+												Local</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/34.jpg" alt="">
+												Parcelforce</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/35.jpg" alt=""> UPS</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/36.jpg" alt=""> Yodel</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/37.jpg" alt="">
+												Parcel2Go</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/38.jpg" alt=""> My
+												Hermes</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/39.jpg" alt=""> LP
+												Express</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/40.jpg" alt=""> Royal
+												Mail PPI</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/41.jpg" alt=""> Royal
+												Mail</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/42.jpg" alt=""> USPS</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/43.jpg" alt=""> DPD
+												Germany</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/44.jpg" alt=""> FedEx
+												SmartPost</a>
+											<a href="../../intregation.html"><img src="../../assets/img/icons/partner/45.jpg" alt="">
+												MailChimp</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="intregationsMainPageContent">
+						<table class="table table-bordered">
+							<thead class="thead-light">
+								<tr>
+									<th scope="col"><i class="fal fa-credit-card-blank"></i> ID</th>
+									<th scope="col"><i class="fal fa-sync"></i> Status</th>
+									<th scope="col"><i class="fal fa-clock"></i> Last action time</th>
+									<th scope="col"><i class="fad fa-handshake-alt"></i> Integration
+										partner </th>
+									<th scope="col"><i class="fal fa-cog"></i> Actios</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" class="align-middle">32970</th>
+									<td class="intregationTableStatus">
+										<h4 class="Carriers">Carriers</h4>
+									</td>
+									<td class="intregationTableDate align-middle">
+										<p>09/07/20 17:55</p>
+									</td>
+									<td class="intregationTablePartner align-middle">
+										<h4><img src="../../assets/img/icons/partner/1.jpg" alt=""> Amazon UK
+										</h4>
+									</td>
+									<td style="width: 220px;" class="intregationTableAactioOption">
+										<div class="dropdown">
+											<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Take Actions
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#"><i class="fal fa-file-export text-info"></i> Import
+													Product</a>
+												<a class="dropdown-item" href="#"><i class="fal fa-file-export text-info"></i> Import
+													Order</a>
+												<a class="dropdown-item" href="#"><i class="fal fa-pencil text-warning"></i> Edit</a>
+												<a class="dropdown-item" href="#" data-toggle="modal" data-target=".bd-example-modal-sm"><i class="fal fa-trash text-danger"></i>Delete</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="align-middle">32970</th>
+									<td class="intregationTableStatus">
+										<h4 class="Carriers">Carriers</h4>
+									</td>
+									<td class="intregationTableDate align-middle">
+										<p>09/07/20 17:55</p>
+									</td>
+									<td class="intregationTablePartner align-middle">
+										<h4><img src="../../assets/img/icons/partner/12.jpg" alt="">
+											Bigcomerch</h4>
+									</td>
+									<td style="width: 220px;" class="intregationTableAactioOption">
+										<div class="dropdown">
+											<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Take Actions
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#"><i class="fal fa-file-export text-info"></i> Import
+													Product</a>
+												<a class="dropdown-item" href="#"><i class="fal fa-file-export text-info"></i> Import
+													Order</a>
+												<a class="dropdown-item" href="#"><i class="fal fa-pencil text-warning"></i> Edit</a>
+												<a class="dropdown-item" href="#" data-toggle="modal" data-target=".bd-example-modal-sm"><i class="fal fa-trash text-danger"></i>Delete</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="align-middle">32970</th>
+									<td class="intregationTableStatus">
+										<h4 class="Carriers">Carriers</h4>
+									</td>
+									<td class="intregationTableDate align-middle">
+										<p>09/07/20 17:55</p>
+									</td>
+									<td class="intregationTablePartner align-middle">
+										<h4><img src="../../assets/img/icons/partner/16.jpg" alt=""> Megento
+											2.0</h4>
+									</td>
+									<td style="width: 220px;" class="intregationTableAactioOption">
+										<div class="dropdown">
+											<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Take Actions
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#"><i class="fal fa-file-export text-info"></i> Import
+													Product</a>
+												<a class="dropdown-item" href="#"><i class="fal fa-file-export text-info"></i> Import
+													Order</a>
+												<a class="dropdown-item" href="#"><i class="fal fa-pencil text-warning"></i> Edit</a>
+												<a class="dropdown-item" href="#" data-toggle="modal" data-target=".bd-example-modal-sm"><i class="fal fa-trash text-danger"></i>Delete</a>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end dashbord main page -->
+
+
+
+
+	<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm deleteModalContainer modal-dialog-centered">
+			<div class="modal-content" id="deleteModal">
+				<div class="modal_confirm_cotent text-center">
+					<span><i class="fal fa-trash"></i></span>
+					<h4>Are you sure delete this record?</h4>
+					<button type="button" class="bg-danger text-white">Confirm Delete</button>
+					<button type="button" class="bg-info text-white" data-dismiss="modal" aria-label="Close">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+<!-- this is all script file link here -->
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/jquery.validate.min.js"></script>
+<script src="../../assets/additional-methods.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/hover-dropdown.js"></script>
+<script src="../../assets/owlcarousel/owl.carousel.js"></script>
+<script type="text/javascript" src="../../assets/bxslider/jquery.bxslider.js"></script>
+<script defer src="../../assets/js/jquery.flexslider.js"></script>
+<script src="../../assets/js/jquery.easing.min.js"></script>
+<script src="../../assets/js/link-hover.js"></script>
+<script type="text/javascript" src="../../assets/js/parallax-slider/jquery.cslider.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../../assets/js/parallax-slider/modernizr.custom.28468.js"></script>
+<!--common script for all pages-->
+<script src="../../assets/js/common-scripts.js"></script>
+<script src="../../assets/js/wow.min.js"></script>
+<script src="../../assets/js/custom.js"></script>
+
+</html>
