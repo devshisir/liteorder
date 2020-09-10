@@ -138,148 +138,167 @@
 					</div>
 					<div class="ordersSubTabContent">
 						<div class="ordertabSubContentButtonTop">
-							<ul>
-								<li><button type="button"><i class="fal fa-sort-amount-down"></i> Filter</button>
-								</li>
-								<li><button type="button"><i class="fal fa-edit"></i> Columns</button></li>
-								<li><button type="button"><i class="fal fa-sort-amount-down"></i> Sort</button></li>
-							</ul>
+							<div class="row">
+								<div class="col-lg-8">
+									<ul>
+										<li><button type="button"><i class="fal fa-sort-amount-down"></i> Filter</button>
+										</li>
+										<li><button type="button"><i class="fal fa-edit"></i> Columns</button></li>
+										<li><button type="button"><i class="fal fa-sort-amount-down"></i> Sort</button></li>
+									</ul>
+								</div>
+								<div class="col-lg-4">
+									<div class="InvokeSelctButton text-right">
+										<button type="button">Invoke Select</button>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="ordersNewTabTable">
-									<table class="table table-bordered">
-										<thead class="thead-light">
-											<tr>
-												<th scope="col">
-													<div class="chiller_cb">
-														<input class="orderManCheckBtn" id="myCheckbox01" type="checkbox">
-														<label for="myCheckbox01">
-															<tl style="opacity: 0;">.</tl>
-														</label>
-														<span></span>
-													</div>
-												</th>
-												<th scope="col"><i class="fal fa-not-equal"></i> order id</th>
-												<th scope="col"><i class="fal fa-store-alt"></i> order store</th>
-												<th scope="col"><i class="fal fa-calendar-day"></i> date</th>
-												<th scope="col"><i class="fal fa-file-invoice-dollar"></i> total
-												</th>
-												<th scope="col"><i class="fal fa-receipt"></i> paid</th>
-												<th scope="col"><i class="fal fa-sync-alt"></i> status</th>
-												<th scope="col"><i class="fal fa-money-check-edit"></i> action </th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th scope="row">
-													<div class="chiller_cb">
-														<input class="orderComonCheckBox" id="myCheckbox02" type="checkbox">
-														<label for="myCheckbox02">
-															<tl style="opacity: 0;">.</tl>
-														</label>
-														<span></span>
-													</div>
-												</th>
-												<td class="orderIdComlum">
-													<img src="assets/img/icons/1.png" alt="">
-													<p>904573538</p>
-													<h5>local</h5>
-												</td>
-												<td class="orderTbleStoreName align-middle">
-													<p><i class="fal fa-store-alt"></i> Order store name</p>
-												</td>
-												<td class="orderTbleDate align-middle">
-													<h4>20/09/04</h4>
-												</td>
-												<td class="orderTbleAmount align-middle">
-													<p>£ 25.90</p>
-												</td>
-												<td class="orderTblePaid text-center align-middle">
-													<!-- <i class="fal fa-check green"></i> -->
-													<i class="fal fa-times-circle red"></i>
-												</td>
-												<td class="orderTbleStatus text-center align-middle">
-													<h4 class="status">New</h4>
-												</td>
-												<td class="orderTbleActionBtn align-middle">
-													<button type="button"><i class="fal fa-shipping-fast"></i> ship
-														order</button>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">
-													<div class="chiller_cb">
-														<input id="myCheckbox03" type="checkbox">
-														<label for="myCheckbox03">
-															<tl style="opacity: 0;">.</tl>
-														</label>
-														<span></span>
-													</div>
-												</th>
-												<td class="orderIdComlum">
-													<img src="assets/img/icons/1.png" alt="">
-													<p>904573538</p>
-													<h5>local</h5>
-												</td>
-												<td class="orderTbleStoreName align-middle">
-													<p><i class="fal fa-store-alt"></i> Order store name</p>
-												</td>
-												<td class="orderTbleDate align-middle">
-													<h4>20/09/04</h4>
-												</td>
-												<td class="orderTbleAmount align-middle">
-													<p>£ 25.90</p>
-												</td>
-												<td class="orderTblePaid text-center align-middle">
-													<i class="fal fa-check green"></i>
-													<!-- <i class="fal fa-times-circle red"></i> -->
-												</td>
-												<td class="orderTbleStatus text-center align-middle">
-													<h4 class="status">New</h4>
-												</td>
-												<td class="orderTbleActionBtn align-middle">
-													<button type="button"><i class="fal fa-shipping-fast"></i> ship
-														order</button>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">
-													<div class="chiller_cb">
-														<input id="myCheckbox04" type="checkbox">
-														<label for="myCheckbox04">
-															<tl style="opacity: 0;">.</tl>
-														</label>
-														<span></span>
-													</div>
-												</th>
-												<td class="orderIdComlum">
-													<img src="assets/img/icons/1.png" alt="">
-													<p>904573538</p>
-													<h5>local</h5>
-												</td>
-												<td class="orderTbleStoreName align-middle">
-													<p><i class="fal fa-store-alt"></i> Order store name</p>
-												</td>
-												<td class="orderTbleDate align-middle">
-													<h4>20/09/04</h4>
-												</td>
-												<td class="orderTbleAmount align-middle">
-													<p>£ 25.90</p>
-												</td>
-												<td class="orderTblePaid text-center align-middle">
-													<!-- <i class="fal fa-check green"></i> -->
-													<i class="fal fa-times-circle red"></i>
-												</td>
-												<td class="orderTbleStatus text-center align-middle">
-													<h4 class="status">New</h4>
-												</td>
-												<td class="orderTbleActionBtn align-middle">
-													<button type="button"><i class="fal fa-shipping-fast"></i> ship
-														order</button>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-
+							<table class="table table-bordered">
+								<thead class="thead-light">
+									<tr>
+										<th scope="col">
+											<div class="chiller_cb">
+												<input class="orderManCheckBtn" id="myCheckbox01" type="checkbox">
+												<label for="myCheckbox01">
+													<tl style="opacity: 0;">.</tl>
+												</label>
+												<span></span>
+											</div>
+										</th>
+										<th scope="col"><i class="fal fa-not-equal"></i> order id</th>
+										<th scope="col"><i class="fal fa-store-alt"></i> order store</th>
+										<th scope="col"><i class="fal fa-calendar-day"></i> date</th>
+										<th scope="col"><i class="fal fa-file-invoice-dollar"></i> total
+										</th>
+										<th scope="col"><i class="fal fa-receipt"></i> paid</th>
+										<th scope="col"><i class="fal fa-sync-alt"></i> status</th>
+										<th scope="col"><i class="fal fa-money-check-edit"></i> action </th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">
+											<div class="chiller_cb">
+												<input class="orderComonCheckBox" id="myCheckbox02" type="checkbox">
+												<label for="myCheckbox02">
+													<tl style="opacity: 0;">.</tl>
+												</label>
+												<span></span>
+											</div>
+										</th>
+										<td class="orderIdComlum">
+											<img class="pophoverCustom" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here">
+											<p>904573538</p>
+											<h5>local</h5>
+										</td>
+										<td class="orderTbleStoreName align-middle">
+											<p><i class="fal fa-store-alt"></i> Order store name</p>
+										</td>
+										<td class="orderTbleDate align-middle">
+											<h4>20/09/04</h4>
+										</td>
+										<td class="orderTbleAmount align-middle">
+											<p>£ 25.90</p>
+										</td>
+										<td class="orderTblePaid text-center align-middle">
+											<!-- <i class="fal fa-check green"></i> -->
+											<i class="fal fa-times-circle red"></i>
+										</td>
+										<td class="orderTbleStatus text-center align-middle">
+											<h4 class="status">New</h4>
+										</td>
+										<td class="orderTbleActionBtn align-middle">
+											<button type="button"><i class="fal fa-shipping-fast"></i> ship
+												order</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div class="chiller_cb">
+												<input id="myCheckbox03" type="checkbox">
+												<label for="myCheckbox03">
+													<tl style="opacity: 0;">.</tl>
+												</label>
+												<span></span>
+											</div>
+										</th>
+										<td class="orderIdComlum">
+											<img class="pophoverCustom" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here">
+											<p>904573538</p>
+											<h5>local</h5>
+										</td>
+										<td class="orderTbleStoreName align-middle">
+											<p><i class="fal fa-store-alt"></i> Order store name</p>
+										</td>
+										<td class="orderTbleDate align-middle">
+											<h4>20/09/04</h4>
+										</td>
+										<td class="orderTbleAmount align-middle">
+											<p>£ 25.90</p>
+										</td>
+										<td class="orderTblePaid text-center align-middle">
+											<i class="fal fa-check green"></i>
+											<!-- <i class="fal fa-times-circle red"></i> -->
+										</td>
+										<td class="orderTbleStatus text-center align-middle">
+											<h4 class="status">New</h4>
+										</td>
+										<td class="orderTbleActionBtn align-middle">
+											<button type="button"><i class="fal fa-shipping-fast"></i> ship
+												order</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											<div class="chiller_cb">
+												<input id="myCheckbox04" type="checkbox">
+												<label for="myCheckbox04">
+													<tl style="opacity: 0;">.</tl>
+												</label>
+												<span></span>
+											</div>
+										</th>
+										<td class="orderIdComlum">
+											<img class="pophoverCustom" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here">
+											<p>904573538</p>
+											<h5>local</h5>
+										</td>
+										<td class="orderTbleStoreName align-middle">
+											<p><i class="fal fa-store-alt"></i> Order store name</p>
+										</td>
+										<td class="orderTbleDate align-middle">
+											<h4>20/09/04</h4>
+										</td>
+										<td class="orderTbleAmount align-middle">
+											<p>£ 25.90</p>
+										</td>
+										<td class="orderTblePaid text-center align-middle">
+											<!-- <i class="fal fa-check green"></i> -->
+											<i class="fal fa-times-circle red"></i>
+										</td>
+										<td class="orderTbleStatus text-center align-middle">
+											<h4 class="status">New</h4>
+										</td>
+										<td class="orderTbleActionBtn align-middle">
+											<button type="button"><i class="fal fa-shipping-fast"></i> ship
+												order</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="custom_pagination text-center">
+								<ul>
+									<li class="back"><a href="#"><i class="fal fa-angle-left"></i> Back</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">..</a></li>
+									<li><a href="#">12</a></li>
+									<li class="next"><a href="#">Next <i class="fal fa-angle-right"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

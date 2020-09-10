@@ -304,12 +304,13 @@ a {
         display: inline-block;
         list-style: none; }
         #customerHeader .customerTabTop ul li a {
-          font-size: 16px;
+          font-size: 15px;
           color: #232323;
           display: block;
           margin-right: 30px;
           padding: 18px 5px;
-          position: relative; }
+          position: relative;
+          font-weight: 500; }
           #customerHeader .customerTabTop ul li a:hover {
             color: #3c52ae; }
           #customerHeader .customerTabTop ul li a:after {
@@ -344,9 +345,10 @@ a {
       border: none;
       background: transparent;
       outline: none;
-      font-size: 16px;
+      font-size: 15px;
       transition: 0.4s;
-      padding: 0px; }
+      padding: 0px;
+      font-weight: 500; }
       #customerHeader .customerHeaderRight ul li .dropdown button:hover {
         color: #3c52ae; }
       #customerHeader .customerHeaderRight ul li .dropdown button i {
@@ -376,869 +378,6 @@ a {
         font-size: 15px; }
         #customerHeader .customerHeaderRight ul li .dropdown .dropdown-menu a:hover {
           background: #ececec; }
-
-/*-- this is tab main component style --*/
-#tabMainComponent {
-  padding: 40px 25px; }
-  #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px; }
-    #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderLeft ul {
-      margin: 0;
-      padding: 0;
-      border: none; }
-      #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderLeft ul li {
-        border-right: 1px solid #dddddd9e;
-        padding-right: 90px; }
-        #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderLeft ul li a {
-          padding: 0px;
-          border: none;
-          text-align: center;
-          position: relative;
-          padding: 10px 0px; }
-          #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderLeft ul li a:after {
-            height: 2px;
-            width: 0;
-            bottom: 0px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            content: "";
-            background: #3c52ae;
-            position: absolute;
-            transition: 0.4s;
-            border-radius: 30px; }
-          #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderLeft ul li a h4 {
-            font-size: 15px;
-            margin-top: 3px; }
-        #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderLeft ul li a.active {
-          color: #1765a6; }
-          #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderLeft ul li a.active:after {
-            width: 100%; }
-    #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderRight {
-      padding-right: 50px; }
-      #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderRight p {
-        text-align: center;
-        font-size: 15px;
-        color: #232323;
-        margin: 0; }
-      #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderRight .dropdown button {
-        border: none;
-        background: transparent;
-        font-weight: 400;
-        font-size: 15px;
-        color: #3c52ae; }
-        #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderRight .dropdown button i {
-          margin-right: 4px; }
-      #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderRight .dropdown .dropdown-menu {
-        position: absolute;
-        transform: translate3d(-5px, 26px, 0px);
-        top: 9px !important;
-        will-change: transform;
-        width: auto;
-        padding: 0px;
-        border-radius: 0px;
-        border: 1px solid #d3d3d3 !important;
-        min-width: 135px !important;
-        padding: 0;
-        color: #424242 !important;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
-        border-top: none; }
-        #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderRight .dropdown .dropdown-menu a {
-          cursor: pointer;
-          padding: 6px 12px !important;
-          font-size: 14px; }
-          #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderRight .dropdown .dropdown-menu a:hover {
-            background: #ececec; }
-  #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubTabContent {
-    margin-top: 20px;
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px;
-    padding: 20px 20px; }
-    #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubTabContent #myTabContent .tab-pane h4 {
-      font-weight: 600;
-      font-size: 20px;
-      color: #232323; }
-  #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px;
-    padding: 10px 0px; }
-    #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderLeft ul {
-      margin: 0;
-      padding: 0;
-      border: none; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderLeft ul li {
-        border-right: 1px solid #dddddd9e;
-        padding-right: 0px; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderLeft ul li a {
-          padding: 0px;
-          border: none;
-          text-align: center;
-          position: relative;
-          padding: 10px 30px;
-          min-width: 70px;
-          font-weight: 500; }
-          #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderLeft ul li a:after {
-            height: 2px;
-            width: 0;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            content: "";
-            background: #3c52ae;
-            position: absolute;
-            transition: 0.4s;
-            border-radius: 30px; }
-          #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderLeft ul li a h4 {
-            font-size: 15px;
-            margin-top: 3px; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderLeft ul li a.active {
-          color: #1765a6; }
-          #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderLeft ul li a.active:after {
-            width: 100%; }
-    #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderRight {
-      padding-right: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderRight ul li {
-        display: inline-block; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderRight ul li a {
-          padding: 5px 20px;
-          display: block;
-          border: 1px solid #ddd;
-          font-size: 14px;
-          margin-left: 14px;
-          border-radius: 4px; }
-          #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderRight ul li a i {
-            margin-right: 4px; }
-          #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderRight ul li a:hover {
-            background: #3c52ae;
-            border-color: #3c52ae;
-            color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderRight ul .btn_sp a {
-        padding: 5px 40px;
-        background: #4286f4;
-        color: #fff;
-        border-color: #4286f4; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderRight ul .btn_sp a:hover {
-          background: #366fcc; }
-  #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px; }
-    #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent .ordertabSubContentButtonTop {
-      padding: 10px 20px;
-      border-bottom: 1px solid rgba(221, 221, 221, 0.507); }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent .ordertabSubContentButtonTop ul li {
-        display: inline-block; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent .ordertabSubContentButtonTop ul li button {
-          border: none;
-          padding: 8px 30px;
-          border-radius: 3px;
-          margin-right: 7px;
-          background: #e4e6f2;
-          color: #4d4bae;
-          transition: 0.4s; }
-          #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent .ordertabSubContentButtonTop ul li button i {
-            margin-right: 5px; }
-          #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent .ordertabSubContentButtonTop ul li button:hover {
-            background: #d9dbe8;
-            color: #4d4bae; }
-    #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent {
-      padding: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .table thead th {
-        vertical-align: middle;
-        border-bottom: 1px solid #dee2e6; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable table thead th i {
-        margin-right: 8px;
-        font-size: 16px; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderIdComlum {
-        cursor: pointer; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderIdComlum img {
-          display: block;
-          float: left;
-          height: 30px;
-          margin-right: 10px;
-          margin-bottom: 0px;
-          border: 1px solid #ddd; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderIdComlum p {
-          font-size: 13px;
-          color: #1765a6;
-          font-weight: 500;
-          margin-bottom: 0px; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderIdComlum h5 {
-          font-size: 13px;
-          margin: 0;
-          margin-top: -4px; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleStoreName p {
-        font-weight: 500;
-        font-size: 13px;
-        margin: 0; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleStoreName p i {
-          margin-right: 5px; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleDate h4 {
-        background: #e4e6f2;
-        font-weight: 500;
-        margin: 0;
-        font-size: 14px;
-        width: 60%;
-        margin: 0 auto;
-        text-align: center;
-        padding: 7px 0px;
-        border-radius: 30px; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleAmount p {
-        font-weight: 500;
-        font-size: 14px;
-        text-align: center;
-        margin: 0; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTblePaid i {
-        font-size: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTblePaid i.red {
-        font-size: 25px; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTblePaid .green {
-        color: #5fd29b; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTblePaid .red {
-        color: #f76962; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleStatus h4 {
-        background: #FAE5E5;
-        font-weight: 500;
-        margin: 0;
-        font-size: 14px;
-        width: 60%;
-        margin: 0 auto;
-        text-align: center;
-        padding: 7px 0px;
-        border-radius: 30px;
-        color: #ef564e; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleActionBtn button {
-        width: 100%;
-        background: #55bb56;
-        color: #fff;
-        border: none;
-        text-transform: capitalize;
-        padding: 6px 0px;
-        border-radius: 3px;
-        transition: 0.4s; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleActionBtn button i {
-          margin-right: 4px; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleActionBtn button:hover {
-          background: #429a43; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .span_pseudo, #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb span:before, #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb span:after {
-        content: "";
-        display: inline-block;
-        background: #fff;
-        width: 0;
-        height: 0.2rem;
-        position: absolute;
-        transform-origin: 0% 0%; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb {
-        position: relative;
-        height: 2rem;
-        display: flex;
-        align-items: center; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb input {
-        display: none; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb input:checked ~ span {
-        background: #55bb56;
-        border-color: #55bb56; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb input:checked ~ span:before {
-        width: 1rem;
-        height: 0.15rem;
-        transition: width 0.1s;
-        transition-delay: 0.3s; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb input:checked ~ span:after {
-        width: 0.4rem;
-        height: 0.15rem;
-        transition: width 0.1s;
-        transition-delay: 0.2s; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb input:disabled ~ span {
-        background: #ececec;
-        border-color: #dcdcdc; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb input:disabled ~ label {
-        color: #dcdcdc; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb input:disabled ~ label:hover {
-        cursor: default; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb label {
-        padding-left: 2rem;
-        position: relative;
-        z-index: 2;
-        cursor: pointer;
-        margin-bottom: 0;
-        color: #232323; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb span {
-        display: inline-block;
-        width: 1.2rem;
-        height: 1.2rem;
-        border: 2px solid #ccc;
-        position: absolute;
-        left: 0;
-        transition: all 0.2s;
-        z-index: 1;
-        box-sizing: content-box; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb span:before {
-        transform: rotate(-55deg);
-        top: 1rem;
-        left: 0.37rem; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable .chiller_cb span:after {
-        transform: rotate(35deg);
-        bottom: 0.35rem;
-        left: 0.2rem; }
-      #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable label {
-        font-weight: 600;
-        color: #232323;
-        font-size: 12px; }
-        #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable label a {
-          margin-left: 7px; }
-          #tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable label a:hover {
-            text-decoration: underline;
-            color: #55BB56; }
-  #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px;
-    padding: 10px 0px; }
-    #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderLeft ul {
-      margin: 0;
-      padding: 0;
-      border: none; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderLeft ul li {
-        border-right: 1px solid #dddddd9e; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderLeft ul li a {
-          padding: 0px;
-          border: none;
-          text-align: center;
-          position: relative;
-          padding: 10px 30px;
-          font-weight: 500; }
-          #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderLeft ul li a:after {
-            height: 2px;
-            width: 0;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            content: "";
-            background: #3c52ae;
-            position: absolute;
-            transition: 0.4s;
-            border-radius: 30px; }
-          #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderLeft ul li a h4 {
-            font-size: 15px;
-            margin-top: 3px; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderLeft ul li a.active {
-          color: #1765a6; }
-          #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderLeft ul li a.active:after {
-            width: 100%; }
-    #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight {
-      padding-right: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight ul li {
-        display: inline-block; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight ul li a {
-          padding: 5px 20px;
-          display: block;
-          border: 1px solid #ddd;
-          font-size: 14px;
-          margin-left: 14px;
-          border-radius: 4px; }
-          #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight ul li a i {
-            margin-right: 4px; }
-          #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight ul li a:hover {
-            background: #3c52ae;
-            border-color: #3c52ae;
-            color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight ul .btn_sp a {
-        padding: 5px 40px;
-        background: #4286f4;
-        color: #fff;
-        border-color: #4286f4; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight ul .btn_sp a:hover {
-          background: #366fcc; }
-  #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px; }
-    #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent .inventory_sub_tab_search {
-      padding: 10px 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent .inventory_sub_tab_search form input {
-        width: 280px;
-        border: 1px solid #ddd;
-        padding: 7px 15px;
-        border-radius: 3px;
-        font-weight: 500;
-        font-size: 14px; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent .inventory_sub_tab_search form button {
-        background: #e4e6f2;
-        color: #4d4bae;
-        border: none;
-        padding: 7px 15px;
-        margin-left: 10px;
-        border-radius: 3px;
-        transition: 0.4s; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent .inventory_sub_tab_search form button:hover {
-          background: #d9dbe8; }
-    #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table {
-      padding: 0px 20px 10px 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .table th {
-        padding-bottom: 0px; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .table thead p {
-        margin: 0px;
-        font-weight: 500;
-        font-size: 14px;
-        text-align: center; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .table thead i {
-        margin-right: 7px; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .table tbody p {
-        margin: 0px;
-        text-align: center;
-        font-weight: 500; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .table tbody .inventory_store_image img {
-        height: 30px; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .table tbody .inventoryTableActioBtn button {
-        border: none;
-        display: inline-block;
-        background: transparent;
-        padding: 5px 15px;
-        text-align: center;
-        color: #fff;
-        border-radius: 3px;
-        margin-left: 8px; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .sellPriceTable {
-        margin: 0px;
-        border-bottom: none; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .sellPriceTable p {
-          text-align: center; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .sellPriceTable thead tr td {
-          padding: 5px 0px; }
-          #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .sellPriceTable thead tr td img {
-            height: 20px;
-            border: 1px solid #ddd; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table .sellPriceTable tbody tr td {
-          padding: 0px;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          border-bottom: none; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .span_pseudo, #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb span:before, #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb span:after {
-        content: "";
-        display: inline-block;
-        background: #fff;
-        width: 0;
-        height: 0.2rem;
-        position: absolute;
-        transform-origin: 0% 0%; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb {
-        position: relative;
-        height: 2rem;
-        display: flex;
-        align-items: center; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb input {
-        display: none; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb input:checked ~ span {
-        background: #55bb56;
-        border-color: #55bb56; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb input:checked ~ span:before {
-        width: 1rem;
-        height: 0.15rem;
-        transition: width 0.1s;
-        transition-delay: 0.3s; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb input:checked ~ span:after {
-        width: 0.4rem;
-        height: 0.15rem;
-        transition: width 0.1s;
-        transition-delay: 0.2s; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb input:disabled ~ span {
-        background: #ececec;
-        border-color: #dcdcdc; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb input:disabled ~ label {
-        color: #dcdcdc; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb input:disabled ~ label:hover {
-        cursor: default; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb label {
-        padding-left: 2rem;
-        position: relative;
-        z-index: 2;
-        cursor: pointer;
-        margin-bottom: 0;
-        color: #232323; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb span {
-        display: inline-block;
-        width: 1.2rem;
-        height: 1.2rem;
-        border: 2px solid #ccc;
-        position: absolute;
-        left: 0;
-        transition: all 0.2s;
-        z-index: 1;
-        box-sizing: content-box; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb span:before {
-        transform: rotate(-55deg);
-        top: 1rem;
-        left: 0.37rem; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table .chiller_cb span:after {
-        transform: rotate(35deg);
-        bottom: 0.35rem;
-        left: 0.2rem; }
-      #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table label {
-        font-weight: 600;
-        color: #232323;
-        font-size: 12px; }
-        #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table label a {
-          margin-left: 7px; }
-          #tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubTabContent #myTabContent .tab-pane .inventory_sub_tab_table table label a:hover {
-            text-decoration: underline;
-            color: #55BB56; }
-  #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px;
-    padding: 10px 0px; }
-    #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomerstabHeaderSubtabHeaderLeft ul {
-      margin: 0;
-      padding: 0;
-      border: none;
-      padding-left: 40px; }
-      #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomerstabHeaderSubtabHeaderLeft ul li {
-        border-right: 1px solid #dddddd9e;
-        padding-right: 90px; }
-        #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomerstabHeaderSubtabHeaderLeft ul li a {
-          padding: 0px;
-          border: none;
-          text-align: center;
-          position: relative;
-          padding: 10px 0px;
-          min-width: 70px; }
-          #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomerstabHeaderSubtabHeaderLeft ul li a:after {
-            height: 2px;
-            width: 0;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            content: "";
-            background: #3c52ae;
-            position: absolute;
-            transition: 0.4s;
-            border-radius: 30px; }
-          #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomerstabHeaderSubtabHeaderLeft ul li a h4 {
-            font-size: 15px;
-            margin-top: 3px; }
-        #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomerstabHeaderSubtabHeaderLeft ul li a.active {
-          color: #1765a6; }
-          #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomerstabHeaderSubtabHeaderLeft ul li a.active:after {
-            width: 100%; }
-    #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomersSubtabHeaderSubtabHeaderRight {
-      padding-right: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomersSubtabHeaderSubtabHeaderRight ul li {
-        display: inline-block; }
-        #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomersSubtabHeaderSubtabHeaderRight ul li a {
-          padding: 5px 20px;
-          display: block;
-          border: 1px solid #ddd;
-          font-size: 14px;
-          margin-left: 14px;
-          border-radius: 4px; }
-          #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomersSubtabHeaderSubtabHeaderRight ul li a i {
-            margin-right: 4px; }
-          #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomersSubtabHeaderSubtabHeaderRight ul li a:hover {
-            background: #3c52ae;
-            border-color: #3c52ae;
-            color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomersSubtabHeaderSubtabHeaderRight ul .btn_sp a {
-        padding: 5px 40px;
-        background: #4286f4;
-        color: #fff;
-        border-color: #4286f4; }
-        #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubtabHeader .CustomersSubtabHeaderSubtabHeaderRight ul .btn_sp a:hover {
-          background: #366fcc; }
-  #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubTabContent {
-    margin-top: 20px;
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px;
-    padding: 20px 20px; }
-    #tabMainComponent .tabMainContent #myTabContent #customers .CustomersSubTabContent #myTabContent .tab-pane h4 {
-      font-weight: 600;
-      font-size: 20px;
-      color: #232323; }
-  #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px;
-    padding: 10px 0px; }
-    #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderLeft ul {
-      margin: 0;
-      padding: 0;
-      border: none;
-      padding-left: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderLeft ul li {
-        border-right: 1px solid #dddddd9e;
-        padding-right: 90px; }
-        #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderLeft ul li a {
-          padding: 0px;
-          border: none;
-          text-align: center;
-          position: relative;
-          padding: 10px 0px;
-          min-width: 70px; }
-          #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderLeft ul li a:after {
-            height: 2px;
-            width: 0;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            content: "";
-            background: #3c52ae;
-            position: absolute;
-            transition: 0.4s;
-            border-radius: 30px; }
-          #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderLeft ul li a h4 {
-            font-size: 15px;
-            margin-top: 3px; }
-        #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderLeft ul li a.active {
-          color: #1765a6; }
-          #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderLeft ul li a.active:after {
-            width: 100%; }
-    #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderRight {
-      padding-right: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderRight ul li {
-        display: inline-block; }
-        #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderRight ul li a {
-          padding: 5px 20px;
-          display: block;
-          border: 1px solid #ddd;
-          font-size: 14px;
-          margin-left: 14px;
-          border-radius: 4px; }
-          #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderRight ul li a i {
-            margin-right: 4px; }
-          #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderRight ul li a:hover {
-            background: #3c52ae;
-            border-color: #3c52ae;
-            color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderRight ul .btn_sp a {
-        padding: 5px 40px;
-        background: #4286f4;
-        color: #fff;
-        border-color: #4286f4; }
-        #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubtabHeader .reportsSubtabHeaderSubtabHeaderRight ul .btn_sp a:hover {
-          background: #366fcc; }
-  #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubTabContent {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px;
-    padding: 20px 20px; }
-    #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubTabContent #myTabContent .tab-pane .createReportsTable #genareButton {
-      background: #55bb56;
-      border: none;
-      width: 100%;
-      padding: 7px 0px;
-      color: #fff;
-      border-radius: 3px;
-      transition: 0.4s; }
-      #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubTabContent #myTabContent .tab-pane .createReportsTable #genareButton i {
-        margin-right: 5px; }
-      #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubTabContent #myTabContent .tab-pane .createReportsTable #genareButton:hover {
-        background: #429a43; }
-    #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubTabContent #myTabContent .tab-pane .createReportsTable table thead tr th {
-      font-weight: 500; }
-      #tabMainComponent .tabMainContent #myTabContent #reports .reportsSubTabContent #myTabContent .tab-pane .createReportsTable table thead tr th i {
-        margin-right: 8px; }
-  #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px;
-    padding: 10px 0px; }
-    #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft {
-      padding-left: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul {
-        margin: 0;
-        padding: 0;
-        border: none; }
-        #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul li {
-          border-right: 1px solid #dddddd9e; }
-          #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul li a {
-            padding: 0px;
-            border: none;
-            text-align: center;
-            position: relative;
-            padding: 10px 30px;
-            font-weight: 500; }
-            #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul li a:after {
-              height: 2px;
-              width: 0;
-              bottom: -10px;
-              left: 0;
-              right: 0;
-              margin: auto;
-              content: "";
-              background: #3c52ae;
-              position: absolute;
-              transition: 0.4s;
-              border-radius: 30px; }
-            #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul li a h4 {
-              font-size: 15px;
-              margin-top: 3px; }
-          #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul li a.active {
-            color: #1765a6; }
-            #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul li a.active:after {
-              width: 100%; }
-    #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight {
-      padding-right: 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight button {
-        border: none;
-        background: #4286f4;
-        color: #fff;
-        transition: 0.4s;
-        padding: 10px 20px;
-        border-radius: 4px;
-        font-weight: 500; }
-        #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight button i {
-          margin-left: 10px; }
-        #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight button:hover {
-          background: #366fcc; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu {
-        padding: 0px;
-        width: 250px;
-        max-height: 400px;
-        overflow-y: scroll;
-        left: -17px !important;
-        top: 7px !important; }
-        #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu .search_filter {
-          padding: 10px; }
-          #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu .search_filter input {
-            width: 100%;
-            border: 1px solid #ddd;
-            font-size: 14px;
-            padding: 7px 10px;
-            border-radius: 3px; }
-        #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu a {
-          display: block;
-          width: 100%;
-          padding: 8px 10px;
-          font-weight: 500;
-          font-size: 13px; }
-          #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu a:hover {
-            background: #4286f4;
-            color: #fff; }
-          #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu a img {
-            height: 30px;
-            min-width: 32px;
-            margin-right: 11px;
-            border: 1px solid #ddd;
-            border-radius: 4px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-webkit-scrollbar {
-        width: 5px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089); }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-webkit-scrollbar-thumb {
-        background-color: #4286f4;
-        outline: 1px solid #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-moz-scrollbar {
-        width: 5px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-moz-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089); }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-moz-scrollbar-thumb {
-        background-color: #4286f4;
-        outline: 1px solid #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-o-scrollbar {
-        width: 5px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-o-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089); }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-o-scrollbar-thumb {
-        background-color: #4286f4;
-        outline: 1px solid #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-ms-scrollbar {
-        width: 5px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-ms-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089); }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderRight .dropdown-menu::-ms-scrollbar-thumb {
-        background-color: #4286f4;
-        outline: 1px solid #fff; }
-  #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent {
-    background: #fff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px; }
-    #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table {
-      padding: 0px 20px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table thead tr th i {
-        margin-right: 5px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr th p {
-        margin: 0px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr th h4 {
-        margin: 0px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr td p {
-        margin: 0px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr td h4 {
-        margin: 0px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableStatus h4 {
-        background: #ddd;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 500;
-        width: 50%;
-        padding: 6px 0px;
-        border-radius: 30px;
-        margin: 0 auto; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableStatus .live {
-        background: #00E676;
-        color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableStatus .pending {
-        background: #FF8A65;
-        color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableStatus .stories {
-        background: #689F38;
-        color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableStatus .Carriers {
-        background: #90CAF9;
-        color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableStatus .Payment {
-        background: #00838F;
-        color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableStatus .Cancelled {
-        background: #d32f2f;
-        color: #fff; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableDate p {
-        background: #E4E6F2;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 500;
-        width: 50%;
-        padding: 5px 0px;
-        border-radius: 30px;
-        margin: 0 auto; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTablePartner h4 {
-        font-weight: 600;
-        font-size: 13px; }
-        #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTablePartner h4 img {
-          height: 35px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableAactioOption button.dropdown-toggle {
-        width: 100%;
-        border: none;
-        background: #FAE5E5;
-        color: #ef564e;
-        font-weight: 500;
-        padding: 6px 0px;
-        border-radius: 4px; }
-      #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableAactioOption .dropdown-menu {
-        padding: 0px;
-        width: 100%;
-        border-color: #ef564e41;
-        border-radius: 0px; }
-        #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableAactioOption .dropdown-menu a {
-          font-weight: 500;
-          font-size: 13px;
-          padding: 10px 12px; }
-          #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableAactioOption .dropdown-menu a i {
-            margin-right: 5px;
-            min-width: 20px;
-            font-size: 16px;
-            position: relative;
-            top: 2px; }
-          #tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubTabContent #myTabContent .tab-pane .intregation_sub_tab_content_table tbody tr .intregationTableAactioOption .dropdown-menu a:hover {
-            background: #FAE5E5;
-            color: #ef564e; }
 
 /*-- start home page header area --*/
 #homeHeader {
@@ -2251,7 +1390,23 @@ a {
       text-align: center;
       font-weight: 500; }
     #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain .table tbody .inventory_store_image img {
-      height: 30px; }
+      display: block;
+      float: left;
+      height: 30px;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      border: 1px solid #ddd;
+      cursor: pointer; }
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain .table tbody .inventory_store_image p {
+      text-align: left;
+      font-size: 13px;
+      color: #1765a6;
+      font-weight: 500;
+      margin-bottom: 0px; }
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain .table tbody .inventory_store_image h5 {
+      font-size: 13px;
+      margin: 0;
+      margin-top: -4px; }
     #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain .table tbody .inventoryTableActioBtn button {
       border: none;
       display: inline-block;
@@ -2646,6 +1801,12 @@ a {
       padding: 5px 0px;
       border-radius: 30px;
       margin: 0 auto; }
+    #intregationsMainPage .intregationsMainPageContent tbody tr .intregationTableactionName p {
+      margin: 0px;
+      font-weight: 500;
+      font-size: 13px;
+      color: #1765a6;
+      text-decoration: underline; }
     #intregationsMainPage .intregationsMainPageContent tbody tr .intregationTablePartner h4 {
       font-weight: 600;
       font-size: 13px; }
@@ -2677,3 +1838,79 @@ a {
         #intregationsMainPage .intregationsMainPageContent tbody tr .intregationTableAactioOption .dropdown-menu a:hover {
           background: #FAE5E5;
           color: #ef564e; }
+
+.InvokeSelctButton button {
+  background: #FAE5E5;
+  border: none;
+  padding: 10px 0px;
+  font-weight: 500;
+  width: 60%;
+  border-radius: 3px;
+  color: #ef564e;
+  transition: 0.4s; }
+  .InvokeSelctButton button:hover {
+    background: #ef564e;
+    color: #FAE5E5; }
+
+.InvokeSelctButton2 {
+  margin-top: 10px; }
+  .InvokeSelctButton2 button {
+    background: #FAE5E5;
+    border: none;
+    padding: 10px 100px;
+    font-weight: 500;
+    border-radius: 3px;
+    color: #ef564e;
+    transition: 0.4s; }
+    .InvokeSelctButton2 button:hover {
+      background: #ef564e;
+      color: #FAE5E5; }
+
+.custom_pagination {
+  margin-top: 20px; }
+  .custom_pagination ul li {
+    display: inline-block;
+    margin: 0px 5px; }
+    .custom_pagination ul li a {
+      height: 35px;
+      width: 35px;
+      background: #e4e6f2;
+      color: #4d4bae;
+      display: block;
+      text-align: center;
+      line-height: 35px;
+      font-weight: 500;
+      border-radius: 4px; }
+      .custom_pagination ul li a:hover {
+        background: #d9dbe8;
+        color: #4d4bae; }
+  .custom_pagination ul .active a {
+    background: #4286f4;
+    color: #fff; }
+  .custom_pagination ul .back a {
+    background: transparent;
+    margin-right: 15px;
+    width: auto; }
+    .custom_pagination ul .back a i {
+      margin-right: 4px; }
+    .custom_pagination ul .back a:hover {
+      background: transparent;
+      color: #4d4bae;
+      text-decoration: underline; }
+  .custom_pagination ul .next a {
+    background: transparent;
+    margin-left: 15px;
+    width: auto; }
+    .custom_pagination ul .next a i {
+      margin-left: 4px; }
+    .custom_pagination ul .next a:hover {
+      background: transparent;
+      color: #4d4bae;
+      text-decoration: underline; }
+
+.popover .popover-body {
+  font-weight: 500;
+  font-size: 13px; }
+
+.inventoryStoreHead {
+  width: 243px; }

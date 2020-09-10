@@ -1,86 +1,72 @@
 /* XL (laptop) Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1767px) {
-    #tabMainComponent .tabMainContent #myTabContent #dshboard .dashboardSubtabHeader .dashboardSubtabHeaderLeft ul li {
-	    padding-right: 47px;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderLeft ul li {
-	    padding-right: 26px;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #orders .ordersSubtabHeader .ordersSubtabHeaderSubtabHeaderRight ul li a {
-	    padding: 5px 8px;
-	    font-size: 14px;
-	    margin-left: 0px;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight ul li a{
-		padding: 5px 8px;
-	    font-size: 14px;
-	    margin-left: 0px;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderLeft ul li {
-	    padding-right: 35px;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #inventory .inventorySubtabHeader .inventorySubtabHeaderSubtabHeaderRight ul .btn_sp a {
-	    padding: 5px 33px;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul li {
-	    padding-right: 15px;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #intregation .intregationSubtabHeader .intregationSubtabHeaderSubtabHeaderLeft ul li a {
-	    padding: 10px 27px;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleDate h4 {
-	    width: 100%;
-	}
-	#tabMainComponent .tabMainContent #myTabContent #orders .dashboardSubTabContent #myTabContent .tab-pane .ordersNewTabTable tbody .orderTbleStatus h4 {
-	    width: 100%;
-	}
-	.inventory_sub_tab_table>.table{
+    
+    #ordersMainPage .ordersSubTabContent .ordersNewTabTable tbody .orderTbleDate h4 {
+        font-size: 13px;
+        width: 90%;
+    }   
+    #ordersMainPage .ordersSubTabContent .ordersNewTabTable tbody .orderTbleStatus h4 {
+        font-size: 12px;
+        width: 70%;
+    }
+    #intregationsMainPage .intregationsMainPageContent tbody tr .intregationTableDate p {
+        font-size: 13px;
+        width: 65%;
+    }
+
+
+
+
+
+
+
+	#InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain>.table{
 		width: 200% !important;
 	}
-	.inventory_sub_tab_table{
+	#InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain{
 		overflow-x: scroll;
 	}
-	.inventory_sub_tab_table::-webkit-scrollbar {
+	#InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-webkit-scrollbar {
         width: 2px;
         height: 5px;
     } 
-    .inventory_sub_tab_table::-webkit-scrollbar-track {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
     }  
-    .inventory_sub_tab_table::-webkit-scrollbar-thumb {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-webkit-scrollbar-thumb {
         background-color: #4286f4;
         outline: 1px solid #fff;
     }
-    .inventory_sub_tab_table::-moz-scrollbar {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-moz-scrollbar {
         width: 2px;
         height: 5px;
     } 
-    .inventory_sub_tab_table::-moz-scrollbar-track {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-moz-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
     }  
-    .inventory_sub_tab_table::-moz-scrollbar-thumb {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-moz-scrollbar-thumb {
         background-color: #4286f4;
         outline: 1px solid #fff;
     }
-    .inventory_sub_tab_table::-o-scrollbar {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-o-scrollbar {
         width: 2px;
         height: 5px;
     } 
-    .inventory_sub_tab_table::-o-scrollbar-track {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-o-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
     }  
-    .inventory_sub_tab_table::-o-scrollbar-thumb {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-o-scrollbar-thumb {
         background-color: #4286f4;
         outline: 1px solid #fff;
     }
-    .inventory_sub_tab_table::-ms-scrollbar {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-ms-scrollbar {
         width: 2px;
         height: 5px;
     } 
-    .inventory_sub_tab_table::-ms-scrollbar-track {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-ms-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
     }  
-    .inventory_sub_tab_table::-ms-scrollbar-thumb {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-ms-scrollbar-thumb {
         background-color: #4286f4;
         outline: 1px solid #fff;
     }
@@ -99,53 +85,53 @@
 
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
-	.inventory_sub_tab_table>.table{
+	#InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain>.table{
 		width: 200% !important;
 	}
-	.inventory_sub_tab_table{
+	#InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain{
 		overflow-x: scroll;
 	}
-	.inventory_sub_tab_table::-webkit-scrollbar {
+	#InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-webkit-scrollbar {
         width: 2px;
         height: 5px;
     } 
-    .inventory_sub_tab_table::-webkit-scrollbar-track {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
     }  
-    .inventory_sub_tab_table::-webkit-scrollbar-thumb {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-webkit-scrollbar-thumb {
         background-color: #4286f4;
         outline: 1px solid #fff;
     }
-    .inventory_sub_tab_table::-moz-scrollbar {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-moz-scrollbar {
         width: 2px;
         height: 5px;
     } 
-    .inventory_sub_tab_table::-moz-scrollbar-track {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-moz-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
     }  
-    .inventory_sub_tab_table::-moz-scrollbar-thumb {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-moz-scrollbar-thumb {
         background-color: #4286f4;
         outline: 1px solid #fff;
     }
-    .inventory_sub_tab_table::-o-scrollbar {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-o-scrollbar {
         width: 2px;
         height: 5px;
     } 
-    .inventory_sub_tab_table::-o-scrollbar-track {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-o-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
     }  
-    .inventory_sub_tab_table::-o-scrollbar-thumb {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-o-scrollbar-thumb {
         background-color: #4286f4;
         outline: 1px solid #fff;
     }
-    .inventory_sub_tab_table::-ms-scrollbar {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-ms-scrollbar {
         width: 2px;
         height: 5px;
     } 
-    .inventory_sub_tab_table::-ms-scrollbar-track {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-ms-scrollbar-track {
         box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.089);
     }  
-    .inventory_sub_tab_table::-ms-scrollbar-thumb {
+    #InventoryMainPage .InventoryMainPageContent .InventoryMainPageContentMain::-ms-scrollbar-thumb {
         background-color: #4286f4;
         outline: 1px solid #fff;
     }

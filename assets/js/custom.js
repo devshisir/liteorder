@@ -104,5 +104,20 @@
 		}
 	  }
 
+	  // this is for pophover functio
+	  $(function () {
+		$('.pophoverCustom').popover({
+		  container: 'body',
+		  trigger: 'hover',
+		  fallbackPlacement: 'flip',
+		  placement: 'right',
+		})
+		$('.pophoverCustom2').popover({
+			container: 'body',
+			trigger: 'hover',
+			fallbackPlacement: 'flip',
+			placement: 'right',
+		  })
+	  })
 
 	
