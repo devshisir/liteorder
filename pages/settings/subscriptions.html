@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Developed By M Abdur Rokib Promy">
+	<meta name="author" content="cosmic">
+	<meta name="keywords" content="Bootstrap 3, Template, Theme, Responsive, Corporate, Business">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<title>Lite Order Customer Dashborad</title>
+	<!-- Bootstrap core CSS -->
+	<link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../assets/css/theme.css" rel="stylesheet">
+	<link href="../../assets/css/bootstrap-reset.css" rel="stylesheet">
+	<!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet">-->
+	<!--external css-->
+	<link href="../../assets/css/fontawsome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../../assets/css/flexslider.css" />
+	<link href="../../assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../../assets/css/animate.css">
+	<link rel="stylesheet" href="../../assets/owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" href="../../assets/owlcarousel/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+	<link href="../../assets/css/superfish.css" rel="stylesheet" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<link href="../../assets/css/style-responsive.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/parallax-slider/parallax-slider.css" />
+	<!-- this is new page design main css file -->
+	<link rel="stylesheet" href="../../assets/css/custom.css">
+	<link rel="stylesheet" href="../../assets/css/responsive.css">
+	<!-- this is new page design main css file -->
+
+
+	<!-- HTML5 browser support message shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+	<!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js">
+    </script>
+    <script src="/assets/js/respond.min.js">
+    </script>
+    <![endif]-->
+</head>
+
+<body class="customerMinBody">
+
+	<!-- start customer dashboard header -->
+	<header id="customerHeader">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-lg-1">
+					<div class="logo text-center">
+						<a href="#">
+							<span><i class="fad fa-adjust"></i></span>
+							Lite Order
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="customerTabTop">
+						<!-- <ul role="tablist">
+
+
+							<li role="presentation">
+								<a href="#">Reports</a>
+							</li>
+						</ul> -->
+						<ul>
+							<li><a class="active" href="../../dashboard.html">Dashboard</a></li>
+							<li><a href="../../dashboard-orders.html">Orders</a></li>
+							<li><a href="../../dashboard-inventory.html">Inventory</a></li>
+							<li><a href="../../dashboard-customers.html">Customers</a></li>
+							<li><a href="../../dashboard-reports.html">Reports</a></li>
+							<li><a href="../../dashboard-intregation.html">Integrations</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="customerHeaderRight text-right">
+						<ul>
+							<li><a href="#"><i class="fal fa-question-circle"></i></a></li>
+							<li><a href="#"><i class="fal fa-bell"></i></a></li>
+							<li>
+								<div class="dropdown">
+									<button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										Settings <i class="fal fa-angle-down"></i>
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="../../settings-main.html">Account</a>
+										<a class="dropdown-item" href="../settings/company.html">Company</a>
+										<a class="dropdown-item" href="../settings/users.html">Users</a>
+										<a class="dropdown-item" href="../settings/financial.html">Financial</a>
+										<a class="dropdown-item" href="#">Integrations</a>
+										<a class="dropdown-item" href="../settings/subscriptions.html">Subscriptions</a>
+										<a class="dropdown-item" href="#">Logout</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end customer dashboard header -->
+
+	<!-- start settings main page -->
+	<section id="settingsMainPage">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="settingsMainPageSubheader">
+						<ul>
+							<li><a href="../../settings-main.html">Account</a></li>
+							<li><a href="../settings/company.html">Company</a></li>
+							<li><a href="../settings/users.html">Users</a></li>
+							<li><a href="../settings/financial.html">Financial</a></li>
+							<li><a href="#">Integrations</a></li>
+							<li class="active"><a href="../settings/subscriptions.html">Subscriptions</a></li>
+						</ul>
+					</div>
+					<div class="subscriptionsMainContent">
+						<div class="subscriptionsMainContentPlanInfo">
+							<div class="row align-items-center">
+								<div class="col-lg-7">
+									<div class="subscriptionsMainContentPlanInfoLeft">
+										<h3><i class="fal fa-line-columns"></i> Current Plan</h3>
+									</div>
+								</div>
+								<div class="col-lg-5">
+									<div class="subscriptionsMainContentPlanInfobtn text-right">
+										<a href="#">Cancel Plan</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="subscriptionsMainContentTopInfo">
+							<div class="row align-items-center">
+								<div class="col-lg-3">
+									<div class="subscriptionsMainContentTopInfoItem text-left">
+										<h4>Current subscription</h4>
+										<h3>Free</h3>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="subscriptionsMainContentTopInfoItem text-center">
+										<h4>Orders</h4>
+										<h2>First 10000</h2>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="subscriptionsMainContentTopInfoItem text-center">
+										<h4>Products</h4>
+										<h2>15000</h2>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="subscriptionsMainContentTopInfoItem text-center">
+										<h4>Price</h4>
+										<h2>-</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="subscriptionProgress">
+							<div class="subscriptionProgressItem">
+								<h4>Subscription days passed</h4>
+								<div class="subscriptionProgressBar">
+									<span class="subscriptionProgressbarFill" style="width: 40%"></span>
+								</div>
+								<p><span>6</span> out of <span>13</span> | Free</p>
+							</div>
+							<div class="subscriptionProgressItem">
+								<h4>Orders used this month</h4>
+								<div class="subscriptionProgressBar">
+									<span class="subscriptionProgressbarFill" style="width: 10%"></span>
+								</div>
+								<p><span>20</span> out of <span>1000</span> | Free</p>
+							</div>
+							<div class="subscriptionProgressItem">
+								<h4>Total products</h4>
+								<div class="subscriptionProgressBar">
+									<span class="subscriptionProgressbarFill" style="width: 0%; opacity: 0"></span>
+								</div>
+								<p><span>2</span> out of <span>15000</span> | Free</p>
+							</div>
+						</div>
+						<div class="subscriptionsPlanContent">
+							<div class="row">
+								<div class="col-lg-10 mx-auto">
+									<div class="subscriptionsPlanContentContainer">
+										<div class="subscriptionsPlanContentTabbtn text-center">
+											<ul class="nav text-center" id="myTab" role="tablist">
+												<li class="nav-item">
+												    <a class="nav-link active" id="monthly-tab" data-toggle="tab" href="#monthly" role="tab" aria-controls="monthly" aria-selected="true">Monthly Plans</a>
+												</li>
+												<li class="nav-item">
+												    <a class="nav-link" id="yearlyPlan-tab" data-toggle="tab" href="#yearlyPlan" role="tab" aria-controls="yearlyPlan" aria-selected="false">Yearly Plans</a>
+												 </li>
+											</ul>
+										</div>
+										<div class="subscriptionsPlanContentTabContent">
+											<div class="tab-content" id="myTabContent">
+											  <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+											  	<div class="row">
+											  		<div class="col-lg-3 pr0">
+											  			<div class="pricingSubscription text-center">
+											  				<h1>Trial</h1>
+											  				<div class="planFeaterItem">
+											  					<h3>First 10000</h3>
+											  					<p>Orders / month</p>
+											  				</div>
+											  				<div class="planFeaterItem">
+											  					<h3>15000</h3>
+											  					<p>Products</p>
+											  				</div>
+											  				<div class="planPrice">
+											  					<h3>Free</h3>
+											  				</div>
+											  				<div class="planBtn">
+											  					<a class="current" href="#">Current</a>
+											  				</div>
+											  			</div>
+											  		</div>
+											  		<div class="col-lg-3 pl0 pr0">
+											  			<div class="pricingSubscription text-center">
+											  				<h1 class="c1">Small</h1>
+											  				<div class="planFeaterItem">
+											  					<h3>500</h3>
+											  					<p>Orders / month</p>
+											  				</div>
+											  				<div class="planFeaterItem">
+											  					<h3>20000</h3>
+											  					<p>Products</p>
+											  				</div>
+											  				<div class="planPrice">
+											  					<h3>$49.00 <span>/month</span></h3>
+											  				</div>
+											  				<div class="planBtn">
+											  					<a class="select" href="#">Select</a>
+											  				</div>
+											  			</div>
+											  		</div>
+											  		<div class="col-lg-3 pl0 pr0">
+											  			<div class="pricingSubscription text-center">
+											  				<h1 class="c2">Medium</h1>
+											  				<div class="planFeaterItem">
+											  					<h3>2000</h3>
+											  					<p>Orders / month</p>
+											  				</div>
+											  				<div class="planFeaterItem">
+											  					<h3>10000</h3>
+											  					<p>Products</p>
+											  				</div>
+											  				<div class="planPrice">
+											  					<h3>$149.00 <span>/month</span></h3>
+											  				</div>
+											  				<div class="planBtn">
+											  					<a class="select" href="#">Select</a>
+											  				</div>
+											  			</div>
+											  		</div>
+											  		<div class="col-lg-3">
+											  			<div class="pricingSubscription text-center" style="border-right: none;">
+											  				<h1 class="c3">Large</h1>
+											  				<div class="planFeaterItem">
+											  					<h3>5000</h3>
+											  					<p>Orders / month</p>
+											  				</div>
+											  				<div class="planFeaterItem">
+											  					<h3>50000</h3>
+											  					<p>Products</p>
+											  				</div>
+											  				<div class="planPrice">
+											  					<h3>$249.00 <span>/month</span></h3>
+											  				</div>
+											  				<div class="planBtn">
+											  					<a class="select" href="#">Select</a>
+											  				</div>
+											  			</div>
+											  		</div>
+											  	</div>
+											  </div>
+											  <div class="tab-pane fade" id="yearlyPlan" role="tabpanel" aria-labelledby="yearlyPlan-tab">
+											  	<div class="row">
+											  		<div class="col-lg-3 pr0">
+											  			<div class="pricingSubscription text-center">
+											  				<h1>Trial</h1>
+											  				<div class="planFeaterItem">
+											  					<h3>First 10000</h3>
+											  					<p>Orders / month</p>
+											  				</div>
+											  				<div class="planFeaterItem">
+											  					<h3>15000</h3>
+											  					<p>Products</p>
+											  				</div>
+											  				<div class="planPrice">
+											  					<h3>Free</h3>
+											  				</div>
+											  			</div>
+											  		</div>
+											  		<div class="col-lg-3 pl0 pr0">
+											  			<div class="pricingSubscription text-center">
+											  				<h1 class="c1">Small</h1>
+											  				<div class="planFeaterItem">
+											  					<h3>6000</h3>
+											  					<p>Orders / month</p>
+											  				</div>
+											  				<div class="planFeaterItem">
+											  					<h3>2000</h3>
+											  					<p>Products</p>
+											  				</div>
+											  				<div class="planPrice">
+											  					<h3>$441.00  <span>/year</span></h3>
+											  					<p><span>$588.00/year</span> 25% OFF</p>
+											  				</div>
+											  				<div class="planBtn">
+											  					<a class="select" href="#">Select</a>
+											  				</div>
+											  			</div>
+											  		</div>
+											  		<div class="col-lg-3 pl0 pr0">
+											  			<div class="pricingSubscription text-center">
+											  				<h1 class="c2">Medium</h1>
+											  				<div class="planFeaterItem">
+											  					<h3>24000</h3>
+											  					<p>Orders / month</p>
+											  				</div>
+											  				<div class="planFeaterItem">
+											  					<h3>10000</h3>
+											  					<p>Products</p>
+											  				</div>
+											  				<div class="planPrice">
+											  					<h3>$1,341.00 <span>/year</span></h3>
+											  					<p><span>$1,788.00/year</span> 25% OFF</p>
+											  				</div>
+											  				<div class="planBtn">
+											  					<a class="select" href="#">Select</a>
+											  				</div>
+											  			</div>
+											  		</div>
+											  		<div class="col-lg-3">
+											  			<div class="pricingSubscription text-center" style="border-right: none;">
+											  				<h1 class="c3">Large</h1>
+											  				<div class="planFeaterItem">
+											  					<h3>60000</h3>
+											  					<p>Orders / month</p>
+											  				</div>
+											  				<div class="planFeaterItem">
+											  					<h3>50000</h3>
+											  					<p>Products</p>
+											  				</div>
+											  				<div class="planPrice">
+											  					<h3>$2,241/year <span>/month</span></h3>
+											  					<p><span>$2,988.00/year</span> 25% OFF</p>
+											  				</div>
+											  				<div class="planBtn">
+											  					<a class="select" href="#">Select</a>
+											  				</div>
+											  			</div>
+											  		</div>
+											  	</div>
+											  </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end settings main page -->
+
+
+</body>
+
+<!-- this is all script file link here -->
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/jquery.validate.min.js"></script>
+<script src="../../assets/additional-methods.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/hover-dropdown.js"></script>
+<script src="../../assets/owlcarousel/owl.carousel.js"></script>
+<script type="text/javascript" src="../../assets/bxslider/jquery.bxslider.js"></script>
+<script defer src="../../assets/js/jquery.flexslider.js"></script>
+<script src="../../assets/js/jquery.easing.min.js"></script>
+<script src="../../assets/js/link-hover.js"></script>
+<script type="text/javascript" src="../../assets/js/parallax-slider/jquery.cslider.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../../assets/js/parallax-slider/modernizr.custom.28468.js"></script>
+<!--common script for all pages-->
+<script src="../../assets/js/common-scripts.js"></script>
+<script src="../../assets/js/wow.min.js"></script>
+<script src="../../assets/js/custom.js"></script>
+
+</html>

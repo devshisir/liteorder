@@ -92,10 +92,12 @@
 										Settings <i class="fal fa-angle-down"></i>
 									</button>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item" href="#">Account</a>
-										<a class="dropdown-item" href="#">Company</a>
-										<a class="dropdown-item" href="#">Users</a>
+										<a class="dropdown-item" href="settings-main.html">Account</a>
+										<a class="dropdown-item" href="pages/settings/company.html">Company</a>
+										<a class="dropdown-item" href="pages/settings/users.html">Users</a>
+										<a class="dropdown-item" href="pages/settings/financial.html">Financial</a>
 										<a class="dropdown-item" href="#">Integrations</a>
+										<a class="dropdown-item" href="pages/settings/subscriptions.html">Subscriptions</a>
 										<a class="dropdown-item" href="#">Logout</a>
 									</div>
 								</div>
@@ -133,7 +135,278 @@
 						</div>
 					</div>
 					<div class="CustomersMainPageContent">
-						<img class="img-fluid" src="assets/img/placeholder/8.png" alt="">
+						<div class="filterArea">
+							<div class="row">
+								<div class="col-lg-7">
+									<div class="filterAreaMain">
+										<ul>
+											<li><button type="button"><i class="fal fa-sort-amount-down"></i> Filter</button></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-5">
+									<div class="searchArea text-right">
+										<form action="#">
+											<input type="text" placeholder="Search by product title or sku">
+											<button type="submit"><i class="fa fa-search"></i></button>
+										</form>
+										<div class="InvokeSelctButton text-right" style="margin-top: 10px;">
+											<div class="dropdown">
+											  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											    Voke Actions
+											  </button>
+											  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											    <a class="dropdown-item" href="#"><i class="fal fa-edit text-info"></i> Edit</a>
+											    <a class="dropdown-item" href="#"><i class="fal fa-trash text-danger"></i> Delete</a>
+											    <a class="dropdown-item" href="#"><i class="fal fa-lock"></i> Others Stuff</a>
+											  </div>
+											</div>
+										</div>
+									</div>		
+								</div>
+							</div>
+						</div>
+						<div class="customersMainTable">
+							<table class="table table-bordered">
+							  <thead class="thead-light">
+							    <tr>
+							      <th scope="col" class="align-middle">
+							      	<div class="chiller_cb">
+										<input class="CustomerMainCheckBtn" id="myCheckbox01" type="checkbox">
+										<label for="myCheckbox01">
+											<tl style="opacity: 0;">.</tl>
+										</label>
+										<span></span>
+									</div>
+							      </th>
+							      <th scope="col">
+							      	<p><i class="fal fa-store-alt"></i> Store name</p>
+							      </th>
+							      <th scope="col">
+							      	<p><i class="fal fa-user-alt"></i> Customer name </p>
+							      </th>
+							      <th scope="col">
+							      	<p><i class="fal fa-envelope"></i> Email</p>
+							      </th>
+							      <th scope="col">
+							      	<p><i class="fal fa-phone-alt"></i>Phone</p>
+							      </th>
+							       <th scope="col">
+							      	<p><i class="fal fa-calendar-day"></i> Created date</p>
+							      </th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th scope="row">
+							      	<div class="chiller_cb">
+										<input class="orderManCheckBtn" id="customerCheck1" type="checkbox">
+										<label for="customerCheck1">
+											<tl style="opacity: 0;">.</tl>
+										</label>
+										<span></span>
+									</div>
+							      </th>
+							      <td class="customerStoreName align-middle">
+										<img class="pophoverCustom2" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here" data-original-title="" title="">
+										<p>Example store name</p>
+										<h5>Local</h5>
+								   </td>
+							      <td class="customerName align-middle">
+							      	<p>Margaret Johnson (DEMO)</p>
+							      </td>
+							      <td class="customerTableEmail align-middle">
+							      	<p>MargaretMJohnson@teleworm.us</p>
+							      </td>
+							      <td class="customerTablePhone align-middle">
+							      	<p>801-769-4762</p>
+							      </td>
+							      <td class="customerTablecreateDate align-middle">
+							      	<p>18/06/05</p>
+							      </td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<div class="chiller_cb">
+										<input class="orderManCheckBtn" id="customerCheck2" type="checkbox">
+										<label for="customerCheck2">
+											<tl style="opacity: 0;">.</tl>
+										</label>
+										<span></span>
+									</div>
+							      </th>
+							      <td class="customerStoreName align-middle">
+										<img class="pophoverCustom2" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here" data-original-title="" title="">
+										<p>Example store name</p>
+										<h5>Local</h5>
+								   </td>
+							      <td class="customerName align-middle">
+							      	<p>Margaret Johnson (DEMO)</p>
+							      </td>
+							      <td class="customerTableEmail align-middle">
+							      	<p>MargaretMJohnson@teleworm.us</p>
+							      </td>
+							      <td class="customerTablePhone align-middle">
+							      	<p>801-769-4762</p>
+							      </td>
+							      <td class="customerTablecreateDate align-middle">
+							      	<p>18/06/05</p>
+							      </td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<div class="chiller_cb">
+										<input class="orderManCheckBtn" id="customerCheck3" type="checkbox">
+										<label for="customerCheck3">
+											<tl style="opacity: 0;">.</tl>
+										</label>
+										<span></span>
+									</div>
+							      </th>
+							      <td class="customerStoreName align-middle">
+										<img class="pophoverCustom2" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here" data-original-title="" title="">
+										<p>Example store name</p>
+										<h5>Local</h5>
+								   </td>
+							      <td class="customerName align-middle">
+							      	<p>Margaret Johnson (DEMO)</p>
+							      </td>
+							      <td class="customerTableEmail align-middle">
+							      	<p>MargaretMJohnson@teleworm.us</p>
+							      </td>
+							      <td class="customerTablePhone align-middle">
+							      	<p>801-769-4762</p>
+							      </td>
+							      <td class="customerTablecreateDate align-middle">
+							      	<p>18/06/05</p>
+							      </td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<div class="chiller_cb">
+										<input class="orderManCheckBtn" id="customerCheck4" type="checkbox">
+										<label for="customerCheck4">
+											<tl style="opacity: 0;">.</tl>
+										</label>
+										<span></span>
+									</div>
+							      </th>
+							      <td class="customerStoreName align-middle">
+										<img class="pophoverCustom2" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here" data-original-title="" title="">
+										<p>Example store name</p>
+										<h5>Local</h5>
+								   </td>
+							      <td class="customerName align-middle">
+							      	<p>Margaret Johnson (DEMO)</p>
+							      </td>
+							      <td class="customerTableEmail align-middle">
+							      	<p>MargaretMJohnson@teleworm.us</p>
+							      </td>
+							      <td class="customerTablePhone align-middle">
+							      	<p>801-769-4762</p>
+							      </td>
+							      <td class="customerTablecreateDate align-middle">
+							      	<p>18/06/05</p>
+							      </td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<div class="chiller_cb">
+										<input class="orderManCheckBtn" id="customerCheck5" type="checkbox">
+										<label for="customerCheck5">
+											<tl style="opacity: 0;">.</tl>
+										</label>
+										<span></span>
+									</div>
+							      </th>
+							      <td class="customerStoreName align-middle">
+										<img class="pophoverCustom2" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here" data-original-title="" title="">
+										<p>Example store name</p>
+										<h5>Local</h5>
+								   </td>
+							      <td class="customerName align-middle">
+							      	<p>Margaret Johnson (DEMO)</p>
+							      </td>
+							      <td class="customerTableEmail align-middle">
+							      	<p>MargaretMJohnson@teleworm.us</p>
+							      </td>
+							      <td class="customerTablePhone align-middle">
+							      	<p>801-769-4762</p>
+							      </td>
+							      <td class="customerTablecreateDate align-middle">
+							      	<p>18/06/05</p>
+							      </td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<div class="chiller_cb">
+										<input class="orderManCheckBtn" id="customerCheck6" type="checkbox">
+										<label for="customerCheck6">
+											<tl style="opacity: 0;">.</tl>
+										</label>
+										<span></span>
+									</div>
+							      </th>
+							      <td class="customerStoreName align-middle">
+										<img class="pophoverCustom2" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here" data-original-title="" title="">
+										<p>Example store name</p>
+										<h5>Local</h5>
+								   </td>
+							      <td class="customerName align-middle">
+							      	<p>Margaret Johnson (DEMO)</p>
+							      </td>
+							      <td class="customerTableEmail align-middle">
+							      	<p>MargaretMJohnson@teleworm.us</p>
+							      </td>
+							      <td class="customerTablePhone align-middle">
+							      	<p>801-769-4762</p>
+							      </td>
+							      <td class="customerTablecreateDate align-middle">
+							      	<p>18/06/05</p>
+							      </td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<div class="chiller_cb">
+										<input class="orderManCheckBtn" id="customerCheck7" type="checkbox">
+										<label for="customerCheck7">
+											<tl style="opacity: 0;">.</tl>
+										</label>
+										<span></span>
+									</div>
+							      </th>
+							      <td class="customerStoreName align-middle">
+										<img class="pophoverCustom2" src="assets/img/icons/1.png" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Store Name Add Here" data-original-title="" title="">
+										<p>Example store name</p>
+										<h5>Local</h5>
+								   </td>
+							      <td class="customerName align-middle">
+							      	<p>Margaret Johnson (DEMO)</p>
+							      </td>
+							      <td class="customerTableEmail align-middle">
+							      	<p>MargaretMJohnson@teleworm.us</p>
+							      </td>
+							      <td class="customerTablePhone align-middle">
+							      	<p>801-769-4762</p>
+							      </td>
+							      <td class="customerTablecreateDate align-middle">
+							      	<p>18/06/05</p>
+							      </td>
+							    </tr>
+							  </tbody>
+							</table>
+							<div class="custom_pagination text-center">
+								<ul>
+									<li class="back"><a href="#"><i class="fal fa-angle-left"></i> Back</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">..</a></li>
+									<li><a href="#">12</a></li>
+									<li class="next"><a href="#">Next <i class="fal fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

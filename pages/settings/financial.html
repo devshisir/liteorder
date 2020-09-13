@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Developed By M Abdur Rokib Promy">
+	<meta name="author" content="cosmic">
+	<meta name="keywords" content="Bootstrap 3, Template, Theme, Responsive, Corporate, Business">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<title>Lite Order Customer Dashborad</title>
+	<!-- Bootstrap core CSS -->
+	<link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../assets/css/theme.css" rel="stylesheet">
+	<link href="../../assets/css/bootstrap-reset.css" rel="stylesheet">
+	<!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet">-->
+	<!--external css-->
+	<link href="../../assets/css/fontawsome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../../assets/css/flexslider.css" />
+	<link href="../../assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../../assets/css/animate.css">
+	<link rel="stylesheet" href="../../assets/owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" href="../../assets/owlcarousel/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css">
+	<link href="../../assets/css/superfish.css" rel="stylesheet" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<link href="../../assets/css/style.css" rel="stylesheet">
+	<link href="../../assets/css/style-responsive.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/parallax-slider/parallax-slider.css" />
+	<!-- this is new page design main css file -->
+	<link rel="stylesheet" href="../../assets/css/custom.css">
+	<link rel="stylesheet" href="../../assets/css/responsive.css">
+	<!-- this is new page design main css file -->
+
+
+	<!-- HTML5 browser support message shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+	<!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js">
+    </script>
+    <script src="/assets/js/respond.min.js">
+    </script>
+    <![endif]-->
+</head>
+
+<body class="customerMinBody">
+
+	<!-- start customer dashboard header -->
+	<header id="customerHeader">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-lg-1">
+					<div class="logo text-center">
+						<a href="#">
+							<span><i class="fad fa-adjust"></i></span>
+							Lite Order
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="customerTabTop">
+						<!-- <ul role="tablist">
+
+
+							<li role="presentation">
+								<a href="#">Reports</a>
+							</li>
+						</ul> -->
+						<ul>
+							<li><a class="active" href="../../dashboard.html">Dashboard</a></li>
+							<li><a href="../../dashboard-orders.html">Orders</a></li>
+							<li><a href="../../dashboard-inventory.html">Inventory</a></li>
+							<li><a href="../../dashboard-customers.html">Customers</a></li>
+							<li><a href="../../dashboard-reports.html">Reports</a></li>
+							<li><a href="../../dashboard-intregation.html">Integrations</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="customerHeaderRight text-right">
+						<ul>
+							<li><a href="#"><i class="fal fa-question-circle"></i></a></li>
+							<li><a href="#"><i class="fal fa-bell"></i></a></li>
+							<li>
+								<div class="dropdown">
+									<button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										Settings <i class="fal fa-angle-down"></i>
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="../../settings-main.html">Account</a>
+										<a class="dropdown-item" href="../settings/company.html">Company</a>
+										<a class="dropdown-item" href="../settings/users.html">Users</a>
+										<a class="dropdown-item" href="../settings/financial.html">Financial</a>
+										<a class="dropdown-item" href="#">Integrations</a>
+										<a class="dropdown-item" href="../settings/subscriptions.html">Subscriptions</a>
+										<a class="dropdown-item" href="#">Logout</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end customer dashboard header -->
+
+	
+
+
+	<!-- start settings main page -->
+	<section id="settingsMainPage">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="settingsMainPageSubheader">
+						<ul>
+							<li><a href="../../settings-main.html">Account</a></li>
+							<li><a href="../settings/company.html">Company</a></li>
+							<li><a href="../settings/users.html">Users</a></li>
+							<li class="active"><a href="../settings/financial.html">Financial</a></li>
+							<li><a href="#">Integrations</a></li>
+							<li><a href="../settings/subscriptions.html">Subscriptions</a></li>
+						</ul>
+					</div>
+					<div class="settingsFinancial">
+						<div class="taxInfoUpdte">
+							<h3>Financial</h3>
+							<div class="row">
+								<div class="col-lg-3">
+									<div class="left">
+										<p>What is your company Tax ID (TIN)?:</p>
+										<button type="button" data-toggle="modal" data-target="#taxEditModal">Edit Tax ID</button>
+									</div>
+								</div>
+								<div class="col-lg-7">
+									<div class="right">
+										<p>TIN is Tax Identification Number. It can be printed on Invoices. It is not mandatory in some countries.</p>
+										<div class="selectBox">
+											<p>Tax Identifier:</p>
+											<select>
+												<option value="1" selected="">Tax ID</option>
+												<option value="2">VAT</option>
+											</select>
+											<div class="checBoxFinacial">
+												<div class="chiller_cb">
+													<input class="CustomerMainCheckBtn" id="myCheckbox01" type="checkbox">
+													<label for="myCheckbox01">
+														Enable additional Tax / VAT calculations for eBay invoices.
+													</label>
+													<span></span>
+												</div>
+											</div>		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bankDetailsUpdate">
+							<div class="row">
+								<div class="col-lg-5">
+									<div class="item">
+										<h3>Local Account Details:</h3>
+										<ul>
+											<li>Account Name: <span>AGB Bank USA</span></li>
+											<li>Account Name: <span>X2324-346639</span></li>
+											<li>Sort Code: <span>X-346639</span></li>
+											<li>Bank / Payment institution: <span>Institution Name</span></li>
+											<li>Payment Terms: <span>Payment terms</span></li>
+										</ul>
+										<button type="button" data-toggle="modal" data-target="#bankLocalModal">Updte Information</button>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="item item2">
+										<h3>International Account Details:</h3>
+										<ul>
+											<li>Account Name: <span>AGB Bank USA</span></li>
+											<li>IBAN: <span>X2324-346639</span></li>
+											<li>BIC / SWIFT: <span>X-346639</span></li>
+											<li>Bank / Payment institution: <span>Institution Name</span></li>
+											<li>Payment Terms: <span>Payment terms</span></li>
+										</ul>
+										<button type="button" data-toggle="modal" data-target="#bankInternationalModal">Updte Information</button>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bseCurrecncy">
+							<h3>Base Currency</h3>
+							<ul>
+								<li>Select base currency: <span>US Dollar</span></li>
+								<li>ISO: <span>USD</span></li>
+								<li>Symbol: <span>$</span></li>
+							</ul>
+							<button data-toggle="modal" data-target="#currencylModal">Edit Currency</button>
+						</div>
+						<div class="pymentProiders">
+							<h3>Payment Providers</h3>
+							<table class="table table-bordered">
+							  <thead class="thead-light">
+							    <tr>
+							      <th scope="col">
+							      	<p>Payment</p>
+							      </th>
+							      <th scope="col" class="text-right">
+							      	<p>Actions</p>
+							      </th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td class="providerName align-middle">
+							      	<p><img class="pophoverCustom2" src="../../assets/img/icons/partner/27.jpg" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Payment method name" data-original-title="" title=""> Stripe</p>
+							      </td>
+							      <td class="text-right actionsBtn">
+							      	<button class="bg-warning text-white"><i class="fal fa-edit"></i></button>
+							      	<button data-toggle="modal" data-target="#paymentMethodDelete" class="bg-danger text-white"><i class="fal fa-trash"></i></button>
+							      </td>
+							    </tr>
+							    <tr>
+							      <td class="providerName align-middle">
+							      	<p><img class="pophoverCustom2" src="../../assets/img/icons/partner/27.jpg" alt="" data-container="body" data-toggle="popover" data-placement="top" data-content="Payment method name" data-original-title="" title=""> Stripe</p>
+							      </td>
+							      <td class="text-right actionsBtn">
+							      	<button class="bg-warning text-white"><i class="fal fa-edit"></i></button>
+							      	<button data-toggle="modal" data-target="#paymentMethodDelete" class="bg-danger text-white"><i class="fal fa-trash"></i></button>
+							      </td>
+							    </tr>
+							  </tbody>
+							</table>
+							<a href="#">Add payment method</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end settings main page -->
+
+
+	<!-- add user modal -->
+	<!-- edit tax modal -->
+	<div class="modal fade" id="taxEditModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog taxEditModalModalModalModalContainer modal-dialog-centered">
+			<div class="modal-content">
+				<form action="#">
+					<h3>Edit financial</h3>
+					<div class="inputBox">
+						<label>What is your company Tax ID (TIN)?</label>
+						<input type="text" placeholder="TIN Number">
+					</div>
+					<button type="submit">Add Tax ID</button>
+				</form>
+				<button type="button" class="taxEditClose" data-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- loacl bank add modal -->
+	<div class="modal fade" id="bankLocalModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog bankLocalModalContainer modal-dialog-centered">
+			<div class="modal-content">
+				<form action="#">
+					<h3>Local Account Details:</h3>
+					<div class="inputBox">
+						<label>Acount Name</label>
+						<input type="text" placeholder="Account name">
+					</div>
+					<div class="inputBox">
+						<label>Acount Number</label>
+						<input type="text" placeholder="Account number">
+					</div>
+					<div class="inputBox">
+						<label>Sort Code</label>
+						<input type="text" placeholder="Sort code">
+					</div>
+					<div class="inputBox">
+						<label>Bank / Payment Instruction</label>
+						<input type="text" placeholder="Instruction">
+					</div>
+					<div class="inputBox">
+						<label>Payment Terms</label>
+						<textarea placeholder="Payment Terms"></textarea>
+					</div>
+					<button type="submit">Add Bank Info</button>
+				</form>
+				<button type="button" class="bankLocalClose" data-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- international bank add modal -->
+	<div class="modal fade" id="bankInternationalModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog bankInternationaModalContainer modal-dialog-centered">
+			<div class="modal-content">
+				<form action="#">
+					<h3>International Account Details:</h3>
+					<div class="inputBox">
+						<label>Acount Name</label>
+						<input type="text" placeholder="Account name">
+					</div>
+					<div class="inputBox">
+						<label>IBAN</label>
+						<input type="text" placeholder="IBAN">
+					</div>
+					<div class="inputBox">
+						<label>BIC/SWIFT</label>
+						<input type="text" placeholder="BIC/SWIFT">
+					</div>
+					<div class="inputBox">
+						<label>Bank / Payment Instruction</label>
+						<input type="text" placeholder="Instruction">
+					</div>
+					<div class="inputBox">
+						<label>Payment Terms</label>
+						<textarea placeholder="Payment Terms"></textarea>
+					</div>
+					<button type="submit">Add Bank Info</button>
+				</form>
+				<button type="button" class="bankInternationaClose" data-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- currency add modal -->
+	<div class="modal fade" id="currencylModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog currencyModalContainer modal-dialog-centered">
+			<div class="modal-content">
+				<form action="#">
+					<h3>Change base currency</h3>
+					<div class="inputBox">
+						<label>Select Currency</label>
+						<select>
+							<option value="0">GBP - £ </option>
+							<option value="0">USD - $ </option>
+							<option value="0">EUR - € </option>
+							<option value="0">AUD - AU$ </option>
+							<option value="0">BRL - R$ </option>
+							<option value="0">CAD - CA$ </option>
+							<option value="0">CHF - CHF </option>
+							<option value="0">INR - টকা</option>
+							<option value="0">DKK - kr</option>
+							<option value="0">RUB - руб.</option>
+							<option value="0">RUB - руб.</option>
+
+						</select>
+					</div>
+					<div class="currencyInfo">
+						<ul>
+							<li>Currency name <span>US Dollar</span></li>
+							<li>Plural name <span>US dollars</span></li>
+							<li>ISO code <span>USD</span></li>
+							<li>Symbol <span>$</span></li>
+						</ul>
+					</div>
+					<button type="submit">Update Currency</button>
+				</form>
+				<button type="button" class="currecncyModlClose" data-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- delete modal -->
+	<div class="modal fade bd-example-modal-sm" id="paymentMethodDelete" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm deleteModalContainer modal-dialog-centered">
+			<div class="modal-content" id="deleteModal">
+				<div class="modal_confirm_cotent text-center">
+					<span><i class="fal fa-trash"></i></span>
+					<h4>Are you sure delete this method?</h4>
+					<button type="button" class="bg-danger text-white">Confirm Delete</button>
+					<button type="button" class="bg-info text-white" data-dismiss="modal" aria-label="Close">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+<!-- this is all script file link here -->
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/jquery.validate.min.js"></script>
+<script src="../../assets/additional-methods.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../assets/js/hover-dropdown.js"></script>
+<script src="../../assets/owlcarousel/owl.carousel.js"></script>
+<script type="text/javascript" src="../../assets/bxslider/jquery.bxslider.js"></script>
+<script defer src="../../assets/js/jquery.flexslider.js"></script>
+<script src="../../assets/js/jquery.easing.min.js"></script>
+<script src="../../assets/js/link-hover.js"></script>
+<script type="text/javascript" src="../../assets/js/parallax-slider/jquery.cslider.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../../assets/js/parallax-slider/modernizr.custom.28468.js"></script>
+<!--common script for all pages-->
+<script src="../../assets/js/common-scripts.js"></script>
+<script src="../../assets/js/wow.min.js"></script>
+<script src="../../assets/js/custom.js"></script>
+
+</html>

@@ -120,4 +120,27 @@
 		  })
 	  })
 
-	
+	$('.CustomerMainCheckBtn').click (function () {
+		var checkedStatus = this.checked;
+		$('.customersMainTable tbody tr').find('th:first :checkbox').each(function () {
+			$(this).prop('checked', checkedStatus);
+		});
+	});
+
+
+	// company logo preview
+	function readURL(input) {
+	  if (input.files && input.files[0]) {
+	    var reader = new FileReader();
+	    
+	    reader.onload = function(e) {
+	      $('#prevImageLogo').attr('src', e.target.result);
+	    }
+	    
+	    reader.readAsDataURL(input.files[0]); // convert to base64 string
+	  }
+	}
+
+	$("#ComlogoImage").change(function() {
+	  readURL(this);
+	});

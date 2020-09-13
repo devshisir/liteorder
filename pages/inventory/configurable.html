@@ -92,10 +92,12 @@
 										Settings <i class="fal fa-angle-down"></i>
 									</button>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item" href="#">Account</a>
-										<a class="dropdown-item" href="#">Company</a>
-										<a class="dropdown-item" href="#">Users</a>
+										<a class="dropdown-item" href="../../settings-main.html">Account</a>
+										<a class="dropdown-item" href="../settings/company.html">Company</a>
+										<a class="dropdown-item" href="../settings/users.html">Users</a>
+										<a class="dropdown-item" href="../settings/financial.html">Financial</a>
 										<a class="dropdown-item" href="#">Integrations</a>
+										<a class="dropdown-item" href="../settings/subscriptions.html">Subscriptions</a>
 										<a class="dropdown-item" href="#">Logout</a>
 									</div>
 								</div>
@@ -143,8 +145,17 @@
 								<input type="text" placeholder="Search by product title or sku">
 								<button type="submit"><i class="fa fa-search"></i></button>
 							</form>
-							<div class="InvokeSelctButton2 text-right">
-								<button type="button">Invoke Select</button>
+							<div class="InvokeSelctButton text-right" style="margin-top: 10px;">
+								<div class="dropdown">
+								  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    Voke Actions
+								  </button>
+								  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								    <a class="dropdown-item" href="#"><i class="fal fa-edit text-info"></i> Edit</a>
+								    <a class="dropdown-item" href="#"><i class="fal fa-trash text-danger"></i> Delete</a>
+								    <a class="dropdown-item" href="#"><i class="fal fa-lock"></i> Others Stuff</a>
+								  </div>
+								</div>
 							</div>
 						</div>
 						<div class="InventoryMainPageContentMain">

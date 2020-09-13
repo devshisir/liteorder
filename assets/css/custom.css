@@ -16,6 +16,12 @@ li {
 a {
   transition: 0.4s; }
 
+.pl0 {
+  padding-left: 0px !important; }
+
+.pr0 {
+  padding-right: 0px !important; }
+
 /*-- this is login area design --*/
 .bg1 {
   background: #f9fbfc; }
@@ -331,7 +337,20 @@ a {
             width: 96%; }
   #customerHeader .customerHeaderRight ul li {
     display: inline-block;
-    margin-left: 30px; }
+    margin-left: 30px;
+    position: relative; }
+    #customerHeader .customerHeaderRight ul li:after {
+      height: 2px;
+      width: 0;
+      bottom: -19px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      content: "";
+      background: #3c52ae;
+      position: absolute;
+      transition: 0.4s;
+      border-radius: 30px; }
     #customerHeader .customerHeaderRight ul li > a {
       font-size: 16px;
       color: #232323; }
@@ -378,6 +397,8 @@ a {
         font-size: 15px; }
         #customerHeader .customerHeaderRight ul li .dropdown .dropdown-menu a:hover {
           background: #ececec; }
+  #customerHeader .customerHeaderRight ul .active:after {
+    width: 96%; }
 
 /*-- start home page header area --*/
 #homeHeader {
@@ -1025,34 +1046,42 @@ a {
         background: #366fcc; }
 
 #dashboardMainPage {
-  padding: 40px 25px; }
+  padding: 40px 15px; }
   #dashboardMainPage .dashboardSubtabHeader {
     background: #fff;
     box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
-    border-radius: 3px; }
-    #dashboardMainPage .dashboardSubtabHeader ul {
+    border-radius: 3px;
+    padding-right: 30px; }
+    #dashboardMainPage .dashboardSubtabHeader .left ul {
       margin: 0;
       padding: 0;
       border: none;
-      padding: 10px 0px; }
-      #dashboardMainPage .dashboardSubtabHeader ul li {
-        border-right: 1px solid #dddddd5d;
+      padding: 5px 0px; }
+      #dashboardMainPage .dashboardSubtabHeader .left ul li {
         display: inline-block; }
-        #dashboardMainPage .dashboardSubtabHeader ul li a {
+        #dashboardMainPage .dashboardSubtabHeader .left ul li a {
           display: block;
           padding: 0px;
           border: none;
           text-align: center;
           position: relative;
-          padding: 10px 20px;
+          padding: 5px 30px;
           text-align: center;
           font-weight: 500;
           color: #4a4b65;
-          position: relative; }
-      #dashboardMainPage .dashboardSubtabHeader ul .active a:after {
+          position: relative;
+          text-align: center;
+          font-size: 14px;
+          margin-right: 20px; }
+          #dashboardMainPage .dashboardSubtabHeader .left ul li a p {
+            margin: 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 12px; }
+      #dashboardMainPage .dashboardSubtabHeader .left ul .active a:after {
         height: 3px;
         width: 100%;
-        bottom: -10px;
+        bottom: -5px;
         left: 0;
         right: 0;
         margin: auto;
@@ -1061,6 +1090,39 @@ a {
         position: absolute;
         transition: 0.4s;
         border-radius: 30px; }
+    #dashboardMainPage .dashboardSubtabHeader .right {
+      padding-right: 40px; }
+      #dashboardMainPage .dashboardSubtabHeader .right ul {
+        margin: 0; }
+        #dashboardMainPage .dashboardSubtabHeader .right ul li {
+          display: inline-block;
+          margin-left: 60px; }
+          #dashboardMainPage .dashboardSubtabHeader .right ul li p {
+            margin: 0;
+            font-weight: 500;
+            font-size: 13px;
+            color: #4a4b65;
+            text-align: right; }
+          #dashboardMainPage .dashboardSubtabHeader .right ul li button {
+            border: none;
+            background: transparent;
+            padding: 0px;
+            color: #1765a6;
+            font-weight: 500; }
+          #dashboardMainPage .dashboardSubtabHeader .right ul li .dropdown-menu {
+            padding: 0px;
+            top: 7px !important; }
+            #dashboardMainPage .dashboardSubtabHeader .right ul li .dropdown-menu a {
+              padding: 7px 10px;
+              font-weight: 500;
+              font-size: 12px; }
+              #dashboardMainPage .dashboardSubtabHeader .right ul li .dropdown-menu a:hover {
+                background: #1765a6;
+                color: #fff; }
+            #dashboardMainPage .dashboardSubtabHeader .right ul li .dropdown-menu .active {
+              background: #1765a6; }
+          #dashboardMainPage .dashboardSubtabHeader .right ul li .dropdown_menu2 {
+            left: -95px !important; }
   #dashboardMainPage .dashboardMainPageContent {
     background: #fff;
     box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
@@ -1560,8 +1622,181 @@ a {
         #CustomersMainPage .CustomersSubtabHeader .CustomersSubtabHeaderSubtabHeaderRight ul .btn_sp a:hover {
           background: #366fcc; }
   #CustomersMainPage .CustomersMainPageContent {
-    padding: 20px 25px;
-    background: #fff; }
+    padding: 0px 0px;
+    background: #fff;
+    /* -- this is customer table content -- */ }
+    #CustomersMainPage .CustomersMainPageContent .filterArea {
+      border-top: 1px solid rgba(221, 221, 221, 0.507);
+      padding: 10px 20px 10px 20px; }
+      #CustomersMainPage .CustomersMainPageContent .filterArea .filterAreaMain ul li {
+        display: inline-block; }
+        #CustomersMainPage .CustomersMainPageContent .filterArea .filterAreaMain ul li button {
+          border: none;
+          padding: 8px 30px;
+          border-radius: 3px;
+          margin-right: 7px;
+          background: #e4e6f2;
+          color: #4d4bae;
+          transition: 0.4s; }
+          #CustomersMainPage .CustomersMainPageContent .filterArea .filterAreaMain ul li button:hover {
+            background: #d9dbe8;
+            color: #4d4bae; }
+      #CustomersMainPage .CustomersMainPageContent .filterArea .searchArea form {
+        display: block; }
+        #CustomersMainPage .CustomersMainPageContent .filterArea .searchArea form input {
+          width: 280px;
+          border: 1px solid #ddd;
+          padding: 7px 15px;
+          border-radius: 3px;
+          font-weight: 500;
+          font-size: 14px; }
+        #CustomersMainPage .CustomersMainPageContent .filterArea .searchArea form button {
+          background: #e4e6f2;
+          color: #4d4bae;
+          border: none;
+          padding: 7px 15px;
+          margin-left: 10px;
+          border-radius: 3px;
+          transition: 0.4s; }
+          #CustomersMainPage .CustomersMainPageContent .filterArea .searchArea form button:hover {
+            background: #d9dbe8; }
+      #CustomersMainPage .CustomersMainPageContent .filterArea .searchArea .invikeSelectBtn {
+        margin-top: 20px; }
+        #CustomersMainPage .CustomersMainPageContent .filterArea .searchArea .invikeSelectBtn button {
+          background: #FAE5E5;
+          border: none;
+          padding: 10px 80px;
+          font-weight: 500;
+          border-radius: 3px;
+          color: #ef564e;
+          transition: 0.4s; }
+          #CustomersMainPage .CustomersMainPageContent .filterArea .searchArea .invikeSelectBtn button:hover {
+            background: #ef564e;
+            color: #FAE5E5; }
+    #CustomersMainPage .CustomersMainPageContent .customersMainTable {
+      padding: 10px 25px;
+      padding-bottom: 25px; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table thead p {
+        margin: 0; }
+        #CustomersMainPage .CustomersMainPageContent .customersMainTable .table thead p i {
+          margin-right: 6px; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table thead th {
+        padding-top: 7px; }
+        #CustomersMainPage .CustomersMainPageContent .customersMainTable .table thead th .chiller_cb {
+          position: relative;
+          top: 3px; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table tbody .customerStoreName img {
+        display: block;
+        float: left;
+        height: 30px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        border: 1px solid #ddd;
+        cursor: pointer; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table tbody .customerStoreName p {
+        text-align: left;
+        font-size: 14px;
+        color: #1765a6;
+        font-weight: 500;
+        margin-bottom: 0px; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table tbody .customerStoreName h5 {
+        font-size: 14px;
+        margin: 0;
+        margin-top: -4px; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table tbody .customerName p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        color: #1765a6; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table tbody .customerTableEmail p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        color: #4a4b65; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table tbody .customerTablePhone p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        color: #4a4b65; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table tbody .customerTablecreateDate p {
+        margin: 0 auto;
+        width: 65%;
+        background: #e4e6f2;
+        color: #4d4bae;
+        font-weight: 500;
+        font-size: 13px;
+        padding: 4px 0px;
+        text-align: center;
+        border-radius: 30px; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .span_pseudo, #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb span:before, #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb span:after {
+        content: "";
+        display: inline-block;
+        background: #fff;
+        width: 0;
+        height: 0.2rem;
+        position: absolute;
+        transform-origin: 0% 0%; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb {
+        position: relative;
+        height: 2rem;
+        display: flex;
+        align-items: center; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb input {
+        display: none; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb input:checked ~ span {
+        background: #55bb56;
+        border-color: #55bb56; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb input:checked ~ span:before {
+        width: 1rem;
+        height: 0.15rem;
+        transition: width 0.1s;
+        transition-delay: 0.3s; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb input:checked ~ span:after {
+        width: 0.4rem;
+        height: 0.15rem;
+        transition: width 0.1s;
+        transition-delay: 0.2s; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb input:disabled ~ span {
+        background: #ececec;
+        border-color: #dcdcdc; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb input:disabled ~ label {
+        color: #dcdcdc; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb input:disabled ~ label:hover {
+        cursor: default; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb label {
+        padding-left: 2rem;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        margin-bottom: 0;
+        color: #232323; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb span {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid #ccc;
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+        z-index: 1;
+        box-sizing: content-box; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb span:before {
+        transform: rotate(-55deg);
+        top: 1rem;
+        left: 0.37rem; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table .chiller_cb span:after {
+        transform: rotate(35deg);
+        bottom: 0.35rem;
+        left: 0.2rem; }
+      #CustomersMainPage .CustomersMainPageContent .customersMainTable .table label {
+        font-weight: 600;
+        color: #232323;
+        font-size: 12px; }
+        #CustomersMainPage .CustomersMainPageContent .customersMainTable .table label a {
+          margin-left: 7px; }
+          #CustomersMainPage .CustomersMainPageContent .customersMainTable .table label a:hover {
+            text-decoration: underline;
+            color: #55BB56; }
 
 #reportsMainPage {
   padding: 40px 25px; }
@@ -1842,15 +2077,33 @@ a {
 .InvokeSelctButton button {
   background: #FAE5E5;
   border: none;
-  padding: 10px 0px;
+  padding: 10px 50px;
   font-weight: 500;
-  width: 60%;
   border-radius: 3px;
   color: #ef564e;
-  transition: 0.4s; }
+  transition: 0.4s;
+  font-size: 14px;
+  outline: none; }
   .InvokeSelctButton button:hover {
     background: #ef564e;
-    color: #FAE5E5; }
+    color: #FAE5E5;
+    box-shadow: none;
+    outline: none; }
+
+.InvokeSelctButton .dropdown-menu {
+  padding: 0px;
+  width: 195px; }
+  .InvokeSelctButton .dropdown-menu a {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px; }
+    .InvokeSelctButton .dropdown-menu a:hover {
+      background: #e4e6f2;
+      color: #4d4bae; }
+      .InvokeSelctButton .dropdown-menu a:hover i {
+        color: #4d4bae !important; }
+    .InvokeSelctButton .dropdown-menu a i {
+      min-width: 20px; }
 
 .InvokeSelctButton2 {
   margin-top: 10px; }
@@ -1914,3 +2167,1743 @@ a {
 
 .inventoryStoreHead {
   width: 243px; }
+
+#settingsMainPage .settingsMainPageSubheader {
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  border-radius: 3px;
+  padding: 5px 20px;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.507); }
+  #settingsMainPage .settingsMainPageSubheader ul {
+    margin: 0; }
+    #settingsMainPage .settingsMainPageSubheader ul li {
+      display: inline-block; }
+      #settingsMainPage .settingsMainPageSubheader ul li a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #4a4b65;
+        display: block;
+        padding: 15px 10px;
+        position: relative;
+        margin-right: 15px; }
+        #settingsMainPage .settingsMainPageSubheader ul li a:hover {
+          color: #1765a6; }
+        #settingsMainPage .settingsMainPageSubheader ul li a:after {
+          height: 2px;
+          width: 0;
+          bottom: -5px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          content: "";
+          background: #3c52ae;
+          position: absolute;
+          transition: 0.4s;
+          border-radius: 30px; }
+    #settingsMainPage .settingsMainPageSubheader ul .active a:after {
+      width: 100%; }
+
+#settingsMainPage .settingsAccountContent {
+  background: #fff;
+  padding: 40px 40px;
+  padding-bottom: 100px; }
+  #settingsMainPage .settingsAccountContent .profileArea h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65; }
+    #settingsMainPage .settingsAccountContent .profileArea h3 i {
+      margin-right: 3px; }
+  #settingsMainPage .settingsAccountContent .profileArea .editProfileBtn {
+    margin-top: 30px; }
+    #settingsMainPage .settingsAccountContent .profileArea .editProfileBtn button {
+      background: #55bb56;
+      border: none;
+      padding: 10px 40px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s; }
+      #settingsMainPage .settingsAccountContent .profileArea .editProfileBtn button i {
+        margin-right: 4px; }
+      #settingsMainPage .settingsAccountContent .profileArea .editProfileBtn button:hover {
+        background: #429a43; }
+  #settingsMainPage .settingsAccountContent .profileArea ul {
+    width: 400px;
+    margin-top: 20px; }
+    #settingsMainPage .settingsAccountContent .profileArea ul li {
+      display: block;
+      font-weight: 600;
+      color: #4a4b65;
+      margin-bottom: 15px; }
+      #settingsMainPage .settingsAccountContent .profileArea ul li i {
+        margin-right: 4px; }
+      #settingsMainPage .settingsAccountContent .profileArea ul li span {
+        display: block;
+        float: right;
+        text-align: left !important;
+        width: 148px;
+        font-weight: 500; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .span_pseudo, #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb span:before, #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb span:after {
+          content: "";
+          display: inline-block;
+          background: #fff;
+          width: 0;
+          height: 0.2rem;
+          position: absolute;
+          transform-origin: 0% 0%; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb {
+          position: relative;
+          height: 2rem;
+          display: flex;
+          align-items: center; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb input {
+          display: none; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb input:checked ~ span {
+          background: #55bb56;
+          border-color: #55bb56; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb input:checked ~ span:before {
+          width: 1rem;
+          height: 0.15rem;
+          transition: width 0.1s;
+          transition-delay: 0.3s; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb input:checked ~ span:after {
+          width: 0.4rem;
+          height: 0.15rem;
+          transition: width 0.1s;
+          transition-delay: 0.2s; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb input:disabled ~ span {
+          background: #ececec;
+          border-color: #dcdcdc; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb input:disabled ~ label {
+          color: #dcdcdc; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb input:disabled ~ label:hover {
+          cursor: default; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb label {
+          padding-left: 2rem;
+          position: relative;
+          z-index: 2;
+          cursor: pointer;
+          margin-bottom: 0;
+          color: #232323; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb span {
+          display: inline-block;
+          width: 1.2rem;
+          height: 1.2rem;
+          border: 2px solid #ccc;
+          position: absolute;
+          left: 0;
+          transition: all 0.2s;
+          z-index: 1;
+          box-sizing: content-box; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb span:before {
+          transform: rotate(-55deg);
+          top: 1rem;
+          left: 0.37rem; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span .chiller_cb span:after {
+          transform: rotate(35deg);
+          bottom: 0.35rem;
+          left: 0.2rem; }
+        #settingsMainPage .settingsAccountContent .profileArea ul li span label {
+          font-weight: 600;
+          color: #232323; }
+  #settingsMainPage .settingsAccountContent .chanePassword {
+    margin-top: 40px; }
+    #settingsMainPage .settingsAccountContent .chanePassword h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65; }
+      #settingsMainPage .settingsAccountContent .chanePassword h3 i {
+        margin-right: 3px; }
+    #settingsMainPage .settingsAccountContent .chanePassword button {
+      margin-top: 10px;
+      background: #55bb56;
+      border: none;
+      padding: 10px 40px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s; }
+      #settingsMainPage .settingsAccountContent .chanePassword button i {
+        margin-right: 4px; }
+      #settingsMainPage .settingsAccountContent .chanePassword button:hover {
+        background: #429a43; }
+  #settingsMainPage .settingsAccountContent .DemoDataClear {
+    margin-top: 40px; }
+    #settingsMainPage .settingsAccountContent .DemoDataClear h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65; }
+      #settingsMainPage .settingsAccountContent .DemoDataClear h3 i {
+        margin-right: 3px; }
+    #settingsMainPage .settingsAccountContent .DemoDataClear button {
+      margin-top: 10px;
+      background: #55bb56;
+      border: none;
+      padding: 10px 40px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s; }
+      #settingsMainPage .settingsAccountContent .DemoDataClear button i {
+        margin-right: 4px; }
+      #settingsMainPage .settingsAccountContent .DemoDataClear button:hover {
+        background: #429a43; }
+  #settingsMainPage .settingsAccountContent .salesSummary {
+    margin-top: 40px; }
+    #settingsMainPage .settingsAccountContent .salesSummary h3 {
+      font-weight: 500;
+      font-size: 14px; }
+      #settingsMainPage .settingsAccountContent .salesSummary h3 span {
+        margin-left: 30px;
+        color: #4a4b65; }
+    #settingsMainPage .settingsAccountContent .salesSummary button {
+      margin-top: 10px;
+      background: #55bb56;
+      border: none;
+      padding: 10px 40px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s; }
+      #settingsMainPage .settingsAccountContent .salesSummary button i {
+        margin-right: 4px; }
+      #settingsMainPage .settingsAccountContent .salesSummary button:hover {
+        background: #429a43; }
+  #settingsMainPage .settingsAccountContent .options {
+    margin-top: 40px; }
+    #settingsMainPage .settingsAccountContent .options h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65; }
+      #settingsMainPage .settingsAccountContent .options h3 i {
+        margin-right: 3px; }
+    #settingsMainPage .settingsAccountContent .options h4 {
+      display: block;
+      font-weight: 600;
+      color: #4a4b65;
+      margin-top: 15px;
+      width: 400px;
+      font-size: 15px; }
+      #settingsMainPage .settingsAccountContent .options h4 span {
+        display: block;
+        float: right;
+        text-align: left !important;
+        width: 148px;
+        font-weight: 500;
+        position: relative;
+        top: -2px; }
+        #settingsMainPage .settingsAccountContent .options h4 span .span_pseudo, #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb span:before, #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb span:after {
+          content: "";
+          display: inline-block;
+          background: #fff;
+          width: 0;
+          height: 0.2rem;
+          position: absolute;
+          transform-origin: 0% 0%; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb {
+          position: relative;
+          height: 2rem;
+          display: flex;
+          align-items: center; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb input {
+          display: none; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb input:checked ~ span {
+          background: #55bb56;
+          border-color: #55bb56; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb input:checked ~ span:before {
+          width: 1rem;
+          height: 0.15rem;
+          transition: width 0.1s;
+          transition-delay: 0.3s; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb input:checked ~ span:after {
+          width: 0.4rem;
+          height: 0.15rem;
+          transition: width 0.1s;
+          transition-delay: 0.2s; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb input:disabled ~ span {
+          background: #ececec;
+          border-color: #dcdcdc; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb input:disabled ~ label {
+          color: #dcdcdc; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb input:disabled ~ label:hover {
+          cursor: default; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb label {
+          padding-left: 2rem;
+          position: relative;
+          z-index: 2;
+          cursor: pointer;
+          margin-bottom: 0;
+          color: #232323; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb span {
+          display: inline-block;
+          width: 1.2rem;
+          height: 1.2rem;
+          border: 2px solid #ccc;
+          position: absolute;
+          left: 0;
+          transition: all 0.2s;
+          z-index: 1;
+          box-sizing: content-box; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb span:before {
+          transform: rotate(-55deg);
+          top: 1rem;
+          left: 0.37rem; }
+        #settingsMainPage .settingsAccountContent .options h4 span .chiller_cb span:after {
+          transform: rotate(35deg);
+          bottom: 0.35rem;
+          left: 0.2rem; }
+        #settingsMainPage .settingsAccountContent .options h4 span label {
+          font-weight: 600;
+          color: #232323; }
+
+#settingsMainPage .subscriptionsMainContent {
+  background: #fff;
+  padding: 20px 0px; }
+  #settingsMainPage .subscriptionsMainContent .subscriptionsMainContentPlanInfo {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.507); }
+    #settingsMainPage .subscriptionsMainContent .subscriptionsMainContentPlanInfo .subscriptionsMainContentPlanInfoLeft h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65; }
+      #settingsMainPage .subscriptionsMainContent .subscriptionsMainContentPlanInfo .subscriptionsMainContentPlanInfoLeft h3 i {
+        margin-right: 5px; }
+    #settingsMainPage .subscriptionsMainContent .subscriptionsMainContentPlanInfo .subscriptionsMainContentPlanInfobtn a {
+      display: inline-block;
+      background: #d25d5e;
+      color: #fff;
+      font-weight: 500;
+      font-size: 13px;
+      padding: 8px 30px;
+      border-radius: 3px; }
+  #settingsMainPage .subscriptionsMainContent .subscriptionsMainContentTopInfo {
+    padding: 20px 20px; }
+    #settingsMainPage .subscriptionsMainContent .subscriptionsMainContentTopInfo .subscriptionsMainContentTopInfoItem h4 {
+      font-weight: 500;
+      font-size: 14px;
+      color: #4a4b65; }
+    #settingsMainPage .subscriptionsMainContent .subscriptionsMainContentTopInfo .subscriptionsMainContentTopInfoItem h3 {
+      font-weight: 500;
+      font-size: 25px;
+      color: #4a4b65; }
+    #settingsMainPage .subscriptionsMainContent .subscriptionsMainContentTopInfo .subscriptionsMainContentTopInfoItem h2 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65; }
+  #settingsMainPage .subscriptionsMainContent .subscriptionProgress {
+    padding: 10px 20px; }
+    #settingsMainPage .subscriptionsMainContent .subscriptionProgress .subscriptionProgressItem {
+      position: relative;
+      margin-bottom: 20px; }
+      #settingsMainPage .subscriptionsMainContent .subscriptionProgress .subscriptionProgressItem h4 {
+        font-weight: 400;
+        font-size: 14px;
+        color: #4a4b65; }
+      #settingsMainPage .subscriptionsMainContent .subscriptionProgress .subscriptionProgressItem .subscriptionProgressBar {
+        width: 100%;
+        height: 13px;
+        background: #e4e6f2;
+        position: relative; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionProgress .subscriptionProgressItem .subscriptionProgressBar .subscriptionProgressbarFill {
+          position: absolute;
+          height: 100%;
+          width: 0%;
+          background: #50BE50;
+          top: 0;
+          left: 0;
+          border-right: 7px solid #fff; }
+      #settingsMainPage .subscriptionsMainContent .subscriptionProgress .subscriptionProgressItem p {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 14px;
+        font-weight: 500; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionProgress .subscriptionProgressItem p span {
+          font-weight: 600;
+          color: #4a4b65;
+          margin-right: 3px;
+          margin-left: 3px; }
+  #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent {
+    padding: 20px;
+    background: #fff; }
+    #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabbtn {
+      text-align: center; }
+      #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabbtn .nav {
+        display: inherit; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabbtn .nav li {
+          display: inline-block; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabbtn .nav li a {
+            background: #e4e6f2;
+            font-weight: 500;
+            font-size: 13px;
+            color: #4d4bae;
+            padding: 12px 40px;
+            border-radius: 4px;
+            margin: 0px 10px; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabbtn .nav li .active {
+            background: #50BE50;
+            color: #fff; }
+    #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent {
+      padding-top: 40px;
+      padding-bottom: 70px; }
+      #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription {
+        border-right: 1px solid #dddddd42;
+        padding: 20px 0px; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription h1 {
+          font-weight: 500;
+          font-size: 25px;
+          color: #4a4b65;
+          margin-bottom: 20px; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .c1 {
+          color: #ffc334; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .c2 {
+          color: #de3a3a; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .c3 {
+          color: #5456e3; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planFeaterItem h3 {
+          fot-weight: 500;
+          font-size: 20px;
+          margin: 0;
+          color: #4a4b65; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planFeaterItem p {
+          text-align: center; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planPrice {
+          margin-top: 20px; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planPrice h3 {
+            font-weight: 500;
+            font-size: 17px;
+            color: #4a4b65;
+            color: #1765a6; }
+            #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planPrice h3 span {
+              font-size: 13px;
+              color: #4a4b65; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planBtn {
+          margin-top: 20px; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planBtn a {
+            display: block;
+            width: 100%;
+            padding: 9px 0px;
+            width: 60%;
+            margin: 0 auto;
+            font-weight: 500;
+            font-size: 13px;
+            border-radius: 3px;
+            background: #50BE50;
+            color: #fff; }
+            #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planBtn a:hover {
+              background: #429a43; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planBtn a.current {
+            opacity: 0.5;
+            pointer-events: none; }
+      #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription {
+        border-right: 1px solid #dddddd42;
+        padding: 20px 0px;
+        min-height: 300px; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription h1 {
+          font-weight: 500;
+          font-size: 25px;
+          color: #4a4b65;
+          margin-bottom: 20px; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .c1 {
+          color: #ffc334; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .c2 {
+          color: #de3a3a; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .c3 {
+          color: #5456e3; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planFeaterItem h3 {
+          fot-weight: 500;
+          font-size: 20px;
+          margin: 0;
+          color: #4a4b65; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planFeaterItem p {
+          text-align: center; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planPrice {
+          margin-top: 20px; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planPrice h3 {
+            font-weight: 500;
+            font-size: 17px;
+            color: #4a4b65;
+            color: #1765a6;
+            margin: 0; }
+            #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planPrice h3 span {
+              font-size: 13px;
+              color: #4a4b65; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planPrice p {
+            text-align: center;
+            margin: 0;
+            margin-top: 3px;
+            color: red; }
+            #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planPrice p span {
+              color: #444446;
+              margin-right: 4px;
+              text-decoration: line-through; }
+        #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planBtn {
+          margin-top: 20px; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planBtn a {
+            display: block;
+            width: 100%;
+            padding: 9px 0px;
+            width: 60%;
+            margin: 0 auto;
+            font-weight: 500;
+            font-size: 13px;
+            border-radius: 3px;
+            background: #50BE50;
+            color: #fff; }
+            #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planBtn a:hover {
+              background: #429a43; }
+          #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planBtn a.current {
+            opacity: 0.5;
+            pointer-events: none; }
+
+#settingsMainPage .settingsUesrManage {
+  background: #fff;
+  padding: 20px 40px;
+  padding-bottom: 100px; }
+  #settingsMainPage .settingsUesrManage .settingsUesrManageTop .left h3 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #4a4b65; }
+    #settingsMainPage .settingsUesrManage .settingsUesrManageTop .left h3 i {
+      margin-right: 7px; }
+  #settingsMainPage .settingsUesrManage .settingsUesrManageTop .right button {
+    background: #55bb56;
+    border: none;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.4s; }
+    #settingsMainPage .settingsUesrManage .settingsUesrManageTop .right button i {
+      margin-right: 4px; }
+    #settingsMainPage .settingsUesrManage .settingsUesrManageTop .right button:hover {
+      background: #429a43; }
+  #settingsMainPage .settingsUesrManage .settingsUesrManagetable {
+    margin-top: 20px; }
+    #settingsMainPage .settingsUesrManage .settingsUesrManagetable .table thead p {
+      margin: 0; }
+      #settingsMainPage .settingsUesrManage .settingsUesrManagetable .table thead p i {
+        margin-right: 6px; }
+    #settingsMainPage .settingsUesrManage .settingsUesrManagetable .table tbody tr th p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 14px; }
+    #settingsMainPage .settingsUesrManage .settingsUesrManagetable .table tbody tr td p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 14px; }
+    #settingsMainPage .settingsUesrManage .settingsUesrManagetable .table tbody .tableRoleDropDown {
+      width: 200px; }
+      #settingsMainPage .settingsUesrManage .settingsUesrManagetable .table tbody .tableRoleDropDown select {
+        width: 100%;
+        background: #fff;
+        border: none;
+        border: 0.5px solid #a8a8a84f;
+        height: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 3px;
+        font-weight: 500;
+        transition: 0.3s;
+        font-size: 13px; }
+      #settingsMainPage .settingsUesrManage .settingsUesrManagetable .table tbody .tableRoleDropDown .dissbledDropDown {
+        opacity: 0.5;
+        pointer-events: none; }
+
+#settingsMainPage .settingsFinancial {
+  padding: 30px 30px 100px 30px;
+  background: #fff; }
+  #settingsMainPage .settingsFinancial .taxInfoUpdte > h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px; }
+  #settingsMainPage .settingsFinancial .taxInfoUpdte .left h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65; }
+  #settingsMainPage .settingsFinancial .taxInfoUpdte .left p {
+    margin: 0; }
+  #settingsMainPage .settingsFinancial .taxInfoUpdte .left button {
+    background: #50BE50;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+    transition: 0.4s; }
+    #settingsMainPage .settingsFinancial .taxInfoUpdte .left button:hover {
+      background: #429a43; }
+  #settingsMainPage .settingsFinancial .taxInfoUpdte .right > p {
+    margin: 0;
+    font-size: 14px;
+    color: #4a4b65; }
+  #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox {
+    margin-top: 10px; }
+    #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox p {
+      margin: 0;
+      font-size: 14px;
+      color: #4a4b65;
+      font-weight: 500; }
+    #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox select {
+      width: 30%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      height: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 13px;
+      margin-top: 6px; }
+    #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial {
+      margin-top: 10px; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .span_pseudo, #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb span:before, #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb span:after {
+        content: "";
+        display: inline-block;
+        background: #fff;
+        width: 0;
+        height: 0.2rem;
+        position: absolute;
+        transform-origin: 0% 0%; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb {
+        position: relative;
+        height: 2rem;
+        display: flex;
+        align-items: center; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb input {
+        display: none; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb input:checked ~ span {
+        background: #55bb56;
+        border-color: #55bb56; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb input:checked ~ span:before {
+        width: 1rem;
+        height: 0.15rem;
+        transition: width 0.1s;
+        transition-delay: 0.3s; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb input:checked ~ span:after {
+        width: 0.4rem;
+        height: 0.15rem;
+        transition: width 0.1s;
+        transition-delay: 0.2s; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb input:disabled ~ span {
+        background: #ececec;
+        border-color: #dcdcdc; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb input:disabled ~ label {
+        color: #dcdcdc; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb input:disabled ~ label:hover {
+        cursor: default; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb label {
+        padding-left: 2rem;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        margin-bottom: 0;
+        color: #232323; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb span {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid #ccc;
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+        z-index: 1;
+        box-sizing: content-box; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb span:before {
+        transform: rotate(-55deg);
+        top: 1rem;
+        left: 0.37rem; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial .chiller_cb span:after {
+        transform: rotate(35deg);
+        bottom: 0.35rem;
+        left: 0.2rem; }
+      #settingsMainPage .settingsFinancial .taxInfoUpdte .right .selectBox .checBoxFinacial label {
+        font-weight: 500;
+        color: #232323; }
+  #settingsMainPage .settingsFinancial .bankDetailsUpdate {
+    margin-top: 40px; }
+    #settingsMainPage .settingsFinancial .bankDetailsUpdate .item h3 {
+      fot-weight: 500;
+      font-size: 20px;
+      color: #4a4b65;
+      margin-bottom: 20px; }
+    #settingsMainPage .settingsFinancial .bankDetailsUpdate .item ul li {
+      margin-bottom: 10px; }
+      #settingsMainPage .settingsFinancial .bankDetailsUpdate .item ul li span {
+        display: block;
+        float: right; }
+    #settingsMainPage .settingsFinancial .bankDetailsUpdate .item button {
+      background: #55bb56;
+      border: none;
+      padding: 10px 70px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s;
+      margin: 0 auto;
+      display: table;
+      margin-top: 30px; }
+      #settingsMainPage .settingsFinancial .bankDetailsUpdate .item button:hover {
+        background: #429a43; }
+    #settingsMainPage .settingsFinancial .bankDetailsUpdate .item2 {
+      padding-left: 70px; }
+  #settingsMainPage .settingsFinancial .bseCurrecncy {
+    margin-top: 60px; }
+    #settingsMainPage .settingsFinancial .bseCurrecncy h3 {
+      fot-weight: 500;
+      font-size: 20px;
+      color: #4a4b65;
+      margin-bottom: 20px; }
+    #settingsMainPage .settingsFinancial .bseCurrecncy ul {
+      width: 400px; }
+      #settingsMainPage .settingsFinancial .bseCurrecncy ul li {
+        margin-bottom: 7px; }
+        #settingsMainPage .settingsFinancial .bseCurrecncy ul li span {
+          display: block;
+          float: right;
+          width: 100px;
+          font-weight: 500; }
+    #settingsMainPage .settingsFinancial .bseCurrecncy button {
+      background: #55bb56;
+      border: none;
+      padding: 10px 70px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s;
+      margin-top: 20px; }
+      #settingsMainPage .settingsFinancial .bseCurrecncy button:hover {
+        background: #429a43; }
+  #settingsMainPage .settingsFinancial .pymentProiders {
+    margin-top: 60px; }
+    #settingsMainPage .settingsFinancial .pymentProiders h3 {
+      fot-weight: 500;
+      font-size: 20px;
+      color: #4a4b65;
+      margin-bottom: 20px; }
+    #settingsMainPage .settingsFinancial .pymentProiders .table p {
+      margin: 0; }
+    #settingsMainPage .settingsFinancial .pymentProiders .table thead th.text-right p {
+      text-align: right; }
+    #settingsMainPage .settingsFinancial .pymentProiders .table tbody .providerName p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 14px;
+      color: #4a4b65;
+      color: #1765a6; }
+      #settingsMainPage .settingsFinancial .pymentProiders .table tbody .providerName p img {
+        height: 30px;
+        border: 1px solid #ddd;
+        padding: 3px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 4px; }
+    #settingsMainPage .settingsFinancial .pymentProiders .table tbody .actionsBtn button {
+      border: none;
+      transition: 0.4s;
+      margin-left: 10px;
+      padding: 6px 15px;
+      border-radius: 3px; }
+    #settingsMainPage .settingsFinancial .pymentProiders a {
+      background: #55bb56;
+      border: none;
+      padding: 10px 70px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s;
+      margin-top: 20px;
+      margin-top: 10px;
+      display: inline-block; }
+      #settingsMainPage .settingsFinancial .pymentProiders a:hover {
+        background: #429a43; }
+
+#settingsMainPage .settingsCompany {
+  padding: 30px 30px 100px 30px;
+  background: #fff; }
+  #settingsMainPage .settingsCompany .information h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 30px; }
+  #settingsMainPage .settingsCompany .information button {
+    background: #50BE50;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+    transition: 0.4s; }
+    #settingsMainPage .settingsCompany .information button:hover {
+      background: #429a43; }
+  #settingsMainPage .settingsCompany .information .left ul li {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500; }
+    #settingsMainPage .settingsCompany .information .left ul li span {
+      display: block;
+      float: right;
+      color: #4a4b65; }
+      #settingsMainPage .settingsCompany .information .left ul li span img {
+        height: 30px; }
+  #settingsMainPage .settingsCompany .information .right {
+    padding-left: 50px; }
+    #settingsMainPage .settingsCompany .information .right ul li {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 500; }
+      #settingsMainPage .settingsCompany .information .right ul li span {
+        display: block;
+        float: right;
+        color: #4a4b65;
+        width: 200px; }
+  #settingsMainPage .settingsCompany .emailInforation {
+    margin-top: 40px;
+    width: 40%; }
+    #settingsMainPage .settingsCompany .emailInforation h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65;
+      margin-bottom: 30px; }
+    #settingsMainPage .settingsCompany .emailInforation button {
+      background: #50BE50;
+      font-weight: 500;
+      font-size: 13px;
+      color: #fff;
+      padding: 10px 40px;
+      border-radius: 4px;
+      border: none;
+      margin-top: 10px;
+      transition: 0.4s; }
+      #settingsMainPage .settingsCompany .emailInforation button:hover {
+        background: #429a43; }
+    #settingsMainPage .settingsCompany .emailInforation ul li {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 500; }
+      #settingsMainPage .settingsCompany .emailInforation ul li span {
+        display: block;
+        float: right;
+        color: #4a4b65;
+        width: 200px; }
+    #settingsMainPage .settingsCompany .emailInforation p {
+      margin-top: 10px;
+      font-weight: 500; }
+      #settingsMainPage .settingsCompany .emailInforation p span {
+        font-weight: 600;
+        color: #4a4b65; }
+  #settingsMainPage .settingsCompany .recorderPoint {
+    margin-top: 40px; }
+    #settingsMainPage .settingsCompany .recorderPoint h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65;
+      margin-bottom: 30px; }
+    #settingsMainPage .settingsCompany .recorderPoint .pointItem h3 {
+      font-weight: 500;
+      font-size: 16px;
+      margin: 0; }
+    #settingsMainPage .settingsCompany .recorderPoint .pointItem h4 {
+      font-weight: 600;
+      color: #4a4b65;
+      margin-top: 5px; }
+    #settingsMainPage .settingsCompany .recorderPoint .pointItem p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 13px; }
+      #settingsMainPage .settingsCompany .recorderPoint .pointItem p span {
+        font-weight: 600;
+        color: #4a4b65; }
+    #settingsMainPage .settingsCompany .recorderPoint .emailNotifications {
+      margin-top: 20px; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications h3 {
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 5px; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 13px; }
+        #settingsMainPage .settingsCompany .recorderPoint .emailNotifications p span {
+          font-weight: 600;
+          color: #4a4b65; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications button {
+        background: #50BE50;
+        font-weight: 500;
+        font-size: 13px;
+        color: #fff;
+        padding: 10px 40px;
+        border-radius: 4px;
+        border: none;
+        margin-top: 10px;
+        transition: 0.4s; }
+        #settingsMainPage .settingsCompany .recorderPoint .emailNotifications button:hover {
+          background: #429a43; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .span_pseudo, #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb span:before, #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb span:after {
+        content: "";
+        display: inline-block;
+        background: #fff;
+        width: 0;
+        height: 0.2rem;
+        position: absolute;
+        transform-origin: 0% 0%; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb {
+        position: relative;
+        height: 2rem;
+        display: flex;
+        align-items: center; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb input {
+        display: none; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb input:checked ~ span {
+        background: #55bb56;
+        border-color: #55bb56; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb input:checked ~ span:before {
+        width: 1rem;
+        height: 0.15rem;
+        transition: width 0.1s;
+        transition-delay: 0.3s; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb input:checked ~ span:after {
+        width: 0.4rem;
+        height: 0.15rem;
+        transition: width 0.1s;
+        transition-delay: 0.2s; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb input:disabled ~ span {
+        background: #ececec;
+        border-color: #dcdcdc; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb input:disabled ~ label {
+        color: #dcdcdc; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb input:disabled ~ label:hover {
+        cursor: default; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb label {
+        padding-left: 2rem;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        margin-bottom: 0;
+        color: #232323; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb span {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid #ccc;
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+        z-index: 1;
+        box-sizing: content-box; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb span:before {
+        transform: rotate(-55deg);
+        top: 1rem;
+        left: 0.37rem; }
+      #settingsMainPage .settingsCompany .recorderPoint .emailNotifications .chiller_cb span:after {
+        transform: rotate(35deg);
+        bottom: 0.35rem;
+        left: 0.2rem; }
+  #settingsMainPage .settingsCompany .stockreport {
+    margin-top: 40px; }
+    #settingsMainPage .settingsCompany .stockreport h3 {
+      font-weight: 500;
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 5px;
+      color: #4a4b65; }
+    #settingsMainPage .settingsCompany .stockreport .stockreportItem {
+      margin-top: 20px; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem h4 {
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 10px; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 5px; }
+        #settingsMainPage .settingsCompany .stockreport .stockreportItem p span {
+          font-weight: 600;
+          color: #4a4b65; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .span_pseudo, #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb span:before, #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb span:after {
+        content: "";
+        display: inline-block;
+        background: #fff;
+        width: 0;
+        height: 0.2rem;
+        position: absolute;
+        transform-origin: 0% 0%; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb {
+        position: relative;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb input {
+        display: none; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb input:checked ~ span {
+        background: #55bb56;
+        border-color: #55bb56; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb input:checked ~ span:before {
+        width: 1rem;
+        height: 0.15rem;
+        transition: width 0.1s;
+        transition-delay: 0.3s; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb input:checked ~ span:after {
+        width: 0.4rem;
+        height: 0.15rem;
+        transition: width 0.1s;
+        transition-delay: 0.2s; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb input:disabled ~ span {
+        background: #ececec;
+        border-color: #dcdcdc; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb input:disabled ~ label {
+        color: #dcdcdc; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb input:disabled ~ label:hover {
+        cursor: default; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb label {
+        padding-left: 2rem;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        margin-bottom: 0;
+        color: #232323; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb span {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid #ccc;
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+        z-index: 1;
+        box-sizing: content-box; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb span:before {
+        transform: rotate(-55deg);
+        top: 1rem;
+        left: 0.37rem; }
+      #settingsMainPage .settingsCompany .stockreport .stockreportItem .chiller_cb span:after {
+        transform: rotate(35deg);
+        bottom: 0.35rem;
+        left: 0.2rem; }
+
+#editProfileModal .editProfileContainer .modal-content {
+  padding: 40px 30px;
+  border-radius: 4px; }
+  #editProfileModal .editProfileContainer .modal-content .profileEditForm h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px; }
+  #editProfileModal .editProfileContainer .modal-content .profileEditForm form .inputbox {
+    margin-bottom: 10px; }
+    #editProfileModal .editProfileContainer .modal-content .profileEditForm form .inputbox label {
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      margin-bottom: 4px; }
+    #editProfileModal .editProfileContainer .modal-content .profileEditForm form .inputbox input {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 12px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s; }
+      #editProfileModal .editProfileContainer .modal-content .profileEditForm form .inputbox input:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+    #editProfileModal .editProfileContainer .modal-content .profileEditForm form .inputbox select {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      height: 45px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 13px; }
+  #editProfileModal .editProfileContainer .modal-content .profileEditForm form button {
+    margin: 0 auto;
+    display: table;
+    margin-top: 20px;
+    background: #55bb56;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.4s; }
+    #editProfileModal .editProfileContainer .modal-content .profileEditForm form button:hover {
+      background: #429a43; }
+  #editProfileModal .editProfileContainer .modal-content .profileEditForm .editProfileClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer; }
+
+#editPasswordeModal .editPasswordContainer .modal-content {
+  padding: 40px 30px;
+  border-radius: 4px; }
+  #editPasswordeModal .editPasswordContainer .modal-content .profileEditForm h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px; }
+  #editPasswordeModal .editPasswordContainer .modal-content .profileEditForm form .inputbox {
+    margin-bottom: 10px; }
+    #editPasswordeModal .editPasswordContainer .modal-content .profileEditForm form .inputbox label {
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      margin-bottom: 4px; }
+    #editPasswordeModal .editPasswordContainer .modal-content .profileEditForm form .inputbox input {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s; }
+      #editPasswordeModal .editPasswordContainer .modal-content .profileEditForm form .inputbox input:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+  #editPasswordeModal .editPasswordContainer .modal-content .profileEditForm form button {
+    margin: 0 auto;
+    display: table;
+    margin-top: 20px;
+    background: #55bb56;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.4s; }
+    #editPasswordeModal .editPasswordContainer .modal-content .profileEditForm form button:hover {
+      background: #429a43; }
+  #editPasswordeModal .editPasswordContainer .modal-content .profileEditForm .editPasswordClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer; }
+
+#editSummaryModal .editSummaryModalModalContainer .modal-content {
+  padding: 40px 70px;
+  border-radius: 4px; }
+  #editSummaryModal .editSummaryModalModalContainer .modal-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px;
+    text-align: center; }
+  #editSummaryModal .editSummaryModalModalContainer .modal-content p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto; }
+  #editSummaryModal .editSummaryModalModalContainer .modal-content form {
+    margin-top: 30px; }
+    #editSummaryModal .editSummaryModalModalContainer .modal-content form .inputBox {
+      margin-bottom: 10px; }
+      #editSummaryModal .editSummaryModalModalContainer .modal-content form .inputBox label {
+        display: block;
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 4px; }
+      #editSummaryModal .editSummaryModalModalContainer .modal-content form .inputBox select {
+        width: 100%;
+        background: #fff;
+        border: none;
+        border: 0.5px solid #a8a8a84f;
+        height: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 3px;
+        font-weight: 500;
+        transition: 0.3s;
+        font-size: 13px; }
+    #editSummaryModal .editSummaryModalModalContainer .modal-content form button {
+      margin: 0 auto;
+      display: table;
+      margin-top: 20px;
+      background: #55bb56;
+      border: none;
+      padding: 10px 50px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s; }
+      #editSummaryModal .editSummaryModalModalContainer .modal-content form button:hover {
+        background: #429a43; }
+  #editSummaryModal .editSummaryModalModalContainer .modal-content .editSummaryClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer; }
+
+#addUserModal .addUserModalModalModalContainer .modal-content {
+  padding: 40px 30px;
+  border-radius: 4px; }
+  #addUserModal .addUserModalModalModalContainer .modal-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px;
+    text-align: center; }
+  #addUserModal .addUserModalModalModalContainer .modal-content form .inputBox {
+    margin-bottom: 10px; }
+    #addUserModal .addUserModalModalModalContainer .modal-content form .inputBox label {
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      margin-bottom: 4px; }
+    #addUserModal .addUserModalModalModalContainer .modal-content form .inputBox input {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s; }
+      #addUserModal .addUserModalModalModalContainer .modal-content form .inputBox input:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+    #addUserModal .addUserModalModalModalContainer .modal-content form .inputBox select {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      height: 45px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 13px; }
+      #addUserModal .addUserModalModalModalContainer .modal-content form .inputBox select option {
+        padding: 7px 0px; }
+  #addUserModal .addUserModalModalModalContainer .modal-content form button {
+    margin: 0 auto;
+    display: table;
+    margin-top: 20px;
+    background: #55bb56;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.4s; }
+    #addUserModal .addUserModalModalModalContainer .modal-content form button:hover {
+      background: #429a43; }
+  #addUserModal .addUserModalModalModalContainer .modal-content .addUsersClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer; }
+
+#taxEditModal .taxEditModalModalModalModalContainer .modal-content {
+  padding: 40px 30px;
+  border-radius: 4px; }
+  #taxEditModal .taxEditModalModalModalModalContainer .modal-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px;
+    text-align: center; }
+  #taxEditModal .taxEditModalModalModalModalContainer .modal-content form .inputBox {
+    margin-bottom: 10px; }
+    #taxEditModal .taxEditModalModalModalModalContainer .modal-content form .inputBox label {
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      margin-bottom: 4px; }
+    #taxEditModal .taxEditModalModalModalModalContainer .modal-content form .inputBox input {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s; }
+      #taxEditModal .taxEditModalModalModalModalContainer .modal-content form .inputBox input:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+  #taxEditModal .taxEditModalModalModalModalContainer .modal-content form button {
+    margin: 0 auto;
+    display: table;
+    margin-top: 20px;
+    background: #55bb56;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.4s; }
+    #taxEditModal .taxEditModalModalModalModalContainer .modal-content form button:hover {
+      background: #429a43; }
+  #taxEditModal .taxEditModalModalModalModalContainer .modal-content .taxEditClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer; }
+
+#bankLocalModal .bankLocalModalContainer .modal-content {
+  padding: 40px 30px;
+  border-radius: 4px; }
+  #bankLocalModal .bankLocalModalContainer .modal-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px;
+    text-align: center; }
+  #bankLocalModal .bankLocalModalContainer .modal-content form .inputBox {
+    margin-bottom: 10px; }
+    #bankLocalModal .bankLocalModalContainer .modal-content form .inputBox label {
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      margin-bottom: 4px; }
+    #bankLocalModal .bankLocalModalContainer .modal-content form .inputBox input {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s; }
+      #bankLocalModal .bankLocalModalContainer .modal-content form .inputBox input:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+    #bankLocalModal .bankLocalModalContainer .modal-content form .inputBox textarea {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s;
+      resize: none;
+      height: 90px; }
+      #bankLocalModal .bankLocalModalContainer .modal-content form .inputBox textarea:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+  #bankLocalModal .bankLocalModalContainer .modal-content form button {
+    margin: 0 auto;
+    display: table;
+    margin-top: 20px;
+    background: #55bb56;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.4s; }
+    #bankLocalModal .bankLocalModalContainer .modal-content form button:hover {
+      background: #429a43; }
+  #bankLocalModal .bankLocalModalContainer .modal-content .bankLocalClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer; }
+
+#bankInternationalModal .bankInternationaModalContainer .modal-content {
+  padding: 40px 30px;
+  border-radius: 4px; }
+  #bankInternationalModal .bankInternationaModalContainer .modal-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px;
+    text-align: center; }
+  #bankInternationalModal .bankInternationaModalContainer .modal-content form .inputBox {
+    margin-bottom: 10px; }
+    #bankInternationalModal .bankInternationaModalContainer .modal-content form .inputBox label {
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      margin-bottom: 4px; }
+    #bankInternationalModal .bankInternationaModalContainer .modal-content form .inputBox input {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s; }
+      #bankInternationalModal .bankInternationaModalContainer .modal-content form .inputBox input:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+    #bankInternationalModal .bankInternationaModalContainer .modal-content form .inputBox textarea {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s;
+      resize: none;
+      height: 90px; }
+      #bankInternationalModal .bankInternationaModalContainer .modal-content form .inputBox textarea:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+  #bankInternationalModal .bankInternationaModalContainer .modal-content form button {
+    margin: 0 auto;
+    display: table;
+    margin-top: 20px;
+    background: #55bb56;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.4s; }
+    #bankInternationalModal .bankInternationaModalContainer .modal-content form button:hover {
+      background: #429a43; }
+  #bankInternationalModal .bankInternationaModalContainer .modal-content .bankInternationaClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer; }
+
+#currencylModal .currencyModalContainer .modal-content {
+  padding: 40px 30px;
+  border-radius: 4px; }
+  #currencylModal .currencyModalContainer .modal-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #4a4b65;
+    margin-bottom: 20px;
+    text-align: center; }
+  #currencylModal .currencyModalContainer .modal-content form .inputBox {
+    margin-bottom: 10px; }
+    #currencylModal .currencyModalContainer .modal-content form .inputBox label {
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      margin-bottom: 4px; }
+    #currencylModal .currencyModalContainer .modal-content form .inputBox input {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      padding: 10px 14px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s; }
+      #currencylModal .currencyModalContainer .modal-content form .inputBox input:focus {
+        border-color: #55bb56;
+        background: #e8f0fe54; }
+    #currencylModal .currencyModalContainer .modal-content form .inputBox select {
+      width: 100%;
+      background: #fff;
+      border: none;
+      border: 0.5px solid #a8a8a84f;
+      height: 45px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 3px;
+      font-weight: 500;
+      transition: 0.3s;
+      font-size: 13px; }
+      #currencylModal .currencyModalContainer .modal-content form .inputBox select option {
+        padding: 7px 0px; }
+  #currencylModal .currencyModalContainer .modal-content form .currencyInfo {
+    margin-top: 20px; }
+    #currencylModal .currencyModalContainer .modal-content form .currencyInfo ul li {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px; }
+      #currencylModal .currencyModalContainer .modal-content form .currencyInfo ul li span {
+        display: block;
+        float: right;
+        width: 220px;
+        color: #4a4b65; }
+  #currencylModal .currencyModalContainer .modal-content form button {
+    margin: 0 auto;
+    display: table;
+    margin-top: 30px;
+    background: #55bb56;
+    border: none;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 3px;
+    transition: 0.4s; }
+    #currencylModal .currencyModalContainer .modal-content form button:hover {
+      background: #429a43; }
+  #currencylModal .currencyModalContainer .modal-content .currecncyModlClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer; }
+
+#companyInformationModal .companyInformationModalContainer {
+  max-width: 640px !important; }
+  #companyInformationModal .companyInformationModalContainer .modal-content {
+    padding: 10px 30px 30px 30px;
+    border-radius: 4px; }
+    #companyInformationModal .companyInformationModalContainer .modal-content h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65;
+      margin-bottom: 20px;
+      text-align: left; }
+    #companyInformationModal .companyInformationModalContainer .modal-content form {
+      margin-top: 30px; }
+      #companyInformationModal .companyInformationModalContainer .modal-content form .logoBox .left h4 {
+        font-weight: 500;
+        font-size: 16px;
+        color: #4a4b65;
+        margin: 0; }
+      #companyInformationModal .companyInformationModalContainer .modal-content form .logoBox .left p {
+        font-size: 13px; }
+      #companyInformationModal .companyInformationModalContainer .modal-content form .logoBox .right input {
+        display: none; }
+      #companyInformationModal .companyInformationModalContainer .modal-content form .logoBox .right label {
+        position: relative; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .logoBox .right label #prevImageLogo {
+          height: 110px;
+          border-radius: 4px;
+          width: 110px; }
+      #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox {
+        margin-bottom: 10px; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox label {
+          display: block;
+          font-weight: 500;
+          font-size: 13px;
+          margin-bottom: 4px; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox input {
+          width: 100%;
+          background: #fff;
+          border: none;
+          border: 0.5px solid #a8a8a84f;
+          padding: 10px 14px;
+          border-radius: 3px;
+          font-weight: 500;
+          transition: 0.3s; }
+          #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox input:focus {
+            border-color: #55bb56;
+            background: #e8f0fe54; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox select {
+          width: 100%;
+          background: #fff;
+          border: none;
+          border: 0.5px solid #a8a8a84f;
+          height: 45px;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-radius: 3px;
+          font-weight: 500;
+          transition: 0.3s;
+          font-size: 13px; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .span_pseudo, #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb span:before, #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb span:after {
+          content: "";
+          display: inline-block;
+          background: #fff;
+          width: 0;
+          height: 0.2rem;
+          position: absolute;
+          transform-origin: 0% 0%; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb {
+          position: relative;
+          height: 2rem;
+          display: flex;
+          align-items: center;
+          margin-top: 20px; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb input {
+          display: none; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb input:checked ~ span {
+          background: #55bb56;
+          border-color: #55bb56; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb input:checked ~ span:before {
+          width: 1rem;
+          height: 0.15rem;
+          transition: width 0.1s;
+          transition-delay: 0.3s; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb input:checked ~ span:after {
+          width: 0.4rem;
+          height: 0.15rem;
+          transition: width 0.1s;
+          transition-delay: 0.2s; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb input:disabled ~ span {
+          background: #ececec;
+          border-color: #dcdcdc; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb input:disabled ~ label {
+          color: #dcdcdc; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb input:disabled ~ label:hover {
+          cursor: default; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb label {
+          padding-left: 2rem;
+          position: relative;
+          z-index: 2;
+          cursor: pointer;
+          margin-bottom: 0;
+          color: #232323; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb span {
+          display: inline-block;
+          width: 1.2rem;
+          height: 1.2rem;
+          border: 2px solid #ccc;
+          position: absolute;
+          left: 0;
+          transition: all 0.2s;
+          z-index: 1;
+          box-sizing: content-box; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb span:before {
+          transform: rotate(-55deg);
+          top: 1rem;
+          left: 0.37rem; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form .inputBox .chiller_cb span:after {
+          transform: rotate(35deg);
+          bottom: 0.35rem;
+          left: 0.2rem; }
+      #companyInformationModal .companyInformationModalContainer .modal-content form button {
+        margin: 0 auto;
+        display: table;
+        margin-top: 20px;
+        background: #55bb56;
+        border: none;
+        padding: 10px 50px;
+        color: #fff;
+        border-radius: 3px;
+        transition: 0.4s; }
+        #companyInformationModal .companyInformationModalContainer .modal-content form button:hover {
+          background: #429a43; }
+    #companyInformationModal .companyInformationModalContainer .modal-content .companyInformationClose {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background: transparent;
+      font-size: 20px;
+      cursor: pointer; }
+
+#EmailEditModal .EmailEditModalContainer {
+  max-width: 450px; }
+  #EmailEditModal .EmailEditModalContainer .modal-content {
+    padding: 40px 30px;
+    border-radius: 4px; }
+    #EmailEditModal .EmailEditModalContainer .modal-content h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65;
+      margin-bottom: 20px;
+      text-align: center; }
+    #EmailEditModal .EmailEditModalContainer .modal-content form .inputBox {
+      margin-bottom: 10px; }
+      #EmailEditModal .EmailEditModalContainer .modal-content form .inputBox label {
+        display: block;
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 4px; }
+      #EmailEditModal .EmailEditModalContainer .modal-content form .inputBox input {
+        width: 100%;
+        background: #fff;
+        border: none;
+        border: 0.5px solid #a8a8a84f;
+        padding: 10px 14px;
+        border-radius: 3px;
+        font-weight: 500;
+        transition: 0.3s; }
+        #EmailEditModal .EmailEditModalContainer .modal-content form .inputBox input:focus {
+          border-color: #55bb56;
+          background: #e8f0fe54; }
+    #EmailEditModal .EmailEditModalContainer .modal-content form button {
+      margin: 0 auto;
+      display: table;
+      margin-top: 30px;
+      background: #55bb56;
+      border: none;
+      padding: 10px 50px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s; }
+      #EmailEditModal .EmailEditModalContainer .modal-content form button:hover {
+        background: #429a43; }
+    #EmailEditModal .EmailEditModalContainer .modal-content .EmailEditModalClose {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background: transparent;
+      font-size: 20px;
+      cursor: pointer; }
+
+#recordPointModal .recordPointModalContainer {
+  max-width: 400px; }
+  #recordPointModal .recordPointModalContainer .modal-content {
+    padding: 40px 30px;
+    border-radius: 4px; }
+    #recordPointModal .recordPointModalContainer .modal-content h3 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4a4b65;
+      margin-bottom: 20px;
+      text-align: center; }
+    #recordPointModal .recordPointModalContainer .modal-content form .inputBox {
+      margin-bottom: 10px; }
+      #recordPointModal .recordPointModalContainer .modal-content form .inputBox label {
+        display: block;
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 4px; }
+      #recordPointModal .recordPointModalContainer .modal-content form .inputBox input {
+        width: 100%;
+        background: #fff;
+        border: none;
+        border: 0.5px solid #a8a8a84f;
+        padding: 10px 14px;
+        border-radius: 3px;
+        font-weight: 500;
+        transition: 0.3s; }
+        #recordPointModal .recordPointModalContainer .modal-content form .inputBox input:focus {
+          border-color: #55bb56;
+          background: #e8f0fe54; }
+    #recordPointModal .recordPointModalContainer .modal-content form button {
+      margin: 0 auto;
+      display: table;
+      margin-top: 30px;
+      background: #55bb56;
+      border: none;
+      padding: 10px 50px;
+      color: #fff;
+      border-radius: 3px;
+      transition: 0.4s; }
+      #recordPointModal .recordPointModalContainer .modal-content form button:hover {
+        background: #429a43; }
+    #recordPointModal .recordPointModalContainer .modal-content .recordPointModalClose {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background: transparent;
+      font-size: 20px;
+      cursor: pointer; }
+
+.fake {
+  height: 500px; }

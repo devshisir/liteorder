@@ -92,10 +92,12 @@
 										Settings <i class="fal fa-angle-down"></i>
 									</button>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item" href="#">Account</a>
-										<a class="dropdown-item" href="#">Company</a>
-										<a class="dropdown-item" href="#">Users</a>
+										<a class="dropdown-item" href="../../settings-main.html">Account</a>
+										<a class="dropdown-item" href="../settings/company.html">Company</a>
+										<a class="dropdown-item" href="../settings/users.html">Users</a>
+										<a class="dropdown-item" href="../settings/financial.html">Financial</a>
 										<a class="dropdown-item" href="#">Integrations</a>
+										<a class="dropdown-item" href="../settings/subscriptions.html">Subscriptions</a>
 										<a class="dropdown-item" href="#">Logout</a>
 									</div>
 								</div>
@@ -114,17 +116,93 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="dashboardSubtabHeader">
-						<ul>
-							<li><a href="../../dashboard.html">New orders</a></li>
-							<li><a href="../../pages/dashbord/sales.html">Sales</a></li>
-							<li class="active"><a href="../../pages/dashbord/total-orders.html">Total orders</a></li>
-							<li><a href="../../pages/dashbord/units-sold.html">Units sold</a></li>
-							<li><a href="../../pages/dashbord/low-stock.html">Low stock</a></li>
-						</ul>
+						<div class="row align-items-center">
+							<div class="col-lg-7">
+								<div class="left">
+									<ul>
+										<li>
+											<a href="../../dashboard.html">
+												New orders
+												<p>2</p>
+											</a>
+										</li>
+										<li>
+											<a href="../dashbord/sales.html">
+												Sales
+												<p>$0.00</p>
+											</a>
+										</li>
+										<li class="active">
+											<a href="../dashbord/total-orders.html">
+												Total orders
+												<p>0</p>
+											</a>
+										</li>
+										<li>
+											<a href="../dashbord/units-sold.html">
+												Units sold
+												<p>0</p>
+											</a>
+										</li>
+										<li>
+											<a href="../dashbord/low-stock.html">
+												Low stock
+												<p>0</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="right text-right">
+									<ul class="text-right">
+										<li>
+											<p>Period:</p>
+											<div class="dropdown">
+											  <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											    Last 7 days <i class="fal fa-angle-down"></i>
+											  </button>
+											  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											    <a class="dropdown-item" href="#">Today</a>
+											    <a class="dropdown-item" href="#">Last 30 days</a>
+											    <a class="dropdown-item active" href="#">Last 7 days</a>
+											    <a class="dropdown-item" href="#">This Week</a>
+											    <a class="dropdown-item" href="#">This Month</a>
+											    <a class="dropdown-item" href="#">Last Week</a>
+											    <a class="dropdown-item" href="#">Last Month</a>
+											    <a class="dropdown-item" href="#">All time</a>
+											  </div>
+											</div>
+										</li>
+										<li>
+											<p>Currency:</p>
+											<div class="dropdown">
+											  <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											    USD -$ <i class="fal fa-angle-down"></i>
+											  </button>
+											  <div class="dropdown-menu dropdown_menu2" aria-labelledby="dropdownMenuButton">
+											    <a class="dropdown-item" href="#">GBP - £</a>
+											    <a class="dropdown-item active" href="#">USD - $</a>
+											    <a class="dropdown-item" href="#">EUR - €</a>
+											    <a class="dropdown-item" href="#">AUD - AU$</a>
+											    <a class="dropdown-item" href="#">BRL - R$</a>
+											    <a class="dropdown-item" href="#">CAD - CA$</a>
+											    <a class="dropdown-item" href="#">CHF - CHF</a>
+											    <a class="dropdown-item" href="#">INR - টকা</a>
+											    <a class="dropdown-item" href="#">DKK - kr</a>
+											    <a class="dropdown-item" href="#">RUB - руб.</a>
+											    <a class="dropdown-item" href="#">JPY - ￥</a>
+											    <a class="dropdown-item" href="#">BGN - лв.</a>
+											  </div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="dashboardMainPageContent">
-						<h4>Total Orders Content</h4>
-						<img class="img-fluid" src="../../assets/img/placeholder/1.png" alt="">
+						<canvas id="myChart" width="500" height="200"></canvas>
 					</div>
 				</div>
 			</div>
@@ -151,5 +229,7 @@
 <script src="../../assets/js/common-scripts.js"></script>
 <script src="../../assets/js/wow.min.js"></script>
 <script src="../../assets/js/custom.js"></script>
+<script src="../../assets/js/Chart.min.js"></script>
+<script src="../../assets/js/chartConfig.js"></script>
 
 </html>
