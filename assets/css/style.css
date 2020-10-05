@@ -2404,7 +2404,7 @@ p { text-align: center }
 .candidate h1 { margin-bottom: 20px }
 .align-left { text-align: left }
 .privacy-terms h3,
-p { text-align: left }
+{ text-align: left }
 .terms-list {
     padding-left: 15px;
     padding-bottom: 25px;

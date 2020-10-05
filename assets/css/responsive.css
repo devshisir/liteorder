@@ -167,7 +167,103 @@
     }
 }
 
+/*-- some custom media quirey --*/
+@media (min-width: 1200px) and (max-width: 1431px) {
+.c1pl0{
+    padding-left: 0px !important;
+}
+.c1pr0{
+    padding-right: 0px !important;
+}
+#orderDetailsPage .leftPanel .orderLeftPanelItemContiner {
+    padding: 10px;
+}
+#orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li {
+    margin-left: 5px;
+}
+#orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li .dropdown #dropdownMenuButton {
+    padding: 5px 16px;
+    width: 82px;
+}
+#orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul li a {
+    padding: 6px 0px;
+    padding: 3px 18px;
+    margin-left: 7px;
+}
+#orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul .status p {
+    padding: 2px 27px;
+    font-size: 10px;
+}
+#orderDetailsPage .rightPanel .paymentStatusItem{
+    padding: 20px;
+}
+#orderDetailsPage .rightPanel .fullfitmentDates{
+    padding: 20px;
+}
+#orderDetailsPage .rightPanel .customersItme{
+    padding: 20px;
+}
+#orderDetailsPage .rightPanel .shippingAddress{
+    padding: 20px;
+}
+#orderDetailsPage .rightPanel .referanceNumber{
+    padding: 20px;
+}
+#orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li .dropdown #dropdownMenuButton > i {
+    right: 5px;
+}
+#customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .orderNumber {
+    font-size: 13px;
+}
+#customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .status p {
+    padding: 3px 7px;
+    font-size: 11px;
+}
+#customerDetailsPage .rightlPanleCustomers .customersItme{
+    padding: 20px;
+}
+#customerDetailsPage .rightlPanleCustomers .addressCustomers{
+    padding: 20px;
+}
+#inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem {
+    padding: 20px;
+}
+#inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem .topInfo .left h4 {
+    font-size: 12px;
+}
+#inventoryDetailsPage .inventoryMainPanelRight .toparea .left h3 {
+    font-size: 12px;
+}
+#inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li .dropdown #dropdownMenuButton {
+    width: 110px;
+    font-size: 12px;
+}
+#inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table thead tr th {
+    font-size: 11px;
+}
+#inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable .table thead tr th {
+    font-size: 11px;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 

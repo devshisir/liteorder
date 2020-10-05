@@ -1297,7 +1297,8 @@ a {
           font-size: 13px;
           color: #1765a6;
           font-weight: 500;
-          margin-bottom: 0px; }
+          margin-bottom: 0px;
+          text-align: left; }
         #ordersMainPage .ordersSubTabContent .ordersNewTabTable tbody .orderIdComlum h5 {
           font-size: 13px;
           margin: 0;
@@ -2560,7 +2561,7 @@ a {
         #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .c3 {
           color: #5456e3; }
         #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #monthly .pricingSubscription .planFeaterItem h3 {
-          fot-weight: 500;
+          font-weight: 500;
           font-size: 20px;
           margin: 0;
           color: #4a4b65; }
@@ -2610,7 +2611,7 @@ a {
         #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .c3 {
           color: #5456e3; }
         #settingsMainPage .subscriptionsMainContent .subscriptionsPlanContent .subscriptionsPlanContentContainer .subscriptionsPlanContentTabContent #myTabContent #yearlyPlan .pricingSubscription .planFeaterItem h3 {
-          fot-weight: 500;
+          font-weight: 500;
           font-size: 20px;
           margin: 0;
           color: #4a4b65; }
@@ -2826,7 +2827,7 @@ a {
   #settingsMainPage .settingsFinancial .bankDetailsUpdate {
     margin-top: 40px; }
     #settingsMainPage .settingsFinancial .bankDetailsUpdate .item h3 {
-      fot-weight: 500;
+      font-weight: 500;
       font-size: 20px;
       color: #4a4b65;
       margin-bottom: 20px; }
@@ -2852,7 +2853,7 @@ a {
   #settingsMainPage .settingsFinancial .bseCurrecncy {
     margin-top: 60px; }
     #settingsMainPage .settingsFinancial .bseCurrecncy h3 {
-      fot-weight: 500;
+      font-weight: 500;
       font-size: 20px;
       color: #4a4b65;
       margin-bottom: 20px; }
@@ -2878,7 +2879,7 @@ a {
   #settingsMainPage .settingsFinancial .pymentProiders {
     margin-top: 60px; }
     #settingsMainPage .settingsFinancial .pymentProiders h3 {
-      fot-weight: 500;
+      font-weight: 500;
       font-size: 20px;
       color: #4a4b65;
       margin-bottom: 20px; }
@@ -3905,5 +3906,1116 @@ a {
       font-size: 20px;
       cursor: pointer; }
 
-.fake {
-  height: 500px; }
+/*-- start order details page style --*/
+#orderDetailsPage {
+  padding: 20px 0px 0px 0px;
+  overflow-x: hidden;
+  /*-- left panel --*/
+  /*-- middle panel --*/
+  /*-- right panel --*/ }
+  #orderDetailsPage .leftPanel {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; }
+    #orderDetailsPage .leftPanel .topBack {
+      background: #fff;
+      padding: 20px 40px;
+      border-radius: 4px;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd; }
+      #orderDetailsPage .leftPanel .topBack a {
+        display: inline-block;
+        padding: 10px 30px;
+        background: #e4e6f2;
+        color: #4d4bae;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 3px; }
+        #orderDetailsPage .leftPanel .topBack a:hover {
+          background: #4286f4;
+          color: #fff; }
+        #orderDetailsPage .leftPanel .topBack a i {
+          margin-right: 4px; }
+    #orderDetailsPage .leftPanel .orderLeftPanelItemContiner {
+      background: #fff;
+      padding: 20px;
+      border-radius: 4px;
+      max-height: 100%;
+      min-height: 100vh;
+      border-top: 10px solid #F4F6F8; }
+      #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem {
+        border: 2px solid #59BA5B;
+        padding: 10px 20px 20px 20px;
+        border-radius: 4px;
+        cursor: pointer; }
+        #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .top {
+          padding-right: 10px; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .top .itemName h5 {
+            font-weight: 600;
+            font-size: 14px;
+            color: #232323; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .top .itemPrice p {
+            font-weight: 600;
+            font-size: 14px;
+            color: #232323;
+            text-align: right; }
+        #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo {
+          position: relative; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo .itemStatus {
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%); }
+            #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo .itemStatus p {
+              background: #ddd;
+              padding: 5px 30px;
+              border-radius: 30px; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo .itemStatus.new p {
+            background: #FAE5E5;
+            color: #ef564e; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo .itemStatus.progress p {
+            background: #17a2b8 !important;
+            color: #ef564e; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo .itemStatus.shiped p {
+            background: #55bb56 !important;
+            color: #ef564e; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo span {
+            display: block;
+            float: left;
+            margin-right: 15px; }
+            #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo span img {
+              height: 40px;
+              border: 2px solid #ddd;
+              border-radius: 3px; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo h5 {
+            font-weight: 600;
+            font-size: 12px;
+            margin: 0;
+            position: relative;
+            top: 3px; }
+          #orderDetailsPage .leftPanel .orderLeftPanelItemContiner .orderLeftPanelItem .bottom .itemInfo p {
+            text-align: left;
+            margin: 0;
+            position: relative;
+            top: 3px;
+            font-size: 13px; }
+  #orderDetailsPage .middlePanel {
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    height: 100%; }
+    #orderDetailsPage .middlePanel .middlePanelTopArea {
+      border-bottom: 1px solid #ddd; }
+      #orderDetailsPage .middlePanel .middlePanelTopArea .topTabBtn ul.nav {
+        display: inherit; }
+        #orderDetailsPage .middlePanel .middlePanelTopArea .topTabBtn ul.nav li {
+          display: inline-block; }
+          #orderDetailsPage .middlePanel .middlePanelTopArea .topTabBtn ul.nav li a {
+            padding: 0px;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 17px 25px;
+            position: relative; }
+            #orderDetailsPage .middlePanel .middlePanelTopArea .topTabBtn ul.nav li a:after {
+              height: 2px;
+              width: 0%;
+              content: "";
+              bottom: -1px;
+              left: 0;
+              background: #3c52ae;
+              position: absolute;
+              transition: 0.4s;
+              opacity: 0; }
+          #orderDetailsPage .middlePanel .middlePanelTopArea .topTabBtn ul.nav li .active {
+            color: #3c52ae; }
+            #orderDetailsPage .middlePanel .middlePanelTopArea .topTabBtn ul.nav li .active:after {
+              width: 100%;
+              opacity: 1; }
+      #orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo {
+        padding-right: 30px;
+        position: relative;
+        top: 8px; }
+        #orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul li {
+          display: inline-block; }
+          #orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul li a {
+            background: #55bb56;
+            color: #fff;
+            border: none;
+            text-transform: capitalize;
+            padding: 6px 0px;
+            border-radius: 3px;
+            transition: 0.4s;
+            display: inline-block;
+            padding: 5px 30px;
+            margin-left: 20px; }
+            #orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul li a:hover {
+              background: #429a43; }
+        #orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul .status p {
+          background: #ddd;
+          padding: 4px 30px;
+          border-radius: 30px;
+          font-weight: 600;
+          font-size: 12px; }
+        #orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul .status.new p {
+          background: #FAE5E5;
+          color: #ef564e; }
+        #orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul .status.progress p {
+          background: #17a2b8;
+          color: #fff; }
+        #orderDetailsPage .middlePanel .middlePanelTopArea .rightLinkInfo ul .status.shiped p {
+          background: #55bb56;
+          color: #fff; }
+    #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane {
+      padding: 20px;
+      /*-- start customer tab area content --*/ }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .itemName h4 img {
+        height: 40px;
+        display: block;
+        float: left;
+        border-radius: 3px;
+        margin-right: 15px; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .itemName h5 {
+        font-weight: 600;
+        font-size: 14px;
+        color: #1765a6;
+        margin: 0;
+        position: relative;
+        top: 3px; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .itemName p {
+        text-align: left;
+        margin: 0;
+        font-weight: 600;
+        font-size: 11px;
+        position: relative;
+        top: 2px; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li {
+        display: inline-block;
+        margin-left: 20px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li .dropdown #dropdownMenuButton {
+          background: #e4e6f2;
+          border: 1px solid #ddd;
+          padding: 6px 16px;
+          width: 100px;
+          border-radius: 2px;
+          position: relative;
+          text-align: left; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li .dropdown #dropdownMenuButton > i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%); }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li .dropdown .dropdown-menu {
+          padding: 0px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li .dropdown .dropdown-menu a {
+            font-weight: 500;
+            font-size: 13px;
+            padding: 7px 10px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .oderTabInfoTop .rightLink ul li > span {
+          font-weight: 600;
+          font-size: 13px;
+          color: #232323; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea {
+        margin-top: 20px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .table .productTableTabInfo > span {
+          display: block;
+          float: left; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .table .productTableTabInfo > span img {
+            height: 60px;
+            border-radius: 4px;
+            margin-right: 20px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .table .productTableTabInfo p {
+          text-align: left;
+          font-size: 13px;
+          color: #1765a6;
+          line-height: 18px;
+          margin: 0;
+          font-weight: 500; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .table .productTableTabInfo ul {
+          padding-left: 80px;
+          margin-top: 10px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .table .productTableTabInfo ul li {
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 4px; }
+            #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .table .productTableTabInfo ul li span {
+              font-weight: 600;
+              color: #232323; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .table tbody tr td {
+          font-weight: 500;
+          color: #232323; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .ammountTotal {
+          margin-top: 30px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .ammountTotal ul li {
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 10px; }
+            #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .ammountTotal ul li span {
+              display: block;
+              float: right;
+              width: 130px;
+              font-weight: 600;
+              color: #232323; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .ammountTotalMain {
+          margin-top: 20px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .ammountTotalMain ul {
+            position: relative;
+            padding-top: 10px; }
+            #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .ammountTotalMain ul:after {
+              height: 1px;
+              width: 30%;
+              right: 0;
+              top: 0;
+              content: "";
+              background: #ddd;
+              position: absolute; }
+            #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .ammountTotalMain ul li {
+              font-weight: 500;
+              font-size: 14px;
+              margin-bottom: 10px; }
+              #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .ammountTotalMain ul li span {
+                display: block;
+                float: right;
+                width: 130px;
+                font-weight: 600;
+                color: #232323; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .orderTableNoteArea {
+          margin-top: 40px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .orderTableNoteArea form textarea {
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 3px;
+            height: 180px;
+            resize: none;
+            font-weight: 500; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .orderTableNoteArea form .noteSubmitBtn {
+            margin-top: 10px; }
+            #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .orderTabMainContentArea .orderTableNoteArea form .noteSubmitBtn button {
+              background: #82AFF9;
+              color: #fff;
+              border: none;
+              text-transform: capitalize;
+              border-radius: 3px;
+              transition: 0.4s;
+              display: inline-block;
+              padding: 10px 40px;
+              margin-left: 20px;
+              outline: none; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .left h4 p {
+        font-weight: 600;
+        font-size: 14px;
+        position: relative;
+        top: 10px;
+        text-align: left;
+        color: #232323; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .left h4 p span {
+          margin-left: 10px;
+          font-weight: 500; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .left h4 img {
+        height: 40px;
+        display: block;
+        float: left;
+        border-radius: 3px;
+        margin-right: 15px; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .right ul li {
+        display: inline-block;
+        margin-left: 15px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .right ul li > a {
+          padding: 7px 20px;
+          background: #e4e6f2;
+          border: 1px solid #ddd;
+          font-weight: 500;
+          color: #232323;
+          border-radius: 3px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .right ul li > a i {
+            margin-right: 5px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .right ul li .dropdown #dropdownMenuButton {
+          background: #e4e6f2;
+          border: 1px solid #ddd;
+          padding: 6px 16px;
+          width: 100px;
+          border-radius: 2px;
+          position: relative;
+          text-align: left; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .right ul li .dropdown #dropdownMenuButton i {
+            margin-right: 4px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .right ul li .dropdown #dropdownMenuButton > i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%); }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .right ul li .dropdown .dropdown-menu {
+          padding: 0px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .topInfo .right ul li .dropdown .dropdown-menu a {
+            font-weight: 500;
+            font-size: 13px;
+            padding: 7px 10px; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable {
+        margin-top: 20px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable > h4 {
+          font-weight: 600;
+          font-size: 15px;
+          color: #232323; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table thead {
+          border-bottom: 1px solid #ddd; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table tbody .storeIcon img {
+          height: 40px;
+          border: 2px solid #ddd;
+          border-radius: 4px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table tbody .orderNumber {
+          font-weight: 500;
+          color: #1765a6; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table tbody .date {
+          font-weight: 500; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table tbody .status p {
+          background: #ddd;
+          border-radius: 30px;
+          padding: 3px 0px;
+          font-weight: 500;
+          font-size: 13px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table tbody .status.new p {
+          background: #FAE5E5;
+          color: #ef564e; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table tbody .status.progress p {
+          background: #17a2b8;
+          color: #fff; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table tbody .status.shiped p {
+          background: #55bb56;
+          color: #fff; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .orderhistoryTable .table tbody .total {
+          font-weight: 500; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customersTabsPagination {
+        margin-top: 30px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customersTabsPagination ul li {
+          display: inline-block;
+          margin: 0px 5px;
+          font-weight: 500;
+          font-size: 14px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customersTabsPagination ul li a {
+            height: 35px;
+            width: 35px;
+            background: #e4e6f2;
+            color: #4d4bae;
+            display: block;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 500;
+            border-radius: 4px; }
+            #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customersTabsPagination ul li a:hover {
+              background: #4286f4;
+              color: #fff; }
+      #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customerEnterNote {
+        margin-top: 30px; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customerEnterNote textarea {
+          width: 100%;
+          border: 1px solid #ddd;
+          padding: 20px;
+          border-radius: 3px;
+          height: 180px;
+          resize: none;
+          font-weight: 500; }
+        #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customerEnterNote .csutomerNoteActionBtn {
+          margin-top: 10px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customerEnterNote .csutomerNoteActionBtn .left a {
+            display: inline-block;
+            background: #D66065;
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 8px 40px;
+            border-radius: 3px; }
+          #orderDetailsPage .middlePanel .middlePanelMainTabArea #myTabContent .tab-pane .customerTabAreaContent .customerEnterNote .csutomerNoteActionBtn .right button {
+            background: #82AFF9;
+            color: #fff;
+            border: none;
+            text-transform: capitalize;
+            border-radius: 3px;
+            transition: 0.4s;
+            display: inline-block;
+            padding: 8px 40px;
+            margin-left: 20px;
+            outline: none; }
+  #orderDetailsPage .rightPanel {
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd; }
+    #orderDetailsPage .rightPanel .paymentStatusItem {
+      padding: 25px 40px;
+      border-bottom: 1px solid #e5e5e5; }
+      #orderDetailsPage .rightPanel .paymentStatusItem h3 {
+        font-weight: 600;
+        font-size: 15px;
+        color: #232323; }
+      #orderDetailsPage .rightPanel .paymentStatusItem h4 {
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        padding-left: 10px; }
+        #orderDetailsPage .rightPanel .paymentStatusItem h4 i {
+          margin-right: 7px;
+          color: #59BA5B;
+          font-size: 20px;
+          position: relative;
+          top: 4px; }
+    #orderDetailsPage .rightPanel .fullfitmentDates {
+      padding: 25px 40px;
+      border-bottom: 1px solid #e5e5e5; }
+      #orderDetailsPage .rightPanel .fullfitmentDates h3 {
+        font-weight: 600;
+        font-size: 15px;
+        color: #232323;
+        margin-bottom: 10px; }
+      #orderDetailsPage .rightPanel .fullfitmentDates p {
+        text-align: left;
+        margin: 0;
+        font-weight: 500; }
+    #orderDetailsPage .rightPanel .customersItme {
+      padding: 25px 40px;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative; }
+      #orderDetailsPage .rightPanel .customersItme .settingsLink {
+        position: absolute;
+        top: 15px;
+        right: 20px; }
+        #orderDetailsPage .rightPanel .customersItme .settingsLink a i {
+          font-size: 18px; }
+        #orderDetailsPage .rightPanel .customersItme .settingsLink a:hover {
+          color: #ef564e; }
+      #orderDetailsPage .rightPanel .customersItme h3 {
+        font-weight: 600;
+        font-size: 15px;
+        color: #232323;
+        margin-bottom: 10px; }
+      #orderDetailsPage .rightPanel .customersItme p {
+        text-align: left;
+        margin: 0;
+        font-weight: 500; }
+      #orderDetailsPage .rightPanel .customersItme .dropdown {
+        margin-top: 10px; }
+        #orderDetailsPage .rightPanel .customersItme .dropdown #dropdownMenuButton {
+          background: #e4e6f2;
+          border: 1px solid #ddd;
+          padding: 6px 16px;
+          width: 130px;
+          border-radius: 2px;
+          position: relative;
+          text-align: left; }
+          #orderDetailsPage .rightPanel .customersItme .dropdown #dropdownMenuButton span.name {
+            font-weight: 500;
+            font-size: 13px; }
+            #orderDetailsPage .rightPanel .customersItme .dropdown #dropdownMenuButton span.name i {
+              margin-right: 5px; }
+          #orderDetailsPage .rightPanel .customersItme .dropdown #dropdownMenuButton > i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%); }
+        #orderDetailsPage .rightPanel .customersItme .dropdown .dropdown-menu {
+          padding: 0px; }
+          #orderDetailsPage .rightPanel .customersItme .dropdown .dropdown-menu a {
+            padding: 0px;
+            font-weight: 500;
+            font-size: 13px;
+            padding: 7px 10px; }
+            #orderDetailsPage .rightPanel .customersItme .dropdown .dropdown-menu a:hover {
+              background: #e4e6f2;
+              color: #4d4bae; }
+            #orderDetailsPage .rightPanel .customersItme .dropdown .dropdown-menu a i {
+              margin-right: 4px; }
+    #orderDetailsPage .rightPanel .shippingAddress {
+      padding: 25px 40px;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative; }
+      #orderDetailsPage .rightPanel .shippingAddress .settingsLink {
+        position: absolute;
+        top: 15px;
+        right: 20px; }
+        #orderDetailsPage .rightPanel .shippingAddress .settingsLink a i {
+          font-size: 18px; }
+        #orderDetailsPage .rightPanel .shippingAddress .settingsLink a:hover {
+          color: #ef564e; }
+      #orderDetailsPage .rightPanel .shippingAddress h3 {
+        font-weight: 600;
+        font-size: 15px;
+        color: #232323;
+        margin-bottom: 10px; }
+      #orderDetailsPage .rightPanel .shippingAddress p {
+        text-align: left;
+        margin: 0;
+        font-weight: 500;
+        margin-bottom: 4px; }
+        #orderDetailsPage .rightPanel .shippingAddress p img {
+          height: 10px;
+          margin-right: 5px; }
+    #orderDetailsPage .rightPanel .referanceNumber {
+      padding: 25px 40px;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative; }
+      #orderDetailsPage .rightPanel .referanceNumber .settingsLink {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px; }
+        #orderDetailsPage .rightPanel .referanceNumber .settingsLink a i {
+          font-size: 18px; }
+        #orderDetailsPage .rightPanel .referanceNumber .settingsLink a:hover {
+          color: #ef564e; }
+      #orderDetailsPage .rightPanel .referanceNumber h3 {
+        font-weight: 600;
+        font-size: 15px;
+        color: #232323;
+        margin-bottom: 10px; }
+    #orderDetailsPage .rightPanel .assignTeamMember .dropdown {
+      margin-top: 14px; }
+      #orderDetailsPage .rightPanel .assignTeamMember .dropdown #dropdownMenuButton {
+        width: 80%;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+
+/*-- start customerDetailsPage --*/
+#customerDetailsPage {
+  overflow-x: hidden;
+  padding: 10px 0px; }
+  #customerDetailsPage .leftPanelCustomers {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; }
+    #customerDetailsPage .leftPanelCustomers .customerBackTop {
+      background: #fff;
+      padding: 20px 40px;
+      border-radius: 4px;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd; }
+      #customerDetailsPage .leftPanelCustomers .customerBackTop a {
+        display: inline-block;
+        padding: 10px 30px;
+        background: #e4e6f2;
+        color: #4d4bae;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 3px; }
+        #customerDetailsPage .leftPanelCustomers .customerBackTop a:hover {
+          background: #4286f4;
+          color: #fff; }
+    #customerDetailsPage .leftPanelCustomers .leftPanelCustomersMain {
+      background: #fff;
+      border-radius: 4px;
+      max-height: 100%;
+      min-height: 100vh;
+      border-top: 10px solid #F4F6F8; }
+      #customerDetailsPage .leftPanelCustomers .leftPanelCustomersMain .leftPanelCustomersMainItem {
+        border-bottom: 1px solid #ddd; }
+        #customerDetailsPage .leftPanelCustomers .leftPanelCustomersMain .leftPanelCustomersMainItem a {
+          font-weight: 500;
+          font-size: 13px;
+          color: #232323;
+          display: block;
+          padding: 20px 20px;
+          border: 2px solid transparent;
+          border-radius: 3px; }
+          #customerDetailsPage .leftPanelCustomers .leftPanelCustomersMain .leftPanelCustomersMainItem a img {
+            height: 40px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px; }
+          #customerDetailsPage .leftPanelCustomers .leftPanelCustomersMain .leftPanelCustomersMainItem a:hover {
+            border-color: #59BA5B;
+            text-decoration: underline;
+            color: #59BA5B; }
+  #customerDetailsPage .customersMiddlePanle {
+    background: #fff;
+    padding-bottom: 50px; }
+    #customerDetailsPage .customersMiddlePanle .topInfo {
+      padding: 20px;
+      border-bottom: 1px solid #ddd; }
+      #customerDetailsPage .customersMiddlePanle .topInfo .left h4 {
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0; }
+        #customerDetailsPage .customersMiddlePanle .topInfo .left h4 img {
+          height: 35px;
+          border: 2px solid #ddd;
+          border-radius: 4px;
+          margin-right: 6px; }
+      #customerDetailsPage .customersMiddlePanle .topInfo .right ul li {
+        display: inline-block;
+        margin-left: 10px; }
+        #customerDetailsPage .customersMiddlePanle .topInfo .right ul li > a {
+          padding: 7px 20px;
+          background: #e4e6f2;
+          border: 1px solid #ddd;
+          font-weight: 500;
+          color: #232323;
+          border-radius: 3px; }
+        #customerDetailsPage .customersMiddlePanle .topInfo .right ul li .dropdown #dropdownMenuButton {
+          background: #e4e6f2;
+          border: 1px solid #ddd;
+          padding: 6px 16px;
+          width: 100px;
+          border-radius: 2px;
+          position: relative;
+          text-align: left;
+          font-weight: 500; }
+          #customerDetailsPage .customersMiddlePanle .topInfo .right ul li .dropdown #dropdownMenuButton i {
+            margin-right: 4px; }
+          #customerDetailsPage .customersMiddlePanle .topInfo .right ul li .dropdown #dropdownMenuButton > i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%); }
+        #customerDetailsPage .customersMiddlePanle .topInfo .right ul li .dropdown .dropdown-menu {
+          padding: 0px; }
+          #customerDetailsPage .customersMiddlePanle .topInfo .right ul li .dropdown .dropdown-menu a {
+            font-weight: 500;
+            font-size: 13px;
+            padding: 7px 10px; }
+    #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable {
+      margin-top: 30px;
+      padding: 0px 20px; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable > h3 {
+        font-weight: 600;
+        font-size: 15px;
+        color: #232323; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable thead {
+        border-bottom: 1px solid #ddd; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .storeIcon img {
+        height: 40px;
+        border: 2px solid #ddd;
+        border-radius: 4px; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .orderNumber {
+        font-weight: 500;
+        color: #1765a6; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .date {
+        font-weight: 500; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .status p {
+        background: #ddd;
+        border-radius: 30px;
+        padding: 3px 0px;
+        font-weight: 500;
+        font-size: 13px; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .status.new p {
+        background: #FAE5E5;
+        color: #ef564e; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .status.progress p {
+        background: #17a2b8;
+        color: #fff; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .status.shiped p {
+        background: #55bb56;
+        color: #fff; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .status.dispatch p {
+        background: #55bb567a;
+        color: #232323; }
+      #customerDetailsPage .customersMiddlePanle .customerOrerHistoryTable tbody .total {
+        font-weight: 500; }
+    #customerDetailsPage .customersMiddlePanle .customersPaginations {
+      margin-top: 2px; }
+      #customerDetailsPage .customersMiddlePanle .customersPaginations ul li {
+        display: inline-block;
+        margin: 0px 5px;
+        font-weight: 500;
+        font-size: 14px; }
+        #customerDetailsPage .customersMiddlePanle .customersPaginations ul li a {
+          height: 35px;
+          width: 35px;
+          background: #e4e6f2;
+          color: #4d4bae;
+          display: block;
+          text-align: center;
+          line-height: 35px;
+          font-weight: 500;
+          border-radius: 4px; }
+    #customerDetailsPage .customersMiddlePanle .customerEnterNote {
+      margin-top: 30px;
+      padding: 0px 20px; }
+      #customerDetailsPage .customersMiddlePanle .customerEnterNote textarea {
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 3px;
+        height: 180px;
+        resize: none;
+        font-weight: 500; }
+      #customerDetailsPage .customersMiddlePanle .customerEnterNote .csutomerNoteActionBtn {
+        margin-top: 10px;
+        padding: 0px 20px; }
+        #customerDetailsPage .customersMiddlePanle .customerEnterNote .csutomerNoteActionBtn .left a {
+          display: inline-block;
+          background: #D66065;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+          padding: 8px 40px;
+          border-radius: 3px; }
+        #customerDetailsPage .customersMiddlePanle .customerEnterNote .csutomerNoteActionBtn .right button {
+          background: #82AFF9;
+          color: #fff;
+          border: none;
+          text-transform: capitalize;
+          border-radius: 3px;
+          transition: 0.4s;
+          display: inline-block;
+          padding: 8px 40px;
+          margin-left: 20px;
+          outline: none; }
+  #customerDetailsPage .rightlPanleCustomers {
+    min-height: 100vh;
+    width: 100%;
+    background: white;
+    border: 1px solid #dddddd;
+    height: 100%; }
+    #customerDetailsPage .rightlPanleCustomers .customersItme {
+      padding: 25px 40px;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative; }
+      #customerDetailsPage .rightlPanleCustomers .customersItme h3 {
+        font-weight: 600;
+        font-size: 15px;
+        color: #232323;
+        margin-bottom: 10px; }
+      #customerDetailsPage .rightlPanleCustomers .customersItme p {
+        text-align: left;
+        margin: 0;
+        font-weight: 500; }
+    #customerDetailsPage .rightlPanleCustomers .addressCustomers {
+      padding: 25px 40px;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative; }
+      #customerDetailsPage .rightlPanleCustomers .addressCustomers h3 {
+        font-weight: 600;
+        font-size: 15px;
+        color: #232323;
+        margin-bottom: 10px; }
+      #customerDetailsPage .rightlPanleCustomers .addressCustomers p {
+        text-align: left;
+        margin: 0;
+        font-weight: 500;
+        margin-bottom: 4px; }
+        #customerDetailsPage .rightlPanleCustomers .addressCustomers p img {
+          height: 10px;
+          margin-right: 5px; }
+
+/*-- start inventoryDetailsPage --*/
+#inventoryDetailsPage {
+  padding: 20px 0px 0px 0px;
+  overflow-x: hidden; }
+  #inventoryDetailsPage .inventoryDetailsLeftPanel {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; }
+    #inventoryDetailsPage .inventoryDetailsLeftPanel .topBack {
+      background: #fff;
+      padding: 20px 40px;
+      border-radius: 4px;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd; }
+      #inventoryDetailsPage .inventoryDetailsLeftPanel .topBack a {
+        display: inline-block;
+        padding: 10px 30px;
+        background: #e4e6f2;
+        color: #4d4bae;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 3px; }
+        #inventoryDetailsPage .inventoryDetailsLeftPanel .topBack a:hover {
+          background: #4286f4;
+          color: #fff; }
+    #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea {
+      background: #fff;
+      border-radius: 4px;
+      max-height: 100%;
+      min-height: 100vh;
+      border-top: 10px solid #F4F6F8;
+      padding-bottom: 30px; }
+      #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem {
+        padding: 20px 30px 25px 30px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        transition: 0.4s;
+        border-bottom: 1px solid #ddd; }
+        #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem .topInfo .left h4 {
+          margin: 0;
+          font-weight: 500;
+          font-size: 14px;
+          color: #232323; }
+        #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem .topInfo .right img {
+          height: 34px;
+          border: 2px solid #ddd;
+          border-radius: 4px; }
+        #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem .infoBox {
+          margin-top: 8px; }
+          #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem .infoBox span {
+            display: block;
+            float: left;
+            margin-bottom: 15px;
+            margin-right: 10px; }
+            #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem .infoBox span img {
+              height: 40px;
+              border: 2px solid #ddd;
+              border-radius: 4px; }
+          #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem .infoBox p {
+            text-align: left;
+            margin: 0;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 17px; }
+        #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .mainLeftPanelAreaItem:hover {
+          border-color: #59BA5B; }
+      #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .loadmoreBtnLeftPanel {
+        margin-top: 20px; }
+        #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .loadmoreBtnLeftPanel a {
+          background: #4286f4;
+          color: #fff;
+          display: inline-block;
+          width: 70%;
+          padding: 10px 0px;
+          border-radius: 4px; }
+          #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .loadmoreBtnLeftPanel a:hover {
+            background: #1765a6;
+            color: #fff; }
+          #inventoryDetailsPage .inventoryDetailsLeftPanel .mainLeftPanelArea .loadmoreBtnLeftPanel a i {
+            margin-right: 10px; }
+  #inventoryDetailsPage .inventoryMainPanelRight {
+    background: #fff;
+    border-radius: 4px;
+    height: auto;
+    padding-bottom: 30px; }
+    #inventoryDetailsPage .inventoryMainPanelRight .toparea {
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+      padding-right: 40px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .toparea .left h3 {
+        font-weight: 500;
+        font-size: 14px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .toparea .left h3 img {
+          height: 35px;
+          border-radius: 2px;
+          margin-right: 6px;
+          border: 2px solid #ddd; }
+      #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li {
+        display: inline-block;
+        margin-left: 15px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li > a {
+          background: #4286f4;
+          color: #fff;
+          display: inline-block;
+          padding: 7px 25px;
+          border-radius: 4px; }
+          #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li > a:hover {
+            background: #1765a6;
+            color: #fff; }
+          #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li > a i {
+            margin-right: 10px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li .dropdown #dropdownMenuButton {
+          background: #e4e6f2;
+          border: 1px solid #ddd;
+          padding: 6px 16px;
+          width: 130px;
+          border-radius: 2px;
+          position: relative;
+          text-align: left;
+          font-weight: 500; }
+          #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li .dropdown #dropdownMenuButton > i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%); }
+          #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li .dropdown #dropdownMenuButton span i {
+            margin-right: 4px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li .dropdown .dropdown-menu {
+          padding: 0px; }
+          #inventoryDetailsPage .inventoryMainPanelRight .toparea .right ul li .dropdown .dropdown-menu a {
+            font-weight: 500;
+            font-size: 13px;
+            padding: 7px 10px; }
+    #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 {
+      margin-top: 30px;
+      padding: 0px 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .imageLeft h5 {
+        font-weight: 500;
+        font-size: 15px;
+        color: #232323; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .imageLeft img {
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop h4 {
+        font-weight: 500;
+        font-size: 15px;
+        color: #232323; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table {
+        margin-top: 25px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table thead {
+          background-color: #E4E6F2 !important; }
+          #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table thead tr th {
+            font-size: 13px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table tbody tr td {
+          font-weight: 500;
+          font-size: 13px;
+          text-decoration: underline;
+          color: #232323; }
+          #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table tbody tr td a:hover {
+            color: #1765a6; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table2 tbody tr td .dropdown #dropdownMenuButton {
+        background: #fff;
+        border: 1px solid #ddd;
+        font-weight: 500;
+        font-size: 13px;
+        padding: 7px 14px;
+        width: 130px;
+        text-align: left;
+        border-radius: 3px;
+        position: relative; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table2 tbody tr td .dropdown #dropdownMenuButton i {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%); }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table2 tbody tr td .dropdown .dropdown-menu {
+        padding: 0px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventoryTable1 .table1DetailsTop .table2 tbody tr td .dropdown .dropdown-menu a {
+          font-weight: 500;
+          font-size: 13px;
+          padding: 7px 10px; }
+    #inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable {
+      margin-top: 50px;
+      padding: 0px 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable > h3 {
+        font-weight: 500;
+        font-size: 15px;
+        color: #232323; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable .table thead {
+        background-color: #E4E6F2 !important; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable .table thead tr th {
+          font-size: 13px; }
+          #inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable .table thead tr th span {
+            font-weight: 400;
+            font-size: 11px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable .table tbody tr td {
+        font-weight: 500; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable .table tbody tr td .productName p {
+          text-align: left;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 18px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventoryProductInfoTable .table tbody tr td .productName img {
+          height: 35px;
+          border-radius: 4px;
+          margin-right: 5px; }
+    #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable {
+      margin-top: 50px;
+      padding: 0px 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable > h3 {
+        font-weight: 500;
+        font-size: 15px;
+        color: #232323; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table thead {
+        background-color: #E4E6F2 !important; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table thead tr th {
+          font-size: 13px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td {
+        padding: 8px 10px;
+        font-weight: 500; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td .productName {
+          position: relative; }
+          #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td .productName a {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%); }
+          #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td .productName h4 {
+            font-weight: 500;
+            font-size: 14px;
+            color: #232323;
+            margin: 0; }
+            #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td .productName h4 img {
+              height: 40px;
+              border-radius: 4px;
+              border: 2px solid #ddd;
+              margin-right: 4px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .inventoryPagePagintions {
+        margin-top: 30px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .inventoryPagePagintions ul li {
+          display: inline-block;
+          margin: 0px 5px;
+          font-weight: 500;
+          font-size: 14px; }
+          #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .inventoryPagePagintions ul li a {
+            height: 35px;
+            width: 35px;
+            background: #e4e6f2;
+            color: #4d4bae;
+            display: block;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 500;
+            border-radius: 4px; }
+            #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .inventoryPagePagintions ul li a:hover {
+              background: #4286f4;
+              color: #fff; }
+    #inventoryDetailsPage .inventoryMainPanelRight .enterNoteInventory {
+      margin-top: 50px;
+      padding: 0px 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px; }
+      #inventoryDetailsPage .inventoryMainPanelRight .enterNoteInventory textarea {
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 3px;
+        height: 180px;
+        resize: none;
+        font-weight: 500; }
+      #inventoryDetailsPage .inventoryMainPanelRight .enterNoteInventory .csutomerNoteActionBtn {
+        margin-top: 10px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .enterNoteInventory .csutomerNoteActionBtn .left a {
+          display: inline-block;
+          background: #D66065;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+          padding: 8px 40px;
+          border-radius: 3px; }
+        #inventoryDetailsPage .inventoryMainPanelRight .enterNoteInventory .csutomerNoteActionBtn .right button {
+          background: #82AFF9;
+          color: #fff;
+          border: none;
+          text-transform: capitalize;
+          border-radius: 3px;
+          transition: 0.4s;
+          display: inline-block;
+          padding: 8px 40px;
+          margin-left: 20px;
+          outline: none; }
+  #inventoryDetailsPage .inventoryMainPanelRightBottom {
+    background: #fff;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px; }
+    #inventoryDetailsPage .inventoryMainPanelRightBottom table {
+      width: 80%; }
+      #inventoryDetailsPage .inventoryMainPanelRightBottom table thead tr th {
+        font-size: 13px; }
+      #inventoryDetailsPage .inventoryMainPanelRightBottom table tbody tr td {
+        font-weight: 500;
+        font-size: 13px; }
