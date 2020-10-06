@@ -6729,6 +6729,17 @@ $title : #4a4b65;
                             font-weight: 500;
                             .productName{
                                 position: relative;
+                                input{
+                                    width: 70%;
+                                    padding: 8px 10px;
+                                    border: 1px solid #ddd;
+                                    font-weight: 500;
+                                    border-radius: 4px;
+                                }
+                                input.disabled{
+                                    pointer-events: none;
+                                    border-color: transparent;
+                                }
                                 a{
                                     position: absolute;
                                     top: 50%;
@@ -6852,11 +6863,267 @@ $title : #4a4b65;
     }
 }
 
+/*-- start customer edit popup modal --*/
+#customerEditModal{
+    .modal-dialog{
+        max-width: 50%;
+        .modal-content{
+            border-radius: 5px;
+        }
+        .modal-body{
+            padding: 0px;
+            padding-bottom: 30px;
+            .headerAreaModal{
+                padding: 20px 30px;
+                .left{
+                    h3{
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: #232323;
+                        margin: 0;
+                    }
+                }
+            }
+            .editCustomerMainForm{
+                margin-top: 20px;
+                padding: 0px 30px;
+                .left{
+                    h4{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #232323;
+                        margin: 0;
+                        margin-bottom: 15px;
+                    }
+                    .inputbox{
+                        margin-bottom: 10px;
+                        input{
+                            width: 100%;
+                            border: 1px solid #ddd;
+                            padding: 13px 20px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            border-radius: 2px;
+                        }
+                        textarea{
+                            width: 100%;
+                            border: 1px solid #ddd;
+                            padding: 13px 20px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            border-radius: 2px;
+                            height: 150px;
+                            resize: none;
+                        }
+                    }
+                }
+                .right{
+                    h4{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #232323;
+                        margin: 0;
+                        margin-bottom: 15px;
+                    }
+                    .inputBox{
+                        margin-bottom: 10px;
+                        select{
+                            width: 100%;
+                            border: 1px solid #ddd;
+                            padding: 13px 20px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            border-radius: 2px;
+                        }
+                        input{
+                            width: 100%;
+                            border: 1px solid #ddd;
+                            padding: 13px 20px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            border-radius: 2px;
+                        }
+                        .countryOptionActon{
+                            margin-top: 15px;
+                            .actionsbtn{
+                                a{
+                                    display: inline-block;
+                                    padding: 7px 35px;
+                                    background: #4286F4;
+                                    color: #fff;
+                                    font-weight: 500;
+                                    font-size: 13px;
+                                    border-radius: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .updateCustomerSubmitBtn{
+                    margin-top: 30px;
+                    button{
+                        width: 50%;
+                        border: none;
+                        background: #55BC56;
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding: 13px 0px;
+                        border-radius: 3px;
+                        outline: none;
+                        transition: 0.4s;
+                        &:hover{
+                            background: #00921f;
+                        }
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
-
-
+/*-- this is tag dropdown --*/
+.tagDropdownMneuDropDown{
+    width: 400px;
+    right: 0px !important;
+    left: inherit !important;
+    padding: 10px 0px 10px 20px !important;
+    .addTagBtnTagDropDown{
+        text-align: center;
+        margin-top: 10px;
+        a{
+            display: inline-block;
+            background: #55bb56;
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 8px 70px !important;
+            border-radius: 3px;
+            &:hover{
+                background: #429a43;
+            }
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.tagDropDown{
+    .tagDropDownItem{
+        position: relative;
+        margin-bottom: 10px;
+        span.iconLable{
+            height: 7px;
+            width: 40px;
+            display: inline-block;
+            border-radius: 30px;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-38%);
+        }
+        span.iconLable.c1{
+            background: #7DB343;
+        }
+        span.iconLable.c2{
+            background: #F54336;
+        }
+        span.iconLable.c3{
+            background: #FFD700;
+        }
+        span.iconLable.c4{
+            background: #FF9901;
+        }
+        .span_pseudo, .chiller_cb span:before, .chiller_cb span:after {
+                content: "";
+                display: inline-block;
+                background: #fff;
+                width: 0;
+                height: 0.2rem;
+                position: absolute;
+                transform-origin: 0% 0%;
+              }
+              
+              .chiller_cb {
+                position: relative;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+              }
+              .chiller_cb input {
+                display: none;
+              }
+              .chiller_cb input:checked ~ span {
+                background: #55bb56;
+                border-color: #55bb56;
+              }
+              .chiller_cb input:checked ~ span:before {
+                width: 1rem;
+                height: 0.15rem;
+                transition: width 0.1s;
+                transition-delay: 0.3s;
+              }
+              .chiller_cb input:checked ~ span:after {
+                width: 0.4rem;
+                height: 0.15rem;
+                transition: width 0.1s;
+                transition-delay: 0.2s;
+              }
+              .chiller_cb input:disabled ~ span {
+                background: #ececec;
+                border-color: #dcdcdc;
+              }
+              .chiller_cb input:disabled ~ label {
+                color: #dcdcdc;
+              }
+              .chiller_cb input:disabled ~ label:hover {
+                cursor: default;
+              }
+              .chiller_cb label {
+                padding-left: 2rem;
+                position: relative;
+                z-index: 2;
+                cursor: pointer;
+                margin-bottom:0;
+                color: #232323;
+              }
+              .chiller_cb span {
+                display: inline-block;
+                width: 1.2rem;
+                height: 1.2rem;
+                border: 2px solid #ccc;
+                position: absolute;
+                left: 0;
+                transition: all 0.2s;
+                z-index: 1;
+                box-sizing: content-box;
+              }
+              .chiller_cb span:before {
+                transform: rotate(-55deg);
+                top: 1rem;
+                left: 0.37rem;
+              }
+              .chiller_cb span:after {
+                transform: rotate(35deg);
+                bottom: 0.35rem;
+                left: 0.2rem;
+              }
+            label{
+                font-weight: 500;
+                color: #232323;
+                font-size: 13px;
+                margin-left: 5px;
+            }
+        span{
+            font-weight: 600;
+        }
+    }
+}
 
 
 

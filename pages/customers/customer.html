@@ -210,22 +210,82 @@
 									<div class="right text-right">
 										<ul>
 											<li>
-												<a href="#"><i class="fa fa-edit"></i> Edit</a>
+												<a href="#" data-toggle="modal" data-target="#customerEditModal"><i
+														class="fa fa-edit"></i> Edit</a>
 											</li>
 											<li>
 												<div class="dropdown">
-												 <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												    <span class="name">
-												    	<i class="fa fa-tag"></i> Tag
-												    </span>
-												    <i class="fa fa-angle-down"></i>
+													<button type="button" id="dropdownMenuButton" data-toggle="dropdown"
+														aria-haspopup="true" aria-expanded="false">
+														<span class="name">
+															<i class="fa fa-tag"></i> Tag
+														</span>
+														<i class="fal fa-angle-down"></i>
 
-												 </button>
-												 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-												    <a class="dropdown-item" href="#">Tag Options</a>
-												    <a class="dropdown-item" href="#">Tag Options</a>
-												    <a class="dropdown-item" href="#">Tag Options</a>
-												 </div>
+													</button>
+													<div class="dropdown-menu tagDropdownMneuDropDown"
+														aria-labelledby="dropdownMenuButton">
+														<div class="tagDropDown">
+															<div class="tagDropDownItem">
+																<div class="chiller_cb">
+																	<input class="orderComonCheckBox" id="tagCheck11"
+																		type="checkbox">
+																	<label for="tagCheck11">
+																		ASAP
+																	</label>
+																	<span></span>
+																</div>
+																<span class="iconLable c1"></span>
+															</div>
+															<div class="tagDropDownItem">
+																<div class="chiller_cb">
+																	<input class="orderComonCheckBox" id="tagCheck12"
+																		type="checkbox">
+																	<label for="tagCheck12">
+																		ON HOLD
+																	</label>
+																	<span></span>
+																</div>
+																<span class="iconLable c2"></span>
+															</div>
+															<div class="tagDropDownItem">
+																<div class="chiller_cb">
+																	<input class="orderComonCheckBox" id="tagCheck13"
+																		type="checkbox">
+																	<label for="tagCheck13">
+																		STOP
+																	</label>
+																	<span></span>
+																</div>
+																<span class="iconLable c2"></span>
+															</div>
+															<div class="tagDropDownItem">
+																<div class="chiller_cb">
+																	<input class="orderComonCheckBox" id="tagCheck14"
+																		type="checkbox">
+																	<label for="tagCheck14">
+																		Custom
+																	</label>
+																	<span></span>
+																</div>
+																<span class="iconLable c3"></span>
+															</div>
+															<div class="tagDropDownItem">
+																<div class="chiller_cb">
+																	<input class="orderComonCheckBox" id="tagCheck15"
+																		type="checkbox">
+																	<label for="tagCheck15">
+																		Replace
+																	</label>
+																	<span></span>
+																</div>
+																<span class="iconLable c4"></span>
+															</div>
+														</div>
+														<div class="addTagBtnTagDropDown">
+															<a href="#"><i class="fal fa-plus"></i> Add Tag</a>
+														</div>
+													</div>
 												</div>
 											</li>
 										</ul>
@@ -236,44 +296,44 @@
 						<div class="customerOrerHistoryTable">
 							<h3>Order history</h3>
 							<table class="table table-borderless">
-							  <thead>
-							    <tr class="text-center">
-							      <th class="text-left" scope="col">Store</th>
-							      <th scope="col">Order No.</th>
-							      <th scope="col">Date</th>
-							      <th scope="col">Status</th>
-							      <th scope="col">Total</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr class="text-center">
-							      <td class="text-left">
-							      	<div class="storeIcon">
-							      		<img src="../../assets/img/icons/partner/27.jpg" alt="">
-							      	</div>
-							      </td>
-							      <td>
-							      	<div class="orderNumber">
-							      		#2364206427
-							      	</div>
-							      </td>
-							      <td>
-							      	<div class="date">
-							      		10/01/20 15:28
-							      	</div>
-							      </td>
-							      <td>
-							      	<div class="status dispatch">
-							      		<p>Dispatched</p>
-							      	</div>
-							      </td>
-							      <td>
-							      	<div class="total">
-							      		$20.13
-							      	</div>
-							      </td>
-							    </tr>
-							  </tbody>
+								<thead>
+									<tr class="text-center">
+										<th class="text-left" scope="col">Store</th>
+										<th scope="col">Order No.</th>
+										<th scope="col">Date</th>
+										<th scope="col">Status</th>
+										<th scope="col">Total</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="text-center">
+										<td class="text-left">
+											<div class="storeIcon">
+												<img src="../../assets/img/icons/partner/27.jpg" alt="">
+											</div>
+										</td>
+										<td>
+											<div class="orderNumber">
+												#2364206427
+											</div>
+										</td>
+										<td>
+											<div class="date">
+												10/01/20 15:28
+											</div>
+										</td>
+										<td>
+											<div class="status dispatch">
+												<p>Dispatched</p>
+											</div>
+										</td>
+										<td>
+											<div class="total">
+												$20.13
+											</div>
+										</td>
+									</tr>
+								</tbody>
 							</table>
 						</div>
 						<div class="customersPaginations text-center">
@@ -323,7 +383,125 @@
 		</div>
 	</section>
 	<!-- end customer main page content -->
-	
+
+	<!-- start edit customer popup area -->
+	<div class="modal fade bd-example-modal-lg" id="customerEditModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="headerAreaModal">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="left">
+									<h3><i class="fal fa-edit"></i> Edit customer</h3>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="right text-right">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true"><i class="fal fa-times"></i></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="editCustomerMainForm">
+						<form action="#">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="left">
+										<h4>Customer details</h4>
+										<div class="inputbox">
+											<input type="email" value="rubia248@gmail.com">
+										</div>
+										<div class="inputbox">
+											<input type="text" value="Jisett Baez Eddington">
+										</div>
+										<div class="inputbox">
+											<input type="text" placeholder="Last name">
+										</div>
+										<div class="inputbox">
+											<input type="text" placeholder="Phone">
+										</div>
+										<div class="inputbox">
+											<textarea placeholder="Note"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="right">
+										<h4>Address</h4>
+										<div class="inputBox">
+											<select>
+												<option value="1" selected>3906 Quado Dr</option>
+												<option value="1">3901 Quado Dr1</option>
+												<option value="1">3902 Quado Dr2</option>
+												<option value="1">3903 Quado Dr3</option>
+												<option value="1">3904 Quado Dr4</option>
+												<option value="1">3907 Quado Dr5</option>
+												<option value="1">3909 Quado Dr6</option>
+											</select>
+										</div>
+										<div class="inputBox">
+											<input type="text" value="3906 Quado Dr" placeholder="Address line 1">
+										</div>
+										<div class="inputBox">
+											<input type="text" value="" placeholder="Address line 2">
+										</div>
+										<div class="inputBox">
+											<input type="text" value="Belle Isle" placeholder="Address line 3">
+										</div>
+										<div class="inputBox">
+											<input type="text" value="FL" placeholder="Placeholder text">
+										</div>
+										<div class="inputBox">
+											<input type="text" value="32812" placeholder="Placeholder text">
+										</div>
+										<div class="inputBox">
+											<input type="text" value="" placeholder="Company">
+										</div>
+										<div class="inputBox">
+											<select>
+												<option value="1">Select Country</option>
+												<option value="1" selected>United States</option>
+												<option value="1">Italy</option>
+												<option value="1">UK</option>
+												<option value="1">Bangladesh</option>
+												<option value="1">Nepal</option>
+												<option value="1">India</option>
+											</select>
+											<div class="countryOptionActon">
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="actionsbtn">
+															<a href="#">Remove</a>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<div class="actionsbtn text-right">
+															<a href="#">Add</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="updateCustomerSubmitBtn text-center">
+										<button type="submit"><i class="fal fa-user"></i> Update Customer</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end edit customer popup area -->
+
 
 </body>
 

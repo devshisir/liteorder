@@ -144,3 +144,27 @@
 	$("#ComlogoImage").change(function() {
 	  readURL(this);
 	});
+
+
+
+
+	$('.tagDropdownMneuDropDown').on('click', function(event){
+	    // The event won't be propagated up to the document NODE and 
+	    // therefore delegated events won't be fired
+	    event.stopPropagation();
+	});
+	$('#editStockProdutcActionBtn2').hide();
+	var num = $('#stockProductInput').val(); 
+	$('#editStockProdutcActionBtn1').on('click',function(e){
+		$('#stockProductInput').toggleClass('disabled');
+		$('#stockProductInput').focus().val('').val(num); 
+		$(this).hide(); 
+		$('#editStockProdutcActionBtn2').show();
+		e.preventDefault();
+	})
+	$('#editStockProdutcActionBtn2').on('click',function(e){
+		$(this).hide(); 
+		$('#editStockProdutcActionBtn1').show();
+		$('#stockProductInput').toggleClass('disabled');
+		e.preventDefault();
+	})

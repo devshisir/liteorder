@@ -4935,6 +4935,15 @@ a {
         font-weight: 500; }
         #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td .productName {
           position: relative; }
+          #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td .productName input {
+            width: 70%;
+            padding: 8px 10px;
+            border: 1px solid #ddd;
+            font-weight: 500;
+            border-radius: 4px; }
+          #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td .productName input.disabled {
+            pointer-events: none;
+            border-color: transparent; }
           #inventoryDetailsPage .inventoryMainPanelRight .inventroryStokLogTable .table tbody tr td .productName a {
             position: absolute;
             top: 50%;
@@ -5019,3 +5028,205 @@ a {
       #inventoryDetailsPage .inventoryMainPanelRightBottom table tbody tr td {
         font-weight: 500;
         font-size: 13px; }
+
+/*-- start customer edit popup modal --*/
+#customerEditModal .modal-dialog {
+  max-width: 50%; }
+  #customerEditModal .modal-dialog .modal-content {
+    border-radius: 5px; }
+  #customerEditModal .modal-dialog .modal-body {
+    padding: 0px;
+    padding-bottom: 30px; }
+    #customerEditModal .modal-dialog .modal-body .headerAreaModal {
+      padding: 20px 30px; }
+      #customerEditModal .modal-dialog .modal-body .headerAreaModal .left h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #232323;
+        margin: 0; }
+    #customerEditModal .modal-dialog .modal-body .editCustomerMainForm {
+      margin-top: 20px;
+      padding: 0px 30px; }
+      #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .left h4 {
+        font-weight: 500;
+        font-size: 16px;
+        color: #232323;
+        margin: 0;
+        margin-bottom: 15px; }
+      #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .left .inputbox {
+        margin-bottom: 10px; }
+        #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .left .inputbox input {
+          width: 100%;
+          border: 1px solid #ddd;
+          padding: 13px 20px;
+          font-weight: 500;
+          font-size: 14px;
+          border-radius: 2px; }
+        #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .left .inputbox textarea {
+          width: 100%;
+          border: 1px solid #ddd;
+          padding: 13px 20px;
+          font-weight: 500;
+          font-size: 14px;
+          border-radius: 2px;
+          height: 150px;
+          resize: none; }
+      #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .right h4 {
+        font-weight: 500;
+        font-size: 16px;
+        color: #232323;
+        margin: 0;
+        margin-bottom: 15px; }
+      #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .right .inputBox {
+        margin-bottom: 10px; }
+        #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .right .inputBox select {
+          width: 100%;
+          border: 1px solid #ddd;
+          padding: 13px 20px;
+          font-weight: 500;
+          font-size: 14px;
+          border-radius: 2px; }
+        #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .right .inputBox input {
+          width: 100%;
+          border: 1px solid #ddd;
+          padding: 13px 20px;
+          font-weight: 500;
+          font-size: 14px;
+          border-radius: 2px; }
+        #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .right .inputBox .countryOptionActon {
+          margin-top: 15px; }
+          #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .right .inputBox .countryOptionActon .actionsbtn a {
+            display: inline-block;
+            padding: 7px 35px;
+            background: #4286F4;
+            color: #fff;
+            font-weight: 500;
+            font-size: 13px;
+            border-radius: 3px; }
+      #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .updateCustomerSubmitBtn {
+        margin-top: 30px; }
+        #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .updateCustomerSubmitBtn button {
+          width: 50%;
+          border: none;
+          background: #55BC56;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+          padding: 13px 0px;
+          border-radius: 3px;
+          outline: none;
+          transition: 0.4s; }
+          #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .updateCustomerSubmitBtn button:hover {
+            background: #00921f; }
+          #customerEditModal .modal-dialog .modal-body .editCustomerMainForm .updateCustomerSubmitBtn button i {
+            margin-right: 5px; }
+
+/*-- this is tag dropdown --*/
+.tagDropdownMneuDropDown {
+  width: 400px;
+  right: 0px !important;
+  left: inherit !important;
+  padding: 10px 0px 10px 20px !important; }
+  .tagDropdownMneuDropDown .addTagBtnTagDropDown {
+    text-align: center;
+    margin-top: 10px; }
+    .tagDropdownMneuDropDown .addTagBtnTagDropDown a {
+      display: inline-block;
+      background: #55bb56;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 8px 70px !important;
+      border-radius: 3px; }
+      .tagDropdownMneuDropDown .addTagBtnTagDropDown a:hover {
+        background: #429a43; }
+      .tagDropdownMneuDropDown .addTagBtnTagDropDown a i {
+        margin-right: 5px; }
+
+.tagDropDown .tagDropDownItem {
+  position: relative;
+  margin-bottom: 10px; }
+  .tagDropDown .tagDropDownItem span.iconLable {
+    height: 7px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-38%); }
+  .tagDropDown .tagDropDownItem span.iconLable.c1 {
+    background: #7DB343; }
+  .tagDropDown .tagDropDownItem span.iconLable.c2 {
+    background: #F54336; }
+  .tagDropDown .tagDropDownItem span.iconLable.c3 {
+    background: #FFD700; }
+  .tagDropDown .tagDropDownItem span.iconLable.c4 {
+    background: #FF9901; }
+  .tagDropDown .tagDropDownItem .span_pseudo, .tagDropDown .tagDropDownItem .chiller_cb span:before, .tagDropDown .tagDropDownItem .chiller_cb span:after {
+    content: "";
+    display: inline-block;
+    background: #fff;
+    width: 0;
+    height: 0.2rem;
+    position: absolute;
+    transform-origin: 0% 0%; }
+  .tagDropDown .tagDropDownItem .chiller_cb {
+    position: relative;
+    height: 2rem;
+    display: flex;
+    align-items: center; }
+  .tagDropDown .tagDropDownItem .chiller_cb input {
+    display: none; }
+  .tagDropDown .tagDropDownItem .chiller_cb input:checked ~ span {
+    background: #55bb56;
+    border-color: #55bb56; }
+  .tagDropDown .tagDropDownItem .chiller_cb input:checked ~ span:before {
+    width: 1rem;
+    height: 0.15rem;
+    transition: width 0.1s;
+    transition-delay: 0.3s; }
+  .tagDropDown .tagDropDownItem .chiller_cb input:checked ~ span:after {
+    width: 0.4rem;
+    height: 0.15rem;
+    transition: width 0.1s;
+    transition-delay: 0.2s; }
+  .tagDropDown .tagDropDownItem .chiller_cb input:disabled ~ span {
+    background: #ececec;
+    border-color: #dcdcdc; }
+  .tagDropDown .tagDropDownItem .chiller_cb input:disabled ~ label {
+    color: #dcdcdc; }
+  .tagDropDown .tagDropDownItem .chiller_cb input:disabled ~ label:hover {
+    cursor: default; }
+  .tagDropDown .tagDropDownItem .chiller_cb label {
+    padding-left: 2rem;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    margin-bottom: 0;
+    color: #232323; }
+  .tagDropDown .tagDropDownItem .chiller_cb span {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid #ccc;
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+    z-index: 1;
+    box-sizing: content-box; }
+  .tagDropDown .tagDropDownItem .chiller_cb span:before {
+    transform: rotate(-55deg);
+    top: 1rem;
+    left: 0.37rem; }
+  .tagDropDown .tagDropDownItem .chiller_cb span:after {
+    transform: rotate(35deg);
+    bottom: 0.35rem;
+    left: 0.2rem; }
+  .tagDropDown .tagDropDownItem label {
+    font-weight: 500;
+    color: #232323;
+    font-size: 13px;
+    margin-left: 5px; }
+  .tagDropDown .tagDropDownItem span {
+    font-weight: 600; }
